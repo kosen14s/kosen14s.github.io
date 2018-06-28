@@ -1,8 +1,8 @@
 # 新サイト制作
-[kosen14s.github.io](http://kosen14s.github.io/) の
+[kosen14s.github.io](http://kosen14s.github.io/) のリニューアル
 
 # 始め方
-  `git clone https://github.com/kosen14s/kosen14s-site-2.git`
+  `git clone https://github.com/kosen14s/kosen14s-site-2.git`  
   `cd kosen14s.github.io.git`
 
 ```
