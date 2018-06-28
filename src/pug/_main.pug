@@ -1,0 +1,23 @@
+mixin item-link(name,url)
+  p: a(href=url).item-link= name
+
+ul.contents
+  li
+    h2 #muscle
+    p.item ベンチプレス
+    p.item デッドリフト
+  li
+    h2 #book
+    +item-link("読書会","#")
+    +item-link("読書会2nd","#") 
+  li
+    h2 #dojin
+    +item-link("闇鍋本","#")
+  li
+    h2 #profile
+    +item-link("メンバーの一覧","#")
+
+.twitter
+  a(href="http://").twitter-tag-link #kosen14s
+  a(href="http://").tweet-button
+    img(src="", alt="ハッシュタグでツイートする")

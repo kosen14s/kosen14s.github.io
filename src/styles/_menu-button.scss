@@ -1,0 +1,64 @@
+// メニューボタン
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: none;
+
+  .menu-icon {
+    margin: 31px auto; //(80-8)/2
+    width: 50px;
+    height: 8px;
+    background-color: white;
+    position: relative;
+    border-radius: 4px;
+    transition: .5s $bezier-fast-ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -(50px - 8px) / 2; //-(width - border-r)/2
+      left: 0;
+      width: 50px;
+      height: 8px;
+      background: white;
+      border-radius: 4px;
+      transition: .5s $bezier-fast-ease-in-out;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -21px;
+      left: 0;
+      width: 50px;
+      height: 8px;
+      background: white;
+      border-radius: 4px;
+      transition: .5s $bezier-fast-ease-in-out;
+    }
+  }
+}
+
+.menu-button:focus-within {
+  .menu-icon {
+    width: ((50px - 8px) * sqrt(2)) + 8px; //≒ 67.4px
+    transform: rotate(45deg);
+
+    &::before {
+      top: -21px / sqrt(2); //≒ -14.85px
+      left: 21px / sqrt(2);
+      width: (21px * sqrt(2)) + 8px; //≒ 37.7px
+      transform: rotate(90deg);
+    }
+    &::after {
+      bottom: -21px / sqrt(2);
+      left: 21px / sqrt(2);
+      width: (21px * sqrt(2)) + 8px;
+      transform: rotate(90deg);
+    }
+  }
+}

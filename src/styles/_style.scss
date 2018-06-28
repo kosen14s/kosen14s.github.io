@@ -1,0 +1,18 @@
+@import "../../node_modules/mathsass/dist/math";
+@import 'variables';
+@import 'mixins';
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  position: relative;
+  height: 100%;
+  overflow:hidden;
+}
+
+@import 'main';
+@import 'header';
+@import 'menu-button';
