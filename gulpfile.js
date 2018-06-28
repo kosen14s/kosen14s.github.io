@@ -40,12 +40,6 @@ gulp.task('pug', () => {
   .pipe(gulp.dest('dest/html'));
 });
 
-gulp.task('browser-sync', () => {
-  return browserSync.init(null, {
-      server: './dest'
-  });
-});
-
 gulp.task('build', ['sass', 'jade', 'pug'])
 
 gulp.task('watch', () => {
