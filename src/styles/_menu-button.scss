@@ -8,6 +8,9 @@
   height: 80px;
   background-color: transparent;
   border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .5s $bezier-fast-ease-in-out;
 
   .menu-icon {
     margin: 31px auto; //(80-8)/2
@@ -25,7 +28,7 @@
       left: 0;
       width: 50px;
       height: 8px;
-      background: white;
+      background-color: white;
       border-radius: 4px;
       transition: .5s $bezier-fast-ease-in-out;
     }
@@ -36,14 +39,18 @@
       left: 0;
       width: 50px;
       height: 8px;
-      background: white;
+      background-color: white;
       border-radius: 4px;
       transition: .5s $bezier-fast-ease-in-out;
     }
   }
 }
 
-.menu-button:focus-within {
+.menu-button:hover {
+  transform: rotate(180deg);
+}
+
+.menu-button_open {
   .menu-icon {
     width: ((50px - 8px) * sqrt(2)) + 8px; //≒ 67.4px
     transform: rotate(45deg);

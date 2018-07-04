@@ -1,0 +1,48 @@
+.spr {
+  background-color: $spring !important;
+  &::before{
+    background-color: $spring !important;
+  }
+  &::after {
+    background-color: $spring !important;
+  }
+}
+.sum {
+  background-color: $summer !important;
+  &::before{
+    background-color: $summer !important;
+  }
+  &::after {
+    background-color: $summer !important;
+  }
+}
+.aut {
+  background-color: $autumn !important;
+  &::before{
+    background-color: $autumn !important;
+  }
+  &::after {
+    background-color: $autumn !important;
+  }
+}
+.win {
+  background-color: $winter !important;
+  &::before{
+    background-color: $winter !important;
+  }
+  &::after {
+    background-color: $winter !important;
+  }
+}
+.spr-sub {
+  background-color: $spring-sub;
+}
+.sum-sub {
+  background-color: $summer-sub;
+}
+.aut-sub {
+  background-color: $autumn-sub;
+}
+.win-sub {
+  background-color: $winter-sub;
+}
