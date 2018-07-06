@@ -10,7 +10,8 @@
   border: none;
   outline: none;
   cursor: pointer;
-  transition: .5s $bezier-fast-ease-in-out;
+  transition: .2s $bezier-fast-ease-in-out;
+  z-index: 100;
 
   .menu-icon {
     margin: 31px auto; //(80-8)/2
@@ -47,7 +48,7 @@
 }
 
 .menu-button:hover {
-  transform: rotate(180deg);
+  transform: scale(0.9);
 }
 
 .menu-button_open {

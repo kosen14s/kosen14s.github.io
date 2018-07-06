@@ -12,22 +12,73 @@ main {
 
   .contents {
     margin: 0;
-    padding: 0;
+    padding: 80px;
+    padding-left: 120px;
     max-width: 100%;
+    font-size: 1.8rem;
 
     li {
       display: inline-block;
-      width: 30%;
+      width: 40%;
       min-height: 200px;
       margin: 10px;
       padding: 5px;
       padding-left: 20px;
+
+      p {
+        margin: 0;
+      }
+      .item {
+        display: block;
+        padding: 1.5rem 0;
+        padding-left: 2rem;
+        z-index: 0;
+      }
+      .item-link {
+        text-decoration-line: none;
+        position: relative;
+        transition: .2s ease-in-out;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0.1rem;
+          left: 0;
+          width: 0;
+          height: 5rem;
+          z-index: -2;
+          transition: .5s $bezier-fast-ease-out;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0.1rem;
+          left: 0;
+          width: 0;
+          height: 5rem;
+          z-index: -1;
+          opacity: 0;
+          transition: .5s .1s $bezier-fast-ease-out;
+        }
+        &:hover {
+          color: white;
+          &::before {
+            width: 100%;
+            opacity: 1;
+          }
+          &::after {
+            width: 100%;
+            opacity: 1;
+          }
+        }
+        
+      }
     }
   }
 
   .twitter {
     display: block;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
 

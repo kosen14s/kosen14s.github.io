@@ -2,14 +2,13 @@ doctype html
 html(lang="ja")
   head
     meta(charset="utf-8")
-    link(rel="stylesheet", href="../styles/index.css")
-    title kosen14s
+    link(rel="stylesheet", href="../styles/together.css")
+    title kosen14s #dojin TOGETHER
 
   body
     main.main
       include _main
 
-    .header-under#header-under
     header#header
       .logo
         img(src="", alt="kosen14s-logo")#logo-img
@@ -18,13 +17,5 @@ html(lang="ja")
 
     button.menu-button#menu-button
       .menu-icon#menu-icon
-
-    .season
-      button.now-season#now-season
-      .season-list#season-list
-        button#spring spring
-        button#summer summer
-        button#autumn autumn
-        button#winter winter
 
     script(src="../scripts/index.js")

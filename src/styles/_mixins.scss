@@ -1,6 +1,8 @@
+
+//use header & menu-button
 .spr {
   background-color: $spring !important;
-  &::before{
+  &::before {
     background-color: $spring !important;
   }
   &::after {
@@ -9,7 +11,7 @@
 }
 .sum {
   background-color: $summer !important;
-  &::before{
+  &::before {
     background-color: $summer !important;
   }
   &::after {
@@ -18,7 +20,7 @@
 }
 .aut {
   background-color: $autumn !important;
-  &::before{
+  &::before {
     background-color: $autumn !important;
   }
   &::after {
@@ -27,13 +29,49 @@
 }
 .win {
   background-color: $winter !important;
-  &::before{
+  &::before {
     background-color: $winter !important;
   }
   &::after {
     background-color: $winter !important;
   }
 }
+
+//use main .item-link
+.spr-link {
+  &::before {
+    background-color: $spring-sub;
+  }
+  &::after {
+    background-color: $spring;
+  }
+}
+.sum-link {
+  &::before {
+    background-color: $summer-sub;
+  }
+  &::after {
+    background-color: $summer;
+  }
+}
+.aut-link {
+  &::before {
+    background-color: $autumn-sub;
+  }
+  &::after {
+    background-color: $autumn;
+  }
+}
+.win-link {
+  &::before {
+    background-color: $winter-sub;
+  }
+  &::after {
+    background-color: $winter;
+  }
+}
+
+//use header-under
 .spr-sub {
   background-color: $spring-sub;
 }

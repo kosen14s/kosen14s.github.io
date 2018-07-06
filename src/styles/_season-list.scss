@@ -1,0 +1,57 @@
+.season {
+  position: fixed;
+  top: 2px;
+  left: 2px;
+  background: transparent;
+  font-size: 1.5rem;
+  color: white;
+
+  .now-season {
+    margin: 2px;
+    min-width: 100px;
+    min-height: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .season-list{
+    transform: translateX(-120px);
+    transition: 0.5s $bezier-fast-ease-out;
+
+    button {
+      margin: 2px;
+      display: block;
+      min-width: 100px;
+      min-height: 30px;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: rgba($color: white, $alpha: .2);
+      transition: 0.4s ease-in-out;
+
+      &#spring:hover {
+        background-color: $spring;
+      }
+      &#summer:hover {
+        background-color: $summer;
+      }
+      &#autumn:hover {
+        background-color: $autumn;
+      }
+      &#winter:hover {
+        background-color: $winter;
+      }
+    }
+  }
+  .season-list_open {
+    transform: translateX(0);
+  }
+
+}

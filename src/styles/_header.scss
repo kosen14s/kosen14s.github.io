@@ -1,3 +1,14 @@
+.header-under {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: .5s .2s $bezier-fast-ease-out;
+}
+
 header {
   position: fixed;
   margin: 0;
@@ -6,7 +17,7 @@ header {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: gray; 
+  background-color: white; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,5 +42,8 @@ header {
 }
 
 .header_open {
+  width: 50vw;
+}
+.header-under_open {
   width: 50vw;
 }
