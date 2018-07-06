@@ -13,6 +13,7 @@ main {
   .contents {
     margin: 0;
     padding: 80px;
+    padding-top: 120px;
     padding-left: 120px;
     max-width: 100%;
     font-size: 1.8rem;
@@ -42,7 +43,7 @@ main {
         &::before {
           content: "";
           position: absolute;
-          bottom: 0.1rem;
+          bottom: 0;
           left: 0;
           width: 0;
           height: 5rem;
@@ -52,7 +53,7 @@ main {
         &::after {
           content: "";
           position: absolute;
-          bottom: 0.1rem;
+          bottom: 0;
           left: 0;
           width: 0;
           height: 5rem;
@@ -79,13 +80,72 @@ main {
   .twitter {
     display: block;
     position: fixed;
+    height: 50px;
     bottom: 20px;
     right: 20px;
 
     .twitter-tag-link {
+      display: block;
+      position: fixed;
+      right: 65px;
+      bottom: 20px;
       width: auto;
-      float: left;
+      height: 50px;
+      padding: 0 20px;
+      text-align: center;
+      line-height: 51px;
+      font-size: 2.3rem;
+      font-weight: bold;
+      text-decoration-line: none;
       color: $official-twitter;
+      z-index: -3;
+      transition: .2s ease-in-out;
+      &:hover {
+        opacity: .7;
+      }
+    }
+    .tweet-button {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      transition: .2s ease-in-out;
+      img {
+        width: 50px;
+      }
+      &::after {
+        content: "";
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        height: 50px;
+        width: 45px;
+        background: white;
+        z-index: -1;
+      }
+
+      &::before {
+        content: "ハッシュタグでツイート";
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        height: 50px;
+        transition: .3s $bezier-fast-ease-out;
+        background: $official-twitter;
+        color:white;
+        font-size: 1.6rem;
+        padding-left: 30px;
+        padding-right: 60px;
+        text-align: center;
+        line-height: 48px;
+        transform: translateX(300px);
+        z-index: -2;
+        border-radius: 25px;
+      }
+      &:hover {
+        &::before {
+          transform: translateX(0);
+        }
+      }
     }
   }
 }

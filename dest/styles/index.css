@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -369,7 +370,8 @@ a:visited {
 
 html {
   height: 100%;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-family: "Noto Sans Japanese"; }
 
 body {
   margin: 0;
@@ -392,6 +394,7 @@ main {
   main .contents {
     margin: 0;
     padding: 80px;
+    padding-top: 120px;
     padding-left: 120px;
     max-width: 100%;
     font-size: 1.8rem; }
@@ -416,7 +419,7 @@ main {
         main .contents li .item-link::before {
           content: "";
           position: absolute;
-          bottom: 0.1rem;
+          bottom: 0;
           left: 0;
           width: 0;
           height: 5rem;
@@ -425,7 +428,7 @@ main {
         main .contents li .item-link::after {
           content: "";
           position: absolute;
-          bottom: 0.1rem;
+          bottom: 0;
           left: 0;
           width: 0;
           height: 5rem;
@@ -443,12 +446,62 @@ main {
   main .twitter {
     display: block;
     position: fixed;
+    height: 50px;
     bottom: 20px;
     right: 20px; }
     main .twitter .twitter-tag-link {
+      display: block;
+      position: fixed;
+      right: 65px;
+      bottom: 20px;
       width: auto;
-      float: left;
-      color: #55acee; }
+      height: 50px;
+      padding: 0 20px;
+      text-align: center;
+      line-height: 51px;
+      font-size: 2.3rem;
+      font-weight: bold;
+      text-decoration-line: none;
+      color: #55acee;
+      z-index: -3;
+      transition: .2s ease-in-out; }
+      main .twitter .twitter-tag-link:hover {
+        opacity: .7; }
+    main .twitter .tweet-button {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      transition: .2s ease-in-out; }
+      main .twitter .tweet-button img {
+        width: 50px; }
+      main .twitter .tweet-button::after {
+        content: "";
+        position: fixed;
+        bottom: 20px;
+        right: 0px;
+        height: 50px;
+        width: 45px;
+        background: white;
+        z-index: -1; }
+      main .twitter .tweet-button::before {
+        content: "ハッシュタグでツイート";
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        height: 50px;
+        transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98);
+        background: #55acee;
+        color: white;
+        font-size: 1.6rem;
+        padding-left: 30px;
+        padding-right: 60px;
+        text-align: center;
+        line-height: 48px;
+        transform: translateX(300px);
+        z-index: -2;
+        border-radius: 25px; }
+      main .twitter .tweet-button:hover::before {
+        transform: translateX(0); }
 
 .header-under {
   position: fixed;
@@ -477,6 +530,9 @@ header {
     margin: auto;
     text-align: center;
     color: white; }
+    header .logo img {
+      width: 18rem;
+      padding-right: .5rem; }
     header .logo h1 {
       margin: 0;
       font-size: 7rem;
