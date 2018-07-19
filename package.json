@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
     "gulp-core": "^0.1.3-alpha",
     "gulp-jade": "^1.1.0",
