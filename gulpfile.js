@@ -4,6 +4,14 @@ const jade = require('gulp-jade');
 const pug = require('gulp-pug');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
+const browserSync = require('browser-sync');
+
+const reload = browserSync.reload;
+const BROWSER_SYNC_OPTIONS = {
+    server: ['src', 'dest'],
+    port: 3000,
+    open: false
+};
 
 gulp.task('sass', function () {
   gulp.src(['src/**/*.scss', '!src/**/_*.scss'])
@@ -43,7 +51,9 @@ gulp.task('pug', () => {
 gulp.task('build', ['sass', 'jade', 'pug'])
 
 gulp.task('watch', () => {
-  gulp.watch('src/styles/*.scss', ['sass']);
-  gulp.watch('src/jade/*.jade', ['jade']);
-  gulp.watch('src/pug/*.pug', ['pug']);
+  browserSync(BROWSER_SYNC_OPTIONS);
+
+  gulp.watch('src/styles/*.scss', ['sass', reload]);
+  gulp.watch('src/jade/*.jade', ['jade', reload]);
+  gulp.watch('src/pug/*.pug', ['pug', reload]);
 });
