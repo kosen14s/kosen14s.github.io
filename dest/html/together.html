@@ -3,41 +3,131 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styles/together.css">
-    <title>kosen14s #dojin TOGETHER</title>
+    <title>TOGETHER | kosen14s #dojin</title>
   </head>
   <body>
-    <main class="main">
-      <ul class="contents">
-        <li>
-          <h2>#muscle</h2>
-          <p class="item">ベンチプレス</p>
-          <p class="item">デッドリフト</p>
-        </li>
-        <li>
-          <h2>#book</h2>
-                <p><a class="item item-link" href="#">読書会</a></p>
-                <p><a class="item item-link" href="#">読書会2nd</a></p>
-        </li>
-        <li>
-          <h2>#dojin</h2>
-                <p><a class="item item-link" href="#">闇鍋本</a></p>
-        </li>
-        <li>
-          <h2>#profile</h2>
-                <p><a class="item item-link" href="#">メンバーの一覧</a></p>
-        </li>
-      </ul>
-      <div class="twitter"><a class="twitter-tag-link" href="https://twitter.com/search?vertical=default&amp;q=%23kosen14s&amp;src=typd">#kosen14s</a><a class="tweet-button" href="https://twitter.com/intent/tweet?text=&amp;hashtags=kosen14s"><img src="../images/twitter.svg" alt="ハッシュタグでツイートする"></a></div>
-    </main>
-    <header id="header">
-      <div class="logo"><img src="" alt="kosen14s-logo" id="logo-img">
-        <h1>kosen14s</h1>
-        <p>高専2014年度入学生のゆるふわ団体</p>
-      </div>
+    <header class="header container">
+      <div class="sub-title">kosen14s 闇鍋同人本</div><img class="title" src="" alt="">
     </header>
-    <button class="menu-button" id="menu-button">
-      <div class="menu-icon" id="menu-icon"></div>
-    </button>
-    <script src="../scripts/index.js"></script>
+    <main>
+      <div class="books container"><img class="book-view" src="../images/TOGETHER1.png" alt="TOGETHER1 表紙イメージ"><img class="book-view" src="../images/TOGETHER2.png" alt="TOGETHER2 表紙イメージ"></div>
+      <div class="links container"><a class="techbookfest5" href="https://techbookfest.org/event/tbf05">技術書展５<span class="techbookfest5-min">のページへ</span></a><a class="pdf-link" href="#">PDF版 Comming soon</a>
+        <div class="share-sns"><a class="twitter" href="http://">つぶやく</a><a class="facebook" href="http://">シェア</a></div>
+      </div>
+      <div class="about container">
+        <h1>kosen14s とは</h1>
+        <p>kosen14s は、2014年度に高専という環境に若くして飛び込んだ最高のオタク達による最高の団体です。</p>プロコニスト、ロボコニストはもちろん、デザイナーやエンジニア、絵師などの様々な活動をしている、
+        個性豊かなメンバーが参加しています。時々集まってはLTをしたり、読書会をしたり、開発合宿をしたり、
+        のびのびと活動しています。
+        <p>本誌ではそんな個性豊かな kosen14s メンバーの活動や趣味の一端をぎゅぎゅっと集めてみました。</p>各メンバーのアクの強さが隠しきれない闇鍋のような本となっております（誰得）。
+        <p>そんなお鍋のパンチある出汁をご賞味いただければ幸いです。</p><a class="14s-site-link" href="./">kosen14s サイトへ</a>
+      </div>
+      <div class="separator-line container"></div>
+      <div class="contents container">
+        <h1>内容</h1>
+        <div class="contents-wrapper">
+          <div class="contents-book"><img class="book-title" src="" alt="①デザインとプログラミングの鍋">
+            <h2 class="pink">Design</h2>
+            <ul class="content">
+              <li>
+                <input type="button" value="ロボコンで使われている安全なUI" onclick="detailOpen(1)">
+              </li>
+              <li>
+                <input type="button" value="HIの観点から理屈で分かるデザイン" onclick="detailOpen(2)">
+              </li>
+              <li>
+                <input type="button" value="デザインの二面性" onclick="detailOpen(3)">
+              </li>
+            </ul>
+            <h2 class="pink">programing</h2>
+            <ul class="content">
+              <li>
+                <input type="button" value="CSSアニメーションの話" onclick="detailOpen(4)">
+              </li>
+              <li>
+                <input type="button" value="詳細" onclick="detailOpen(5)">
+              </li>
+              <li>
+                <input type="button" value="詳細" onclick="detailOpen(6)">
+              </li>
+              <li>
+                <input type="button" value="Rubyできかいがくしゅ～" onclick="detailOpen(7)">
+              </li>
+              <li>
+                <input type="button" value="SVG仕様書読んでみた" onclick="detailOpen(8)">
+              </li>
+              <li>
+                <input type="button" value="omronのPLC制御コンテスト技術キャンプの話" onclick="detailOpen(9)">
+              </li>
+            </ul>
+          </div>
+          <div class="contents-book"><img class="book-title" src="" alt="②数学と電気の鍋">
+            <h2 class="green">Math</h2>
+            <ul class="content">
+              <li>
+                <input type="button" value="SATソルバについて" onclick="detailOpen(10)">
+              </li>
+              <li>
+                <input type="button" value="巨大数" onclick="detailOpen(11)">
+              </li>
+            </ul>
+            <h2 class="green">Electric</h2>
+            <ul class="content">
+              <li>
+                <input type="button" value="電気科オタクの見る世界" onclick="detailOpen(12)">
+              </li>
+              <li>
+                <input type="button" value="うさみみでもわかる電気工学" onclick="detailOpen(13)">
+              </li>
+              <li>
+                <input type="button" value="vvvfはエモい！" onclick="detailOpen(14)">
+              </li>
+            </ul>
+            <h2 class="green">Others</h2>
+            <ul class="content">
+              <li>
+                <input type="button" value="ラーメン &amp;&amp; 鉄道配線" onclick="detailOpen(15)">
+              </li>
+              <li>
+                <input type="button" value="Juliamoで乗り切ろう高専生活" onclick="detailOpen(16)">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="separator-line container"></div>
+      <div class="info container">
+        <h1>頒布情報</h1>
+        <p>技術書展5に出典する商品一覧です。</p>
+        <div class="info-wrapper">
+          <div class="property">商品名</div>
+          <div class="values">
+            <p class="value">TOGETHER❶ デザインとプログラミングの鍋</p>
+            <p class="value">TOGETHER❷ 数学と電気の鍋</p><a class="value" href="http://">プログラミング言語かるた</a><a class="value" href="http://">Gitコマンドかるた</a><a class="value" href="http://"> </a>
+          </div>
+        </div>
+        <div class="info-wrapper">
+          <div class="property">サークル名</div>
+          <div class="values"><a class="value" href="http://">kosen14s</a></div>
+        </div>
+        <div class="info-wrapper">
+          <div class="property">代表</div>
+          <div class="values"><a class="value" href="http://">Cilvia @tech0970</a></div>
+        </div>
+        <div class="info-wrapper">
+          <div class="property">著者</div>
+          <div class="values">
+            <p class="value">各著者名は上部「内容」の各話タイトルをクリックすると表示されます。</p>
+          </div>
+        </div>
+        <div class="info-wrapper">
+          <div class="property">頒布価格</div>
+          <div class="values">
+            <p class="value">x,xxx円</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../scripts/together.js"></script>
   </body>
 </html>

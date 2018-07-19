@@ -3,19 +3,103 @@ html(lang="ja")
   head
     meta(charset="utf-8")
     link(rel="stylesheet", href="../styles/together.css")
-    title kosen14s #dojin TOGETHER
+    title TOGETHER | kosen14s #dojin
 
   body
-    header.header
+    header.header.container
+      .sub-title kosen14s 闇鍋同人本
+      img(src="", alt="").title
 
-  main
-    .book-view
+    main
+      .books.container
+        img(src="../images/TOGETHER1.png", alt="TOGETHER1 表紙イメージ").book-view
+        img(src="../images/TOGETHER2.png", alt="TOGETHER2 表紙イメージ").book-view
 
-    .link
+      .links.container
+        a(href="https://techbookfest.org/event/tbf05").techbookfest5 技術書展５
+          span.techbookfest5-min のページへ
+        a(href="#").pdf-link PDF版 Comming soon
+        .share-sns
+          a(href="http://").twitter つぶやく
+          a(href="http://").facebook シェア
 
-    .about
+      .about.container
+        h1 kosen14s とは
+        p kosen14s は、2014年度に高専という環境に若くして飛び込んだ最高のオタク達による最高の団体です。
+        | プロコニスト、ロボコニストはもちろん、デザイナーやエンジニア、絵師などの様々な活動をしている、
+        | 個性豊かなメンバーが参加しています。時々集まってはLTをしたり、読書会をしたり、開発合宿をしたり、
+        | のびのびと活動しています。
+        p 本誌ではそんな個性豊かな kosen14s メンバーの活動や趣味の一端をぎゅぎゅっと集めてみました。
+        | 各メンバーのアクの強さが隠しきれない闇鍋のような本となっております（誰得）。
+        p そんなお鍋のパンチある出汁をご賞味いただければ幸いです。
+        a(href="./").14s-site-link kosen14s サイトへ
 
-    
+      .separator-line.container
+
+      .contents.container
+        h1 内容
+        .contents-wrapper
+          .contents-book
+            img(src="", alt="①デザインとプログラミングの鍋").book-title
+            
+            h2.pink Design
+            ul.content
+              li: input(type="button", value="ロボコンで使われている安全なUI", onclick="detailOpen(1)")
+              li: input(type="button", value="HIの観点から理屈で分かるデザイン", onclick="detailOpen(2)")
+              li: input(type="button", value="デザインの二面性", onclick="detailOpen(3)")
+            h2.pink programing
+            ul.content
+              li: input(type="button", value="CSSアニメーションの話", onclick="detailOpen(4)")
+              li: input(type="button", value="詳細", onclick="detailOpen(5)")
+              li: input(type="button", value="詳細", onclick="detailOpen(6)")
+              li: input(type="button", value="Rubyできかいがくしゅ～", onclick="detailOpen(7)")
+              li: input(type="button", value="SVG仕様書読んでみた", onclick="detailOpen(8)")
+              li: input(type="button", value="omronのPLC制御コンテスト技術キャンプの話", onclick="detailOpen(9)")
+
+          .contents-book
+            img(src="", alt="②数学と電気の鍋").book-title
+
+            h2.green Math
+            ul.content
+              li: input(type="button", value="SATソルバについて", onclick="detailOpen(10)")
+              li: input(type="button", value="巨大数", onclick="detailOpen(11)")
+            h2.green Electric
+            ul.content
+              li: input(type="button", value="電気科オタクの見る世界", onclick="detailOpen(12)")
+              li: input(type="button", value="うさみみでもわかる電気工学", onclick="detailOpen(13)")
+              li: input(type="button", value="vvvfはエモい！", onclick="detailOpen(14)")
+            h2.green Others
+            ul.content
+              li: input(type="button", value="ラーメン && 鉄道配線", onclick="detailOpen(15)")
+              li: input(type="button", value="Juliamoで乗り切ろう高専生活", onclick="detailOpen(16)")
+
+      .separator-line.container
+
+      .info.container
+        h1 頒布情報
+        p 技術書展5に出典する商品一覧です。
+        .info-wrapper
+          .property 商品名
+          .values
+            p.value TOGETHER❶ デザインとプログラミングの鍋
+            p.value TOGETHER❷ 数学と電気の鍋
+            a(href="http://").value プログラミング言語かるた
+            a(href="http://").value Gitコマンドかるた
+            a(href="http://").value 
+        .info-wrapper
+          .property サークル名
+          .values
+            a(href="http://").value kosen14s
+        .info-wrapper
+          .property 代表
+          .values
+            a(href="http://").value Cilvia @tech0970
+        .info-wrapper
+          .property 著者
+          .values: p.value 各著者名は上部「内容」の各話タイトルをクリックすると表示されます。
+        .info-wrapper
+          .property 頒布価格
+          .values: p.value x,xxx円
 
 
 
