@@ -4,24 +4,31 @@ html(lang="ja")
     meta(charset="utf-8")
     link(rel="stylesheet", href="../styles/together.css")
     title TOGETHER | kosen14s #dojin
+    link(href="../fonts/GN-Kin-iro_SansSerif_1.ttf", rel="stylesheet")
 
   body
+    .backgraund-1
+    .backgraund-2
+    .backgraund-cover
+
     header.header.container
       .sub-title kosen14s 闇鍋同人本
-      img(src="", alt="").title
+      img(src="../images/techbookfest5/TOGETHER.svg", alt="タイトル：TOGETHER").title
 
     main
       .books.container
-        img(src="../images/TOGETHER1.png", alt="TOGETHER1 表紙イメージ").book-view
-        img(src="../images/TOGETHER2.png", alt="TOGETHER2 表紙イメージ").book-view
+        img(src="../images/techbookfest5/TOGETHER1.png", alt="TOGETHER1 表紙イメージ").book-1
+        img(src="../images/techbookfest5/TOGETHER2.png", alt="TOGETHER2 表紙イメージ").book-2
 
       .links.container
-        a(href="https://techbookfest.org/event/tbf05").techbookfest5 技術書展５
-          span.techbookfest5-min のページへ
-        a(href="#").pdf-link PDF版 Comming soon
+        a(href="https://techbookfest.org/event/tbf05")
+          img(src="../images/techbookfest5/techbookfest5.png", alt="技術書展５のサイトへ").link-box-large
+        img(src="../images/techbookfest5/pdf-comming.png", alt="PDF版 Comming soon!").link-box-large
         .share-sns
-          a(href="http://").twitter つぶやく
-          a(href="http://").facebook シェア
+          a(href="http://")
+            img(src="../images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
+          a(href="http://")
+            img(src="../images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
 
       .about.container
         h1 kosen14s とは
@@ -32,7 +39,7 @@ html(lang="ja")
         p 本誌ではそんな個性豊かな kosen14s メンバーの活動や趣味の一端をぎゅぎゅっと集めてみました。
         | 各メンバーのアクの強さが隠しきれない闇鍋のような本となっております（誰得）。
         p そんなお鍋のパンチある出汁をご賞味いただければ幸いです。
-        a(href="./").14s-site-link kosen14s サイトへ
+        a(href="./").site-link-14s kosen14s サイトへ
 
       .separator-line.container
 
@@ -40,14 +47,14 @@ html(lang="ja")
         h1 内容
         .contents-wrapper
           .contents-book
-            img(src="", alt="①デザインとプログラミングの鍋").book-title
+            img(src="../images/techbookfest5/design-prog.svg", alt="①デザインとプログラミングの鍋").book-title
             
             h2.pink Design
             ul.content
               li: input(type="button", value="ロボコンで使われている安全なUI", onclick="detailOpen(1)")
               li: input(type="button", value="HIの観点から理屈で分かるデザイン", onclick="detailOpen(2)")
               li: input(type="button", value="デザインの二面性", onclick="detailOpen(3)")
-            h2.pink programing
+            h2.pink Programing
             ul.content
               li: input(type="button", value="CSSアニメーションの話", onclick="detailOpen(4)")
               li: input(type="button", value="詳細", onclick="detailOpen(5)")
@@ -57,7 +64,7 @@ html(lang="ja")
               li: input(type="button", value="omronのPLC制御コンテスト技術キャンプの話", onclick="detailOpen(9)")
 
           .contents-book
-            img(src="", alt="②数学と電気の鍋").book-title
+            img(src="../images/techbookfest5/math-elec.svg", alt="②数学と電気の鍋").book-title
 
             h2.green Math
             ul.content
@@ -81,26 +88,48 @@ html(lang="ja")
         .info-wrapper
           .property 商品名
           .values
-            p.value TOGETHER❶ デザインとプログラミングの鍋
-            p.value TOGETHER❷ 数学と電気の鍋
-            a(href="http://").value プログラミング言語かるた
-            a(href="http://").value Gitコマンドかるた
+            .value
+              .product TOGETHER❶ デザインとプログラミングの鍋
+              .price x,xxx円
+            .value
+              .product TOGETHER❷ 数学と電気の鍋
+              .price x,xxx円
+            a(href="http://").value
+              .product プログラミング言語かるた
+              .price 3,000円
+            a(href="http://").value
+              .product プログラミング言語かるたメイキングブック
+              .price 500円（PDF:300円）
+            a(href="http://").value
+              .product Gitコマンドかるた（解説書付き）
+              .price 2,500円
             a(href="http://").value 
+              .product オリジナル"Hello world"Tシャツ
+              .price x,xxx円
+            a(href="http://").value
+              .product プログラマのためのマスキングテープ
+              .price x,xxx円
         .info-wrapper
           .property サークル名
           .values
-            a(href="http://").value kosen14s
+            a(href="http://").value: .product kosen14s
         .info-wrapper
           .property 代表
           .values
-            a(href="http://").value Cilvia @tech0970
+            a(href="http://").value: .product Cilvia @tech0970
         .info-wrapper
           .property 著者
           .values: p.value 各著者名は上部「内容」の各話タイトルをクリックすると表示されます。
-        .info-wrapper
-          .property 頒布価格
-          .values: p.value x,xxx円
 
-
+      footer
+        .share-sns
+          a(href="http://")
+            img(src="../images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
+          a(href="http://")
+            img(src="../images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
+        .logo14s
+          a(href="http://")
+            img(src="../images/kosen14s-logo.svg", alt="kosen14s-logo")
+            p kosen14s
 
     script(src="../scripts/together.js")
