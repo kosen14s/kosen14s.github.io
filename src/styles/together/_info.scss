@@ -1,0 +1,48 @@
+.info {
+  .info-wrapper {
+    width: 100%;
+    .property {
+      display: block;
+      width: 140px;
+      margin: 3rem 0 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: $light-skyblue;
+    }
+    .values {
+      padding-left: 30px;
+      .product {
+        padding: 1.5rem 0;
+        width: 500px;
+        float: left;
+      }
+      .price {
+        padding: 1.5rem 0;
+      }
+    }
+    a:hover {
+      color: white;
+      .product {
+        filter: drop-shadow(0 0 10px white);
+      }
+      .price {
+        filter: drop-shadow(0 0 10px white);
+      }
+    }
+  }
+}
+@media(max-width: 1000px) {
+  .info {
+    .info-wrapper {
+      .values {
+        .product {
+          float: none;
+          padding-bottom: .5rem;
+        }
+        .price {
+          padding-top: .5rem;
+        }
+      }
+    }
+  }
+}

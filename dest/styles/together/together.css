@@ -435,16 +435,6 @@ body {
 a {
   text-decoration: none; }
 
-.header {
-  text-align: center; }
-  .header .sub-title {
-    margin: 20px 0 10px;
-    color: #7cb639;
-    font-size: 4rem;
-    font-family: "GN-きんいろサンセリフ"; }
-  .header img {
-    width: 50%; }
-
 h1 {
   font-size: 4.3rem;
   font-family: "GN-きんいろサンセリフ";
@@ -458,6 +448,27 @@ h2 {
     color: #ff619b; }
   h2.green {
     color: #7cb639; }
+
+.separator-line {
+  display: block;
+  height: 1px;
+  background: #6ab1ad; }
+
+.header {
+  text-align: center; }
+  .header .sub-title {
+    margin: 20px 0 10px;
+    color: #7cb639;
+    font-size: 4rem;
+    font-family: "GN-きんいろサンセリフ"; }
+  .header img {
+    width: 50rem; }
+
+@media (max-width: 620px) {
+  .header .sub-title {
+    font-size: 3rem; }
+  .header img {
+    width: 80%; } }
 
 .books {
   margin: 50px auto;
@@ -473,6 +484,11 @@ h2 {
     box-shadow: 0 0 60px 0 #ff619b; }
   .books .book-2 {
     box-shadow: 0 0 60px 0 #7cb639; }
+
+@media (max-width: 1000px) {
+  .books img {
+    width: 250px;
+    margin: 30px; } }
 
 .links .link-box-large {
   display: block;
@@ -500,6 +516,18 @@ h2 {
     .links .share-sns .link-box-fb:hover {
       box-shadow: 0 0 60px 3px #455a9e; }
 
+@media (max-width: 620px) {
+  .links .link-box-large {
+    width: 100%; }
+  .links .share-sns {
+    width: 100%; }
+    .links .share-sns .link-box-tw {
+      width: 95%;
+      margin-right: 5%; }
+    .links .share-sns .link-box-fb {
+      width: 95%;
+      margin-left: 5%; } }
+
 .about {
   margin-top: 120px; }
   .about .site-link-14s {
@@ -525,6 +553,7 @@ h2 {
     .contents .contents-wrapper .contents-book ul.content input {
       background-color: transparent;
       border: none;
+      width: auto;
       color: #ddd;
       font-size: 2rem;
       padding: .7rem 0;
@@ -539,10 +568,14 @@ h2 {
         filter: drop-shadow(0 0 10px white);
         text-decoration: underline; }
 
-.separator-line {
-  display: block;
-  height: 1px;
-  background: #6ab1ad; }
+@media (max-width: 1000px) {
+  .contents .contents-wrapper .contents-book {
+    margin-top: 30px;
+    width: 100%; } }
+
+@media (max-width: 620px) {
+  .contents .contents-wrapper .contents-book img {
+    height: 4rem; } }
 
 .info .info-wrapper {
   width: 100%; }
@@ -567,6 +600,13 @@ h2 {
       filter: drop-shadow(0 0 10px white); }
     .info .info-wrapper a:hover .price {
       filter: drop-shadow(0 0 10px white); }
+
+@media (max-width: 1000px) {
+  .info .info-wrapper .values .product {
+    float: none;
+    padding-bottom: .5rem; }
+  .info .info-wrapper .values .price {
+    padding-top: .5rem; } }
 
 footer {
   margin: 100px auto; }
@@ -594,3 +634,20 @@ footer {
       width: 80px; }
     footer .logo14s p {
       margin: 5px 0; }
+
+@media (max-width: 620px) {
+  footer .share-sns {
+    width: 100%; }
+    footer .share-sns .link-box-tw {
+      width: 95%;
+      margin-right: 5%; }
+    footer .share-sns .link-box-fb {
+      width: 95%;
+      margin-left: 5%; } }
+
+@media (max-width: 1000px) {
+  :root {
+    --section: 90%; }
+  .container {
+    margin: 90px calc((100% - var(--section)) / 2) 50px;
+    width: var(--section); } }

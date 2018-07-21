@@ -2,9 +2,10 @@ doctype html
 html(lang="ja")
   head
     meta(charset="utf-8")
-    link(rel="stylesheet", href="../styles/together.css")
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    link(rel="stylesheet", href="./styles/together/together.css")
     title TOGETHER | kosen14s #dojin
-    link(href="../fonts/GN-Kin-iro_SansSerif_1.ttf", rel="stylesheet")
+    link(href="./fonts/GN-Kin-iro_SansSerif_1.ttf", rel="stylesheet")
 
   body
     .backgraund-1
@@ -13,22 +14,21 @@ html(lang="ja")
 
     header.header.container
       .sub-title kosen14s 闇鍋同人本
-      img(src="../images/techbookfest5/TOGETHER.svg", alt="タイトル：TOGETHER").title
+      img(src="./images/techbookfest5/TOGETHER.svg", alt="タイトル：TOGETHER").title
+      .books
+        img(src="./images/techbookfest5/TOGETHER1.png", alt="TOGETHER1 表紙イメージ").book-1
+        img(src="./images/techbookfest5/TOGETHER2.png", alt="TOGETHER2 表紙イメージ").book-2
 
     main
-      .books.container
-        img(src="../images/techbookfest5/TOGETHER1.png", alt="TOGETHER1 表紙イメージ").book-1
-        img(src="../images/techbookfest5/TOGETHER2.png", alt="TOGETHER2 表紙イメージ").book-2
-
       .links.container
         a(href="https://techbookfest.org/event/tbf05")
-          img(src="../images/techbookfest5/techbookfest5.png", alt="技術書展５のサイトへ").link-box-large
-        img(src="../images/techbookfest5/pdf-comming.png", alt="PDF版 Comming soon!").link-box-large
+          img(src="./images/techbookfest5/techbookfest5.png", alt="技術書展５のサイトへ").link-box-large
+        img(src="./images/techbookfest5/pdf-comming.png", alt="PDF版 Comming soon!").link-box-large
         .share-sns
           a(href="http://")
-            img(src="../images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
+            img(src="./images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
           a(href="http://")
-            img(src="../images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
+            img(src="./images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
 
       .about.container
         h1 kosen14s とは
@@ -46,39 +46,41 @@ html(lang="ja")
       .contents.container
         h1 内容
         .contents-wrapper
+
+
           .contents-book
-            img(src="../images/techbookfest5/design-prog.svg", alt="①デザインとプログラミングの鍋").book-title
+            img(src="./images/techbookfest5/design-prog.svg", alt="①デザインとプログラミングの鍋").book-title
             
             h2.pink Design
             ul.content
-              li: input(type="button", value="ロボコンで使われている安全なUI", onclick="detailOpen(1)")
-              li: input(type="button", value="HIの観点から理屈で分かるデザイン", onclick="detailOpen(2)")
-              li: input(type="button", value="デザインの二面性", onclick="detailOpen(3)")
+              li: input(type="button", value="ロボコンで使われている安全なUI", onclick="detailOpen(1)")#content-1
+              li: input(type="button", value="HIの観点から理屈で分かるデザイン", onclick="detailOpen(2)")#content-2
+              li: input(type="button", value="デザインの二面性", onclick="detailOpen(3)")#content-3
             h2.pink Programing
             ul.content
-              li: input(type="button", value="CSSアニメーションの話", onclick="detailOpen(4)")
-              li: input(type="button", value="詳細", onclick="detailOpen(5)")
-              li: input(type="button", value="詳細", onclick="detailOpen(6)")
-              li: input(type="button", value="Rubyできかいがくしゅ～", onclick="detailOpen(7)")
-              li: input(type="button", value="SVG仕様書読んでみた", onclick="detailOpen(8)")
-              li: input(type="button", value="omronのPLC制御コンテスト技術キャンプの話", onclick="detailOpen(9)")
+              li: input(type="button", value="CSSアニメーションの話", onclick="detailOpen(4)")#content-4
+              li: input(type="button", value="詳細", onclick="detailOpen(5)")#content-5
+              li: input(type="button", value="詳細", onclick="detailOpen(6)")#content-6
+              li: input(type="button", value="Rubyできかいがくしゅ～", onclick="detailOpen(7)")#content-6
+              li: input(type="button", value="SVG仕様書読んでみた", onclick="detailOpen(8)")#content-7
+              li: input(type="button", value="omronのPLC制御コンテスト技術キャンプの話", onclick="detailOpen(9)")#content-9
 
           .contents-book
-            img(src="../images/techbookfest5/math-elec.svg", alt="②数学と電気の鍋").book-title
+            img(src="./images/techbookfest5/math-elec.svg", alt="②数学と電気の鍋").book-title
 
             h2.green Math
             ul.content
-              li: input(type="button", value="SATソルバについて", onclick="detailOpen(10)")
-              li: input(type="button", value="巨大数", onclick="detailOpen(11)")
+              li: input(type="button", value="SATソルバについて", onclick="detailOpen(10)")#content-10
+              li: input(type="button", value="巨大数", onclick="detailOpen(11)")#content-11
             h2.green Electric
             ul.content
-              li: input(type="button", value="電気科オタクの見る世界", onclick="detailOpen(12)")
-              li: input(type="button", value="うさみみでもわかる電気工学", onclick="detailOpen(13)")
-              li: input(type="button", value="vvvfはエモい！", onclick="detailOpen(14)")
+              li: input(type="button", value="電気科オタクの見る世界", onclick="detailOpen(12)")#content-12
+              li: input(type="button", value="うさみみでもわかる電気工学", onclick="detailOpen(13)")#content-13
+              li: input(type="button", value="vvvfはエモい！", onclick="detailOpen(14)")#content-14
             h2.green Others
             ul.content
-              li: input(type="button", value="ラーメン && 鉄道配線", onclick="detailOpen(15)")
-              li: input(type="button", value="Juliamoで乗り切ろう高専生活", onclick="detailOpen(16)")
+              li: input(type="button", value="ラーメン && 鉄道配線", onclick="detailOpen(15)")#content-15
+              li: input(type="button", value="Juliamoで乗り切ろう高専生活", onclick="detailOpen(16)")#content-16
 
       .separator-line.container
 
@@ -94,42 +96,42 @@ html(lang="ja")
             .value
               .product TOGETHER❷ 数学と電気の鍋
               .price x,xxx円
-            a(href="http://").value
+            a(href="http://yamasy.info/programming-karuta/").value
               .product プログラミング言語かるた
               .price 3,000円
-            a(href="http://").value
+            a(href="https://whiims.booth.pm/items/799138").value
               .product プログラミング言語かるたメイキングブック
               .price 500円（PDF:300円）
-            a(href="http://").value
+            a(href="https://whiims.github.io/git-karuta.html").value
               .product Gitコマンドかるた（解説書付き）
               .price 2,500円
-            a(href="http://").value 
+            a(href="https://whiims.booth.pm/items/895006").value 
               .product オリジナル"Hello world"Tシャツ
               .price x,xxx円
-            a(href="http://").value
+            a(href="https://whiims.booth.pm/items/813108").value
               .product プログラマのためのマスキングテープ
               .price x,xxx円
         .info-wrapper
           .property サークル名
           .values
-            a(href="http://").value: .product kosen14s
+            a(href="./").value: .product kosen14s
         .info-wrapper
           .property 代表
           .values
-            a(href="http://").value: .product Cilvia @tech0970
+            a(href="https://twitter.com/tech0970").value: .product Cilvia @tech0970
         .info-wrapper
           .property 著者
           .values: p.value 各著者名は上部「内容」の各話タイトルをクリックすると表示されます。
 
-      footer
+      footer.container
         .share-sns
           a(href="http://")
-            img(src="../images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
+            img(src="./images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
           a(href="http://")
-            img(src="../images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
+            img(src="./images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
         .logo14s
-          a(href="http://")
-            img(src="../images/kosen14s-logo.svg", alt="kosen14s-logo")
+          a(href="./")
+            img(src="./images/kosen14s-logo.svg", alt="kosen14s-logo")
             p kosen14s
 
-    script(src="../scripts/together.js")
+    script(src="./scripts/together.js")

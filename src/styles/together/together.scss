@@ -1,7 +1,7 @@
-@import 'normalize';
-@import "../../node_modules/mathsass/dist/math";
-@import 'variables';
-@import 'mixins';
+@import '../normalize';
+@import "../../../node_modules/mathsass/dist/math";
+@import '../variables';
+@import '../mixins';
 
 a:link { color: $light-gray; }
 a:visited { color: $light-gray; }
@@ -25,4 +25,4 @@ body {
   background: transparent;
 }
 
-@import 'together-main';
+@import 'main';

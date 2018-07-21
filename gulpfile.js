@@ -14,7 +14,7 @@ const BROWSER_SYNC_OPTIONS = {
 };
 
 gulp.task('sass', function () {
-  gulp.src(['src/**/*.scss', '!src/**/_*.scss'])
+  gulp.src(['src/**/**/*.scss', '!src/**/**/_*.scss'])
     .pipe(plumber({
       errorHandler: notify.onError('<%= error.message %>')
     }))
@@ -34,7 +34,7 @@ gulp.task('jade', () => {
   .pipe(jade({
     pretty: true
   }))
-  .pipe(gulp.dest('dest/html'));
+  .pipe(gulp.dest('dest'));
 });
 
 gulp.task('pug', () => {
@@ -45,7 +45,7 @@ gulp.task('pug', () => {
   .pipe(pug({
     pretty: true
   }))
-  .pipe(gulp.dest('dest/html'));
+  .pipe(gulp.dest('dest'));
 });
 
 gulp.task('build', ['sass', 'jade', 'pug'])
@@ -53,7 +53,7 @@ gulp.task('build', ['sass', 'jade', 'pug'])
 gulp.task('watch', () => {
   browserSync(BROWSER_SYNC_OPTIONS);
 
-  gulp.watch('src/styles/*.scss', ['sass', reload]);
+  gulp.watch('src/styles/**/*.scss', ['sass', reload]);
   gulp.watch('src/jade/*.jade', ['jade', reload]);
   gulp.watch('src/pug/*.pug', ['pug', reload]);
 });

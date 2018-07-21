@@ -1,0 +1,86 @@
+.backgraund-1 {
+  position: fixed;
+  z-index: -9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: 50%;
+  background-position-x: -30%;
+  background-image: url("../images/techbookfest5/frontCover_1_BW.png");
+  background-repeat: no-repeat;
+}
+.backgraund-2 {
+  position: fixed;
+  z-index: -9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: 50%; 
+  background-position-x: 130%;
+  background-position-y: top;
+  background-image: url("../images/techbookfest5/frontCover_2_BW.png");
+  background-repeat: no-repeat;
+}
+.backgraund-cover {
+  position: fixed;
+  z-index: -9000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $dark-skyblue;
+  opacity: 0.7;
+}
+
+.container {
+  width: 980px;
+  margin: 90px auto 50px;
+}
+a {text-decoration: none;}
+
+h1 {
+  font-size: 4.3rem;
+  font-family: $kiniro-sansserif;
+  color: $light-skyblue;
+}
+h2 {
+  margin: 3rem 0;
+  font-size: 3rem;
+  font-family: $kiniro-sansserif;
+  &.pink {
+    color: $together-1;
+  }
+  &.green {
+    color: $together-2;
+  }
+}
+
+.separator-line {
+  display: block;
+  height: 1px;
+  background: $light-skyblue;
+}
+
+@import 'header';
+@import 'links';
+@import 'about';
+@import 'contents';
+@import 'info';
+@import 'footer';
+
+@media(max-width: 1000px) {
+  :root {
+    --section: 90%;
+  }
+  .container {
+    margin: 90px calc((100% - var(--section)) / 2) 50px;
+    width: var(--section);
+  }
+}
+
+@media(max-width: 620px) {
+}
