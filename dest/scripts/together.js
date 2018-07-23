@@ -1,11 +1,17 @@
-import contents from 'together-contents';
+const fs = require("fs");
 
-var content_input
+'use strict';
+
+var f = fs.readFileSync(together-contents.json);
+var o = JSON.parse(f);
+
+console.log(o);
+
   //配列からコンテンツ内容取ってきて、htmlのinputのvalueに入れたい
   for (let i = 0; i < 16; i++) {
     var num = i+1;
-    content_input[i] = document.getElementById("content-"+num);
-    content_input[i].value = contents[i].title;
+    o[i] = document.getElementById("content-"+num);
+    o[i].value = contents[i].title;
   }
   console.log(contents);
 

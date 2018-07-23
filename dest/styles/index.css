@@ -548,6 +548,11 @@ header {
 .header-under_open {
   width: 50vw; }
 
+@media (max-width: 920px) {
+  header img {
+    width: 250px;
+    margin: 30px; } }
+
 .menu-button {
   position: fixed;
   top: 20px;
