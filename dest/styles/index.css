@@ -304,6 +304,10 @@ a:link {
 a:visited {
   color: black; }
 
+@font-face {
+  font-family: 'GN-きんいろサンセリフ';
+  src: url(./../../fonts/GN-Kin-iro_SansSerif_1.ttf); }
+
 .spr {
   background-color: #F4A7B9 !important; }
   .spr::before {

@@ -8,7 +8,7 @@
   background-attachment: fixed;
   background-size: 50%;
   background-position-x: -30%;
-  background-image: url("../images/techbookfest5/frontCover_1_BW.png");
+  background-image: url("../../images/techbookfest5/frontCover_1_BW.png");
   background-repeat: no-repeat;
 }
 .backgraund-2 {
@@ -22,7 +22,7 @@
   background-size: 50%; 
   background-position-x: 130%;
   background-position-y: top;
-  background-image: url("../images/techbookfest5/frontCover_2_BW.png");
+  background-image: url("../../images/techbookfest5/frontCover_2_BW.png");
   background-repeat: no-repeat;
 }
 .backgraund-cover {
@@ -36,11 +36,20 @@
   opacity: 0.7;
 }
 
+@media(max-width: 1000px) {
+  .backgraund-1 {
+    background-size: 100%;
+    background-position-x: center;
+  }
+  .backgraund-2 {
+    display: none;
+  }
+}
+
 .container {
   width: 980px;
   margin: 90px auto 50px;
 }
-a {text-decoration: none;}
 
 h1 {
   font-size: 4.3rem;
@@ -65,12 +74,36 @@ h2 {
   background: $light-skyblue;
 }
 
+.share-sns {
+  width: 500px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  .link-box-tw {
+    width: 240px;
+    transition: .3s $bezier-fast-ease-out;
+    &:hover {
+      box-shadow:0 0 60px 0 $official-twitter;
+    }
+  }
+  .link-box-fb {
+    width: 240px;
+    transition: .3s $bezier-fast-ease-out;
+    &:hover {
+      box-shadow:0 0 60px 3px $official-facebook;
+    }
+  }
+}
+
 @import 'header';
 @import 'links';
 @import 'about';
 @import 'contents';
 @import 'info';
 @import 'footer';
+
 
 @media(max-width: 1000px) {
   :root {
@@ -83,4 +116,15 @@ h2 {
 }
 
 @media(max-width: 620px) {
+  .share-sns {
+    width: 100%;
+    .link-box-tw {
+      width: 95%;
+      margin-right: 5%;
+    }
+    .link-box-fb {
+      width: 95%;
+      margin-left: 5%;
+    }
+  }
 }

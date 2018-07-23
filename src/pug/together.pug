@@ -5,7 +5,7 @@ html(lang="ja")
     meta(name='viewport' content='width=device-width,initial-scale=1')
     link(rel="stylesheet", href="./styles/together/together.css")
     title TOGETHER | kosen14s #dojin
-    link(href="./fonts/GN-Kin-iro_SansSerif_1.ttf", rel="stylesheet")
+    link(href="../fonts/GN-Kin-iro_SansSerif_1.ttf", rel="stylesheet")
 
   body
     .backgraund-1
@@ -39,7 +39,7 @@ html(lang="ja")
         p 本誌ではそんな個性豊かな kosen14s メンバーの活動や趣味の一端をぎゅぎゅっと集めてみました。
         | 各メンバーのアクの強さが隠しきれない闇鍋のような本となっております（誰得）。
         p そんなお鍋のパンチある出汁をご賞味いただければ幸いです。
-        a(href="./").site-link-14s kosen14s サイトへ
+        .site-link-14s: a(href="./") kosen14s サイトへ 🔗
 
       .separator-line.container
 
@@ -52,35 +52,35 @@ html(lang="ja")
             img(src="./images/techbookfest5/design-prog.svg", alt="①デザインとプログラミングの鍋").book-title
             
             h2.pink Design
-            ul.content
-              li: input(type="button", value="ロボコンで使われている安全なUI", onclick="detailOpen(1)")#content-1
-              li: input(type="button", value="HIの観点から理屈で分かるデザイン", onclick="detailOpen(2)")#content-2
-              li: input(type="button", value="デザインの二面性", onclick="detailOpen(3)")#content-3
+            ul.content 
+              li: button(type="button", onclick="detailOpen(1)")#content-1 ロボコンで使われている安全なUI ⓘ
+              li: button(type="button", onclick="detailOpen(2)")#content-2 HIの観点から理屈で分かるデザイン ⓘ
+              li: button(type="button", onclick="detailOpen(3)")#content-3 デザインの二面性 ⓘ
             h2.pink Programing
             ul.content
-              li: input(type="button", value="CSSアニメーションの話", onclick="detailOpen(4)")#content-4
-              li: input(type="button", value="詳細", onclick="detailOpen(5)")#content-5
-              li: input(type="button", value="詳細", onclick="detailOpen(6)")#content-6
-              li: input(type="button", value="Rubyできかいがくしゅ～", onclick="detailOpen(7)")#content-6
-              li: input(type="button", value="SVG仕様書読んでみた", onclick="detailOpen(8)")#content-7
-              li: input(type="button", value="omronのPLC制御コンテスト技術キャンプの話", onclick="detailOpen(9)")#content-9
+              li: button(type="button", onclick="detailOpen(4)")#content-4 CSSアニメーションの話 ⓘ
+              li: button(type="button", onclick="detailOpen(5)")#content-5 詳細
+              li: button(type="button", onclick="detailOpen(6)")#content-6 詳細
+              li: button(type="button", onclick="detailOpen(7)")#content-6 Rubyできかいがくしゅ～ ⓘ
+              li: button(type="button", onclick="detailOpen(8)")#content-7 SVG仕様書読んでみた ⓘ
+              li: button(type="button", onclick="detailOpen(9)")#content-9 omronのPLC制御コンテスト技術キャンプの話 ⓘ
 
           .contents-book
             img(src="./images/techbookfest5/math-elec.svg", alt="②数学と電気の鍋").book-title
 
             h2.green Math
             ul.content
-              li: input(type="button", value="SATソルバについて", onclick="detailOpen(10)")#content-10
-              li: input(type="button", value="巨大数", onclick="detailOpen(11)")#content-11
+              li: button(type="button", onclick="detailOpen(10)")#content-10 SATソルバについて ⓘ
+              li: button(type="button", onclick="detailOpen(11)")#content-11 巨大数 ⓘ
             h2.green Electric
             ul.content
-              li: input(type="button", value="電気科オタクの見る世界", onclick="detailOpen(12)")#content-12
-              li: input(type="button", value="うさみみでもわかる電気工学", onclick="detailOpen(13)")#content-13
-              li: input(type="button", value="vvvfはエモい！", onclick="detailOpen(14)")#content-14
+              li: button(type="button", onclick="detailOpen(12)")#content-12 電気科オタクの見る世界 ⓘ
+              li: button(type="button", onclick="detailOpen(13)")#content-13 うさみみでもわかる電気工学 ⓘ
+              li: button(type="button", onclick="detailOpen(14)")#content-14 vvvfはエモい！ ⓘ
             h2.green Others
             ul.content
-              li: input(type="button", value="ラーメン && 鉄道配線", onclick="detailOpen(15)")#content-15
-              li: input(type="button", value="Juliamoで乗り切ろう高専生活", onclick="detailOpen(16)")#content-16
+              li: button(type="button", onclick="detailOpen(15)")#content-15 ラーメン &amp;&amp; 鉄道配線 ⓘ
+              li: button(type="button", onclick="detailOpen(16)")#content-16 Juliamoで乗り切ろう高専生活 ⓘ
 
       .separator-line.container
 
@@ -97,31 +97,31 @@ html(lang="ja")
               .product TOGETHER❷ 数学と電気の鍋
               .price x,xxx円
             a(href="http://yamasy.info/programming-karuta/").value
-              .product プログラミング言語かるた
+              .product プログラミング言語かるた 🔗
               .price 3,000円
             a(href="https://whiims.booth.pm/items/799138").value
-              .product プログラミング言語かるたメイキングブック
+              .product プログラミング言語かるたメイキングブック 🔗
               .price 500円（PDF:300円）
             a(href="https://whiims.github.io/git-karuta.html").value
-              .product Gitコマンドかるた（解説書付き）
+              .product Gitコマンドかるた（解説書付き）🔗
               .price 2,500円
             a(href="https://whiims.booth.pm/items/895006").value 
-              .product オリジナル"Hello world"Tシャツ
+              .product オリジナル"Hello world"Tシャツ 🔗
               .price x,xxx円
             a(href="https://whiims.booth.pm/items/813108").value
-              .product プログラマのためのマスキングテープ
+              .product プログラマのためのマスキングテープ 🔗
               .price x,xxx円
         .info-wrapper
           .property サークル名
           .values
-            a(href="./").value: .product kosen14s
+            a(href="./").value-mono kosen14s 🔗
         .info-wrapper
           .property 代表
           .values
-            a(href="https://twitter.com/tech0970").value: .product Cilvia @tech0970
+            a(href="https://twitter.com/tech0970").value-mono Cilvia @tech0970 🔗
         .info-wrapper
           .property 著者
-          .values: p.value 各著者名は上部「内容」の各話タイトルをクリックすると表示されます。
+          .values: p.value-mono 各著者名は上部「内容」の各話タイトルをクリックすると表示されます。
 
       footer.container
         .share-sns

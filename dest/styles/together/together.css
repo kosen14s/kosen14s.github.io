@@ -304,6 +304,10 @@ a:link {
 a:visited {
   color: black; }
 
+@font-face {
+  font-family: 'GN-きんいろサンセリフ';
+  src: url(./../../fonts/GN-Kin-iro_SansSerif_1.ttf); }
+
 .spr {
   background-color: #F4A7B9 !important; }
   .spr::before {
@@ -388,6 +392,12 @@ body {
   color: #ddd;
   font-size: 1.9rem; }
 
+a {
+  text-decoration: none;
+  position: relative; }
+  a:hover {
+    color: white; }
+
 ::selection {
   background: transparent; }
 
@@ -401,7 +411,7 @@ body {
   background-attachment: fixed;
   background-size: 50%;
   background-position-x: -30%;
-  background-image: url("../images/techbookfest5/frontCover_1_BW.png");
+  background-image: url("../../images/techbookfest5/frontCover_1_BW.png");
   background-repeat: no-repeat; }
 
 .backgraund-2 {
@@ -415,7 +425,7 @@ body {
   background-size: 50%;
   background-position-x: 130%;
   background-position-y: top;
-  background-image: url("../images/techbookfest5/frontCover_2_BW.png");
+  background-image: url("../../images/techbookfest5/frontCover_2_BW.png");
   background-repeat: no-repeat; }
 
 .backgraund-cover {
@@ -428,12 +438,16 @@ body {
   background-color: #000e13;
   opacity: 0.7; }
 
+@media (max-width: 1000px) {
+  .backgraund-1 {
+    background-size: 100%;
+    background-position-x: center; }
+  .backgraund-2 {
+    display: none; } }
+
 .container {
   width: 980px;
   margin: 90px auto 50px; }
-
-a {
-  text-decoration: none; }
 
 h1 {
   font-size: 4.3rem;
@@ -453,6 +467,24 @@ h2 {
   display: block;
   height: 1px;
   background: #6ab1ad; }
+
+.share-sns {
+  width: 500px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center; }
+  .share-sns .link-box-tw {
+    width: 240px;
+    transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+    .share-sns .link-box-tw:hover {
+      box-shadow: 0 0 60px 0 #55acee; }
+  .share-sns .link-box-fb {
+    width: 240px;
+    transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+    .share-sns .link-box-fb:hover {
+      box-shadow: 0 0 60px 3px #455a9e; }
 
 .header {
   text-align: center; }
@@ -498,35 +530,9 @@ h2 {
   .links .link-box-large:hover {
     box-shadow: 0 0 60px 0 #4CAF50; }
 
-.links .share-sns {
-  width: 500px;
-  margin: 40px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center; }
-  .links .share-sns .link-box-tw {
-    width: 240px;
-    transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
-    .links .share-sns .link-box-tw:hover {
-      box-shadow: 0 0 60px 0 #55acee; }
-  .links .share-sns .link-box-fb {
-    width: 240px;
-    transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
-    .links .share-sns .link-box-fb:hover {
-      box-shadow: 0 0 60px 3px #455a9e; }
-
 @media (max-width: 620px) {
   .links .link-box-large {
-    width: 100%; }
-  .links .share-sns {
-    width: 100%; }
-    .links .share-sns .link-box-tw {
-      width: 95%;
-      margin-right: 5%; }
-    .links .share-sns .link-box-fb {
-      width: 95%;
-      margin-left: 5%; } }
+    width: 100%; } }
 
 .about {
   margin-top: 120px; }
@@ -550,19 +556,24 @@ h2 {
       height: 5rem; }
     .contents .contents-wrapper .contents-book ul.content li {
       list-style: none; }
-    .contents .contents-wrapper .contents-book ul.content input {
+    .contents .contents-wrapper .contents-book ul.content button {
+      display: block;
       background-color: transparent;
       border: none;
-      width: auto;
+      max-width: auto;
       color: #ddd;
       font-size: 2rem;
       padding: .7rem 0;
       margin: 0.3rem 0;
+      text-align: left;
+      text-decoration: none;
+      position: relative;
+      word-break: break-all;
       cursor: pointer; }
-      .contents .contents-wrapper .contents-book ul.content input:hover {
+      .contents .contents-wrapper .contents-book ul.content button:hover {
         color: white;
         filter: drop-shadow(0 0 10px white); }
-      .contents .contents-wrapper .contents-book ul.content input:focus {
+      .contents .contents-wrapper .contents-book ul.content button:focus {
         outline: none;
         color: white;
         filter: drop-shadow(0 0 10px white);
@@ -593,40 +604,30 @@ h2 {
       width: 500px;
       float: left; }
     .info .info-wrapper .values .price {
-      padding: 1.5rem 0; }
+      padding: 1.5rem 0;
+      color: #aaa; }
+    .info .info-wrapper .values .value-mono {
+      display: inline-block;
+      padding: 1.5rem 0;
+      width: 100%; }
   .info .info-wrapper a:hover {
     color: white; }
     .info .info-wrapper a:hover .product {
       filter: drop-shadow(0 0 10px white); }
     .info .info-wrapper a:hover .price {
+      color: white;
       filter: drop-shadow(0 0 10px white); }
 
 @media (max-width: 1000px) {
   .info .info-wrapper .values .product {
     float: none;
-    padding-bottom: .5rem; }
+    width: 100%;
+    padding: 2rem 0 .5rem; }
   .info .info-wrapper .values .price {
-    padding-top: .5rem; } }
+    padding: .5rem 0 2rem; } }
 
 footer {
   margin: 100px auto; }
-  footer .share-sns {
-    width: 500px;
-    margin: 40px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center; }
-    footer .share-sns .link-box-tw {
-      width: 240px;
-      transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
-      footer .share-sns .link-box-tw:hover {
-        box-shadow: 0 0 60px 0 #55acee; }
-    footer .share-sns .link-box-fb {
-      width: 240px;
-      transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
-      footer .share-sns .link-box-fb:hover {
-        box-shadow: 0 0 60px 3px #455a9e; }
   footer .logo14s {
     text-align: center;
     margin: 60px 0; }
@@ -635,19 +636,19 @@ footer {
     footer .logo14s p {
       margin: 5px 0; }
 
-@media (max-width: 620px) {
-  footer .share-sns {
-    width: 100%; }
-    footer .share-sns .link-box-tw {
-      width: 95%;
-      margin-right: 5%; }
-    footer .share-sns .link-box-fb {
-      width: 95%;
-      margin-left: 5%; } }
-
 @media (max-width: 1000px) {
   :root {
     --section: 90%; }
   .container {
     margin: 90px calc((100% - var(--section)) / 2) 50px;
     width: var(--section); } }
+
+@media (max-width: 620px) {
+  .share-sns {
+    width: 100%; }
+    .share-sns .link-box-tw {
+      width: 95%;
+      margin-right: 5%; }
+    .share-sns .link-box-fb {
+      width: 95%;
+      margin-left: 5%; } }

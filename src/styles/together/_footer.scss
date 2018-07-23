@@ -1,27 +1,5 @@
 footer {
   margin: 100px auto;
-  .share-sns {
-    width: 500px;
-    margin: 40px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    .link-box-tw {
-      width: 240px;
-      transition: .3s $bezier-fast-ease-out;
-      &:hover {
-        box-shadow:0 0 60px 0 $official-twitter;
-      }
-    }
-    .link-box-fb {
-      width: 240px;
-      transition: .3s $bezier-fast-ease-out;
-      &:hover {
-        box-shadow:0 0 60px 3px $official-facebook;
-      }
-    }
-  }
   .logo14s {
     text-align: center;
     margin: 60px 0;
@@ -30,22 +8,6 @@ footer {
     }
     p {
       margin: 5px 0;
-    }
-  }
-}
-
-@media(max-width: 620px) {
-  footer {
-    .share-sns {
-      width: 100%;
-      .link-box-tw {
-        width: 95%;
-        margin-right: 5%;
-      }
-      .link-box-fb {
-        width: 95%;
-        margin-left: 5%;
-      }
     }
   }
 }

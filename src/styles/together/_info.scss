@@ -18,6 +18,12 @@
       }
       .price {
         padding: 1.5rem 0;
+        color: #aaa;
+      }
+      .value-mono {
+        display: inline-block;
+        padding: 1.5rem 0;
+        width: 100%;
       }
     }
     a:hover {
@@ -26,6 +32,7 @@
         filter: drop-shadow(0 0 10px white);
       }
       .price {
+        color: white;
         filter: drop-shadow(0 0 10px white);
       }
     }
@@ -37,10 +44,11 @@
       .values {
         .product {
           float: none;
-          padding-bottom: .5rem;
+          width: 100%;
+          padding: 2rem 0 .5rem;
         }
         .price {
-          padding-top: .5rem;
+          padding: .5rem 0 2rem;
         }
       }
     }

@@ -21,6 +21,14 @@ body {
   font-size: 1.9rem;
 }
 
+a{
+  text-decoration: none;
+  position: relative;
+  &:hover {
+    color: white;
+  }
+}
+
 ::selection {
   background: transparent;
 }
