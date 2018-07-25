@@ -545,39 +545,41 @@ h2 {
       color: white;
       filter: drop-shadow(0 0 10px white); }
 
-.contents .contents-wrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .contents .contents-wrapper .contents-book {
-    width: 50%; }
-    .contents .contents-wrapper .contents-book img {
-      height: 5rem; }
-    .contents .contents-wrapper .contents-book ul.content li {
-      list-style: none; }
-    .contents .contents-wrapper .contents-book ul.content button {
-      display: block;
-      background-color: transparent;
-      border: none;
-      max-width: auto;
-      color: #ddd;
-      font-size: 2rem;
-      padding: .7rem 0;
-      margin: 0.3rem 0;
-      text-align: left;
-      text-decoration: none;
-      position: relative;
-      word-break: break-all;
-      cursor: pointer; }
-      .contents .contents-wrapper .contents-book ul.content button:hover {
-        color: white;
-        filter: drop-shadow(0 0 10px white); }
-      .contents .contents-wrapper .contents-book ul.content button:focus {
-        outline: none;
-        color: white;
-        filter: drop-shadow(0 0 10px white);
-        text-decoration: underline; }
+.contents {
+  position: relative; }
+  .contents .contents-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .contents .contents-wrapper .contents-book {
+      width: 50%; }
+      .contents .contents-wrapper .contents-book img {
+        height: 5rem; }
+      .contents .contents-wrapper .contents-book ul.content li {
+        list-style: none; }
+      .contents .contents-wrapper .contents-book ul.content button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        max-width: auto;
+        color: #ddd;
+        font-size: 2rem;
+        padding: .7rem 0;
+        margin: 0.3rem 0;
+        text-align: left;
+        text-decoration: none;
+        position: relative;
+        word-break: break-all;
+        cursor: pointer; }
+        .contents .contents-wrapper .contents-book ul.content button:hover {
+          color: white;
+          filter: drop-shadow(0 0 10px white); }
+        .contents .contents-wrapper .contents-book ul.content button:focus {
+          outline: none;
+          color: white;
+          filter: drop-shadow(0 0 10px white);
+          text-decoration: underline; }
 
 @media (max-width: 1000px) {
   .contents .contents-wrapper .contents-book {
@@ -587,6 +589,52 @@ h2 {
 @media (max-width: 620px) {
   .contents .contents-wrapper .contents-book img {
     height: 4rem; } }
+
+.contents .contents-detail {
+  display: none; }
+  .contents .contents-detail button {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    padding: 7px 10px 5px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    color: #6ab1ad;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+    .contents .contents-detail button:hover {
+      color: black;
+      background-color: #6ab1ad; }
+    .contents .contents-detail button:focus {
+      outline: none; }
+  .contents .contents-detail h3 {
+    padding-left: 30px; }
+  .contents .contents-detail .detail-block {
+    padding-left: 50px;
+    display: flex; }
+    .contents .contents-detail .detail-block a {
+      cursor: pointer; }
+      .contents .contents-detail .detail-block a:hover {
+        filter: drop-shadow(0 0 10px #6ab1ad); }
+    .contents .contents-detail .detail-block .detail-property {
+      display: block;
+      width: auto; }
+    .contents .contents-detail .detail-block .detail-link {
+      display: flex; }
+    .contents .contents-detail .detail-block .detail-value {
+      width: auto;
+      padding: 0 2rem; }
+    .contents .contents-detail .detail-block .author-icon {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: #6ab1ad; }
+  .contents .contents-detail .detail-text {
+    padding-left: 50px; }
+
+.contents .detail-open {
+  display: inherit; }
 
 .info .info-wrapper {
   width: 100%; }

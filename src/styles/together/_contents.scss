@@ -1,4 +1,5 @@
 .contents {
+  position: relative;
   .contents-wrapper {
     width: 100%;
     display: flex;
@@ -63,5 +64,67 @@
         }
       }
     }
+  }
+}
+
+.contents {
+  .contents-detail {
+    display: none;
+    button {
+      margin-bottom: 30px;
+      margin-left: 30px;
+      padding: 7px 10px 5px;
+      display: inline-block;
+      background-color: transparent;
+      border: none;
+      color: $light-skyblue;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: .3s $bezier-fast-ease-out;
+      &:hover {
+        color: black;
+        background-color: $light-skyblue;
+      }
+      &:focus {
+        outline:none;
+      }
+    }
+
+    h3 {
+      padding-left: 30px;
+    }
+    .detail-block{
+      padding-left: 50px;
+      display: flex;
+      a {
+        cursor: pointer;
+        &:hover{
+          filter: drop-shadow(0 0 10px $light-skyblue);
+        }
+      }
+      .detail-property {
+        display: block;
+        width: auto;
+      }
+      .detail-link {
+        display: flex;
+      }
+      .detail-value {
+        width: auto;
+        padding: 0 2rem;
+      }
+      .author-icon {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background: $light-skyblue;
+      }
+    }
+    .detail-text {
+      padding-left: 50px;
+    }
+  }
+  .detail-open {
+    display: inherit;
   }
 }

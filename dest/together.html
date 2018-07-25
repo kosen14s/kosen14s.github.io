@@ -36,34 +36,34 @@
             <h2 class="pink">Design</h2>
             <ul class="content"> 
               <li>
-                <button type="button" onclick="detailOpen(1)" id="content-1">ロボコンで使われている安全なUI ⓘ</button>
+                <button type="button" onclick="detailOpen(1)" id="content-1">ロボコンで使われている安全なUI</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(2)" id="content-2">HIの観点から理屈で分かるデザイン ⓘ</button>
+                <button type="button" onclick="detailOpen(2)" id="content-2">HIの観点から理屈で分かるデザイン</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(3)" id="content-3">デザインの二面性 ⓘ</button>
+                <button type="button" onclick="detailOpen(3)" id="content-3">デザインの二面性</button>
               </li>
             </ul>
             <h2 class="pink">Programing</h2>
             <ul class="content">
               <li>
-                <button type="button" onclick="detailOpen(4)" id="content-4">CSSアニメーションの話 ⓘ</button>
+                <button type="button" onclick="detailOpen(4)" id="content-4">CSSアニメーションの話</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(5)" id="content-5">詳細</button>
+                <button type="button" onclick="detailOpen(5)" id="content-5">未定</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(6)" id="content-6">詳細</button>
+                <button type="button" onclick="detailOpen(6)" id="content-6">未定</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(7)" id="content-6">Rubyできかいがくしゅ～ ⓘ</button>
+                <button type="button" onclick="detailOpen(7)" id="content-7">Rubyできかいがくしゅ～</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(8)" id="content-7">SVG仕様書読んでみた ⓘ</button>
+                <button type="button" onclick="detailOpen(8)" id="content-8">SVG仕様書読んでみた</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(9)" id="content-9">omronのPLC制御コンテスト技術キャンプの話 ⓘ</button>
+                <button type="button" onclick="detailOpen(9)" id="content-9">omronのPLC制御コンテスト技術キャンプの話</button>
               </li>
             </ul>
           </div>
@@ -71,34 +71,51 @@
             <h2 class="green">Math</h2>
             <ul class="content">
               <li>
-                <button type="button" onclick="detailOpen(10)" id="content-10">SATソルバについて ⓘ</button>
+                <button type="button" onclick="detailOpen(10)" id="content-10">SATソルバについて</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(11)" id="content-11">巨大数 ⓘ</button>
+                <button type="button" onclick="detailOpen(11)" id="content-11">巨大数</button>
               </li>
             </ul>
             <h2 class="green">Electric</h2>
             <ul class="content">
               <li>
-                <button type="button" onclick="detailOpen(12)" id="content-12">電気科オタクの見る世界 ⓘ</button>
+                <button type="button" onclick="detailOpen(12)" id="content-12">電気科オタクの見る世界</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(13)" id="content-13">うさみみでもわかる電気工学 ⓘ</button>
+                <button type="button" onclick="detailOpen(13)" id="content-13">うさみみでもわかる電気工学</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(14)" id="content-14">vvvfはエモい！ ⓘ</button>
+                <button type="button" onclick="detailOpen(14)" id="content-14">vvvfはエモい！</button>
               </li>
             </ul>
             <h2 class="green">Others</h2>
             <ul class="content">
               <li>
-                <button type="button" onclick="detailOpen(15)" id="content-15">ラーメン &amp;&amp; 鉄道配線 ⓘ</button>
+                <button type="button" onclick="detailOpen(15)" id="content-15">ラーメン &amp;&amp; 鉄道配線</button>
               </li>
               <li>
-                <button type="button" onclick="detailOpen(16)" id="content-16">Juliamoで乗り切ろう高専生活 ⓘ</button>
+                <button type="button" onclick="detailOpen(16)" id="content-16">Juliamoで乗り切ろう高専生活</button>
               </li>
             </ul>
           </div>
+        </div>
+        <div class="contents-detail" id="contents-detail">
+          <h1>詳細</h1>
+          <button class="detail-close" type="button" onclick="detailBack()">← Back</button>
+          <button class="detail-close" type="button" onclick="detailClose()">× Close</button>
+          <button class="detail-close" type="button" onclick="detailNext()">Next →</button>
+          <h3 id="detail-chapter"></h3>
+          <div class="detail-block" id="link-block">
+            <p class="detail-property">Author :</p>
+            <div class="detail-link" id="detail-link"><a id="author-link-txt">
+                <p class="detail-value" id="detail-author">null</p></a><a id="author-link-img"><img class="author-icon" src="" alt="icon" id="author-icon"></a></div>
+          </div>
+          <div class="detail-block">
+            <p class="detail-property">Category :</p>
+            <p class="detail-value" id="detail-category">null</p>
+          </div>
+          <p class="detail-text" id="detail-text">null</p>
         </div>
       </div>
       <div class="separator-line container"></div>
