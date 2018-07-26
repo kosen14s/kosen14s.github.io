@@ -1,131 +1,131 @@
 [
   {
-    "title":"ロボコンで使われている安全なUI",
-    "category":"Design",
-    "author":"Cilvia",
-    "author_link": "https://twitter.com/tech0970",
+    "title": "ロボコンで使われている安全なUI",
+    "category": "Design",
+    "author": ["Cilvia"],
+    "author_link": ["https://twitter.com/tech0970"],
     "author_icon": "cilvia.png",
     "detail": "詳しい説明を書く。"
   },
   {
-    "title":"HIの観点から理屈で分かるデザイン",
-    "category":"Design",
-    "author":"yamasy",
-    "author_link":"",
-    "author_icon":"",
-    "detail":""
+    "title": "HIの観点から理屈で分かるデザイン",
+    "category": "Design",
+    "author": ["yamasy"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"デザインの二面性",
-    "category":"Design",
-    "author":"Chige",
-    "author_link":"https://twitter.com/chige12_",
-    "author_icon":"chige.png",
-    "detail":""
+    "title": "デザインの二面性",
+    "category": "Design",
+    "author": ["Chige"],
+    "author_link": ["https://twitter.com/chige12_"],
+    "author_icon": "chige.png",
+    "detail": ""
   },
   {
-    "title":"CSSアニメーションの話",
-    "category":"Programing",
-    "author":"Chige",
-    "author_link":"https://twitter.com/chige12_",
-    "author_icon":"chige.png",
-    "detail":""
+    "title": "CSSアニメーションの話",
+    "category": "Programing",
+    "author": ["Chige"],
+    "author_link": ["https://twitter.com/chige12_"],
+    "author_icon": "chige.png",
+    "detail": ""
   },
   {
-    "title":"未定",
-    "category":"Programing",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":"" 
+    "title": "未定",
+    "category": "Programing",
+    "author": ["theoldmoon0602"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"未定",
-    "category":"Programing",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":"" 
+    "title": "未定",
+    "category": "Programing",
+    "author": ["eliza"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"Rubyできかいがくしゅ～",
-    "category":"Programing",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":"" 
+    "title": "Rubyできかいがくしゅ～",
+    "category": "Programing",
+    "author": ["yamasy"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"SVG仕様書読んでみた",
-    "category":"Programing",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":"" 
+    "title": "SVG仕様書読んでみた",
+    "category": "Programing",
+    "author": ["yamasy"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"omronのPLC制御コンテスト技術キャンプの話",
-    "category":"Programing",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":"" 
+    "title": "omronのPLC制御コンテスト技術キャンプの話",
+    "category": "Programing",
+    "author": ["f_respectful"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"SATソルバについて",
-    "category":"Math",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":"" 
+    "title": "SATソルバについて",
+    "category": "Math",
+    "author": ["shinkwhek"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"巨大数",
-    "category":"Math",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":"" 
+    "title": "巨大数",
+    "category": "Math",
+    "author": ["ishikazu"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"電気科オタクの見る世界",
-    "category":"Electric",
-    "author":["chige","kyumina"],
-    "author_link":["",""],
-    "author_icon":["",""],
-    "detail":"" 
+    "title": "電気科オタクの見る世界",
+    "category": "Electric",
+    "author": ["chige", "kyumina"],
+    "author_link": ["", ""],
+    "author_icon": ["", ""],
+    "detail": ""
   },
   {
-    "title":"うさみみでもわかる電気工学",
-    "category":"Electric",
-    "author":["yamasy","chige","cilvia"],
-    "author_link":["","",""],
-    "author_icon":["","",""],
-    "detail":"" 
+    "title": "うさみみでもわかる電気工学",
+    "category": "Electric",
+    "author": ["yamasy", "chige", "cilvia"],
+    "author_link": ["", "", ""],
+    "author_icon": ["", "", ""],
+    "detail": ""
   },
   {
-    "title":"vvvfはエモい！",
-    "category":"Electric",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":"" 
+    "title": "vvvfはエモい！",
+    "category": "Electric",
+    "author": ["cilvia"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"ラーメン && 鉄道配線",
-    "category":"Others",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":""
+    "title": "ラーメン && 鉄道配線",
+    "category": "Others",
+    "author": ["zeropon"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   },
   {
-    "title":"Juliamoで乗り切ろう高専生活",
-    "category":"Others",
-    "author":"",
-    "author_link":"",
-    "author_icon":"",
-    "detail":""
+    "title": "Juliamoで乗り切ろう高専生活",
+    "category": "Others",
+    "author": ["theoldmoon0602"],
+    "author_link": [""],
+    "author_icon": "",
+    "detail": ""
   }
 ]
 
