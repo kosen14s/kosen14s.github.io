@@ -14,7 +14,7 @@
   z-index: 100;
 
   .menu-icon {
-    margin: 31px auto; //(80-8)/2
+    margin: ((80px - 8px) / 2px) auto; //(80-8)/2
     width: 50px;
     height: 8px;
     background-color: white;
@@ -36,7 +36,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -21px;
+      bottom: -(50px - 8px) / 2;
       left: 0;
       width: 50px;
       height: 8px;
@@ -57,16 +57,61 @@
     transform: rotate(45deg);
 
     &::before {
-      top: -21px / sqrt(2); //≒ -14.85px
-      left: 21px / sqrt(2);
-      width: (21px * sqrt(2)) + 8px; //≒ 37.7px
+      top: -(50px - 8px)/2 / sqrt(2); //≒ -14.85px
+      left: (50px - 8px)/2 / sqrt(2);
+      width: ((50px - 8px)/2 * sqrt(2)) + 8px; //≒ 37.7px
       transform: rotate(90deg);
     }
     &::after {
-      bottom: -21px / sqrt(2);
-      left: 21px / sqrt(2);
-      width: (21px * sqrt(2)) + 8px;
+      bottom: -(50px - 8px)/2 / sqrt(2);
+      left: (50px - 8px)/2 / sqrt(2);
+      width: ((50px - 8px)/2 * sqrt(2)) + 8px;
       transform: rotate(90deg);
+    }
+  }
+}
+
+@media(max-width: 920px) {
+  .menu-button {
+    width: 100px;
+    height: 100px;
+    .menu-icon {
+      margin: ((100px - 10px) / 2) auto; //(80-8)/2
+      width: 60px;
+      height: 10px;
+      border-radius: 5px;
+      &::before {
+        top: -(60px - 10px) / 2; //-(width - border-r)/2
+        width: 60px;
+        height: 10px;
+        border-radius: 5px;
+      }
+      &::after {
+        bottom: -(60px - 10px) / 2;
+        left: 0;
+        width: 60px;
+        height: 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .menu-button_open {
+    .menu-icon {
+      width: ((60px - 10px) * sqrt(2)) + 10px;
+      transform: rotate(45deg);
+  
+      &::before {
+        top: -(60px - 10px)/2 / sqrt(2);
+        left: (60px - 10px)/2 / sqrt(2);
+        width: ((60px - 10px)/2 * sqrt(2)) + 10px;
+        transform: rotate(90deg);
+      }
+      &::after {
+        bottom: -(60px - 10px)/2 / sqrt(2);
+        left: (60px - 10px)/2 / sqrt(2);
+        width: ((60px - 10px)/2 * sqrt(2)) + 10px;
+        transform: rotate(90deg);
+      }
     }
   }
 }
