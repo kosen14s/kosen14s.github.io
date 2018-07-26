@@ -591,7 +591,14 @@ h2 {
     height: 4rem; } }
 
 .contents .contents-detail {
-  display: none; }
+  display: none;
+  position: fixed;
+  background: white;
+  top: 20vh;
+  bottom: 20vh;
+  left: 20vw;
+  right: 20vw;
+  padding: 20px 40px; }
   .contents .contents-detail button {
     margin-bottom: 30px;
     margin-left: 30px;
