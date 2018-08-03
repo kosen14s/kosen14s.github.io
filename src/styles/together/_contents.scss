@@ -48,39 +48,49 @@
   .contents-detail {
     display: none;
     position: fixed;
-    background: white;
+    background-color: white;
+    color: #333;
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow:0 0 60px 0 $light-skyblue;
     top: 20vh;
     bottom: 20vh;
     left: 20vw;
     right: 20vw;
     padding: 20px 40px;
-
-    button {
-      margin-bottom: 30px;
-      margin-left: 30px;
-      padding: 7px 10px 5px;
+    h1 {
+      width: 15rem;
       display: inline-block;
-      background-color: transparent;
-      border: none;
-      color: $light-skyblue;
-      font-size: 2rem;
-      cursor: pointer;
-      transition: .3s $bezier-fast-ease-out;
-      &:hover {
-        color: black;
-        background-color: $light-skyblue;
-      }
-      &:focus {
-        outline:none;
+      margin-bottom: 1.5rem;
+    }
+    .button-wrapper {
+      margin-bottom: 30px;
+      display: inline-block;
+      button {
+        padding: 7px 10px 5px;
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        color: $light-skyblue;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: .3s $bezier-fast-ease-out;
+        &:hover {
+          color: black;
+          background-color: $light-skyblue;
+        }
+        &:focus {
+          outline:none;
+        }
       }
     }
-
     h3 {
-      padding-left: 30px;
+      margin-left: 30px;
     }
     .detail-block{
-      padding-left: 50px;
       display: flex;
+      flex-wrap: wrap;
+      margin-left: 30px;
       a {
         cursor: pointer;
         &:hover{
@@ -89,24 +99,27 @@
       }
       .detail-property {
         display: block;
-        width: auto;
+        width: 11rem;
       }
       .detail-link {
         display: flex;
+        flex-wrap: nowrap;
+        margin-right: 2rem;
       }
       .detail-value {
         width: auto;
-        padding: 0 2rem;
+        color: #333;
       }
       .author-icon {
         display: inline-block;
-        width: 60px;
-        height: 60px;
+        width: 56px;
+        height: 56px;
+        margin-right: 1rem;
         background: $light-skyblue;
       }
     }
     .detail-text {
-      padding-left: 50px;
+      margin-left: 30px;
     }
   }
   .detail-open {
@@ -114,12 +127,29 @@
   }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1080px) {
   .contents {
     .contents-wrapper {
       .contents-book {
         margin-top: 30px;
         width: 100%;
+      }
+    }
+    .contents-detail {
+      .detail-block{
+        margin-left: 0;
+        .detail-property-author {
+          width: 100%;
+        }
+        .detail-link {
+          margin-bottom: 8px;
+        }
+      }
+      h3 {
+        margin-left: 0;
+      }
+      .detail-text {
+        margin-left: 0;
       }
     }
   }
@@ -141,6 +171,11 @@
       left: 10vw;
       right: 10vw;
       padding: 20px 40px;
+      .button-wrapper {
+        button {
+          padding: 10px 5px;
+        }
+      }
     }
   }
 }

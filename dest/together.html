@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./styles/together/together.css">
     <title>TOGETHER | kosen14s #dojin</title>
-    <link href="../fonts/GN-Kin-iro_SansSerif_1.ttf" rel="stylesheet">
+    <link href="../fonts/GN-Kin-iro_SansSerif_1.ttf" rel="stylesheet"><meta property="og:title" content="TOGETHER|kosen14s">
+<meta property="og:description" content="現役高専生の闇鍋同人本、技術書典5に出典！ プログラミング言語かるたも">
+<meta property="og:image" content="[イメージ]">
+<meta property="og:type" content="product" />
+<meta property="og:url" contetnt="http://kosen14s.github.io/together.html">
   </head>
   <body>
     <div class="backgraund-1"></div>
@@ -17,7 +21,7 @@
     </header>
     <main>
       <div class="links container"><a href="https://techbookfest.org/event/tbf05"><img class="link-box-large" src="./images/techbookfest5/techbookfest5.png" alt="技術書展５のサイトへ"></a><img class="link-box-large" src="./images/techbookfest5/pdf-comming.png" alt="PDF版 Comming soon!">
-        <div class="share-sns"><a href="http://"><img class="link-box-tw" src="./images/techbookfest5/tw-share.png" alt="つぶやく"></a><a href="http://"><img class="link-box-fb" src="./images/techbookfest5/fb-share.png" alt="シェア"></a></div>
+        <div class="share-sns"><a href="http://twitter.com/share?url=http://kosen14s.github.io/together.html&amp;text=現役高専生の闇鍋同人本「TOGETHER」技術書典5に出典！&amp;hashtags=kosen14s" target="_blank"><img class="link-box-tw" src="./images/techbookfest5/tw-share.png" alt="つぶやく"></a><a href="http://www.facebook.com/share.php?u=http://kosen14s.github.io/together.html" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><img class="link-box-fb" src="./images/techbookfest5/fb-share.png" alt="シェア"></a></div>
       </div>
       <div class="about container">
         <h1>kosen14s とは</h1>
@@ -102,14 +106,16 @@
         </div>
         <div class="contents-detail" id="contents-detail">
           <h1>詳細</h1>
-          <button class="detail-close" type="button" onclick="detailBack()">← Back</button>
-          <button class="detail-close" type="button" onclick="detailClose()">× Close</button>
-          <button class="detail-close" type="button" onclick="detailNext()">Next →</button>
+          <div class="button-wrapper">
+            <button class="detail-close" type="button" onclick="detailBack()">← Back</button>
+            <button class="detail-close" type="button" onclick="detailClose()">× Close</button>
+            <button class="detail-close" type="button" onclick="detailNext()">Next →</button>
+          </div>
           <h3 id="detail-chapter"></h3>
           <div class="detail-block" id="link-block">
             <p class="detail-property">Author :</p>
-            <div class="detail-link" id="detail-link"><a id="author-link-txt">
-                <p class="detail-value" id="detail-author">null</p></a><a id="author-link-img"><img class="author-icon" src="" alt="icon" id="author-icon"></a></div>
+            <div class="detail-link" id="detail-link"><a id="author-link-img"><img class="author-icon" src="" alt="icon" id="author-icon"></a><a id="author-link-txt">
+                <p class="detail-value" id="detail-author">null</p></a></div>
           </div>
           <div class="detail-block">
             <p class="detail-property">Category :</p>
@@ -127,11 +133,11 @@
           <div class="values">
             <div class="value">
               <div class="product">TOGETHER❶ デザインとプログラミングの鍋</div>
-              <div class="price">x,xxx円</div>
+              <div class="price">値段検討中</div>
             </div>
             <div class="value">
               <div class="product">TOGETHER❷ 数学と電気の鍋</div>
-              <div class="price">x,xxx円</div>
+              <div class="price">値段検討中</div>
             </div><a class="value" href="http://yamasy.info/programming-karuta/">
               <div class="product">プログラミング言語かるた 🔗</div>
               <div class="price">3,000円</div></a><a class="value" href="https://whiims.booth.pm/items/799138">
@@ -140,9 +146,9 @@
               <div class="product">Gitコマンドかるた（解説書付き）🔗</div>
               <div class="price">2,500円</div></a><a class="value" href="https://whiims.booth.pm/items/895006"> 
               <div class="product">オリジナル"Hello world"Tシャツ 🔗</div>
-              <div class="price">x,xxx円</div></a><a class="value" href="https://whiims.booth.pm/items/813108">
+              <div class="price">値段検討中</div></a><a class="value" href="https://whiims.booth.pm/items/813108">
               <div class="product">プログラマのためのマスキングテープ 🔗</div>
-              <div class="price">x,xxx円</div></a>
+              <div class="price">値段検討中</div></a>
           </div>
         </div>
         <div class="info-wrapper">
@@ -161,7 +167,7 @@
         </div>
       </div>
       <footer class="container">
-        <div class="share-sns"><a href="http://"><img class="link-box-tw" src="./images/techbookfest5/tw-share.png" alt="つぶやく"></a><a href="http://"><img class="link-box-fb" src="./images/techbookfest5/fb-share.png" alt="シェア"></a></div>
+        <div class="share-sns"><a href="http://twitter.com/share?url=http://kosen14s.github.io/together.html&amp;text=現役高専生の闇鍋同人本「TOGETHER」技術書展5&amp;hashtags=kosen14s" target="_blank"><img class="link-box-tw" src="./images/techbookfest5/tw-share.png" alt="つぶやく"></a><a href="http://www.facebook.com/share.php?u=http://kosen14s.github.io/together.html" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><img class="link-box-fb" src="./images/techbookfest5/fb-share.png" alt="シェア"></a></div>
         <div class="logo14s"><a href="./"><img src="./images/kosen14s-logo.svg" alt="kosen14s-logo">
             <p>kosen14s</p></a></div>
       </footer>

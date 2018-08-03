@@ -475,6 +475,8 @@ h2 {
   justify-content: space-between;
   align-items: center;
   align-content: center; }
+  .share-sns a {
+    cursor: pointer; }
   .share-sns .link-box-tw {
     width: 240px;
     transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
@@ -584,60 +586,83 @@ h2 {
 .contents .contents-detail {
   display: none;
   position: fixed;
-  background: white;
+  background-color: white;
+  color: #333;
+  overflow-y: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 60px 0 #6ab1ad;
   top: 20vh;
   bottom: 20vh;
   left: 20vw;
   right: 20vw;
   padding: 20px 40px; }
-  .contents .contents-detail button {
-    margin-bottom: 30px;
-    margin-left: 30px;
-    padding: 7px 10px 5px;
+  .contents .contents-detail h1 {
+    width: 15rem;
     display: inline-block;
-    background-color: transparent;
-    border: none;
-    color: #6ab1ad;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
-    .contents .contents-detail button:hover {
-      color: black;
-      background-color: #6ab1ad; }
-    .contents .contents-detail button:focus {
-      outline: none; }
+    margin-bottom: 1.5rem; }
+  .contents .contents-detail .button-wrapper {
+    margin-bottom: 30px;
+    display: inline-block; }
+    .contents .contents-detail .button-wrapper button {
+      padding: 7px 10px 5px;
+      display: inline-block;
+      background-color: transparent;
+      border: none;
+      color: #6ab1ad;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+      .contents .contents-detail .button-wrapper button:hover {
+        color: black;
+        background-color: #6ab1ad; }
+      .contents .contents-detail .button-wrapper button:focus {
+        outline: none; }
   .contents .contents-detail h3 {
-    padding-left: 30px; }
+    margin-left: 30px; }
   .contents .contents-detail .detail-block {
-    padding-left: 50px;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px; }
     .contents .contents-detail .detail-block a {
       cursor: pointer; }
       .contents .contents-detail .detail-block a:hover {
         filter: drop-shadow(0 0 10px #6ab1ad); }
     .contents .contents-detail .detail-block .detail-property {
       display: block;
-      width: auto; }
+      width: 11rem; }
     .contents .contents-detail .detail-block .detail-link {
-      display: flex; }
+      display: flex;
+      flex-wrap: nowrap;
+      margin-right: 2rem; }
     .contents .contents-detail .detail-block .detail-value {
       width: auto;
-      padding: 0 2rem; }
+      color: #333; }
     .contents .contents-detail .detail-block .author-icon {
       display: inline-block;
-      width: 60px;
-      height: 60px;
+      width: 56px;
+      height: 56px;
+      margin-right: 1rem;
       background: #6ab1ad; }
   .contents .contents-detail .detail-text {
-    padding-left: 50px; }
+    margin-left: 30px; }
 
 .contents .detail-open {
   display: inherit; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
   .contents .contents-wrapper .contents-book {
     margin-top: 30px;
-    width: 100%; } }
+    width: 100%; }
+  .contents .contents-detail .detail-block {
+    margin-left: 0; }
+    .contents .contents-detail .detail-block .detail-property-author {
+      width: 100%; }
+    .contents .contents-detail .detail-block .detail-link {
+      margin-bottom: 8px; }
+  .contents .contents-detail h3 {
+    margin-left: 0; }
+  .contents .contents-detail .detail-text {
+    margin-left: 0; } }
 
 @media (max-width: 620px) {
   .contents .contents-wrapper .contents-book img {
@@ -647,7 +672,9 @@ h2 {
     bottom: 10vh;
     left: 10vw;
     right: 10vw;
-    padding: 20px 40px; } }
+    padding: 20px 40px; }
+    .contents .contents-detail .button-wrapper button {
+      padding: 10px 5px; } }
 
 .info .info-wrapper {
   width: 100%; }
@@ -697,7 +724,7 @@ footer {
     footer .logo14s p {
       margin: 5px 0; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
   :root {
     --section: 90%; }
   .container {

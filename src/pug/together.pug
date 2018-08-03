@@ -1,11 +1,16 @@
 doctype html
 html(lang="ja")
-  head
+  head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#")
     meta(charset="utf-8")
     meta(name='viewport' content='width=device-width,initial-scale=1')
     link(rel="stylesheet", href="./styles/together/together.css")
     title TOGETHER | kosen14s #dojin
     link(href="../fonts/GN-Kin-iro_SansSerif_1.ttf", rel="stylesheet")
+    <meta property="og:title" content="TOGETHER|kosen14s">
+    <meta property="og:description" content="現役高専生の闇鍋同人本、技術書典5に出典！ プログラミング言語かるたも">
+    <meta property="og:image" content="[イメージ]">
+    <meta property="og:type" content="product" />
+    <meta property="og:url" contetnt="http://kosen14s.github.io/together.html">
 
   body
     .backgraund-1
@@ -25,9 +30,9 @@ html(lang="ja")
           img(src="./images/techbookfest5/techbookfest5.png", alt="技術書展５のサイトへ").link-box-large
         img(src="./images/techbookfest5/pdf-comming.png", alt="PDF版 Comming soon!").link-box-large
         .share-sns
-          a(href="http://")
+          a(href="http://twitter.com/share?url=http://kosen14s.github.io/together.html&text=現役高専生の闇鍋同人本「TOGETHER」技術書典5に出典！&hashtags=kosen14s", target="_blank")
             img(src="./images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
-          a(href="http://")
+          a(href="http://www.facebook.com/share.php?u=http://kosen14s.github.io/together.html", onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;")
             img(src="./images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
 
       .about.container
@@ -84,16 +89,17 @@ html(lang="ja")
 
         #contents-detail.contents-detail
           h1 詳細
-          button(type="button", onclick="detailBack()").detail-close ← Back
-          button(type="button", onclick="detailClose()").detail-close × Close
-          button(type="button", onclick="detailNext()").detail-close Next →
+          .button-wrapper
+            button(type="button", onclick="detailBack()").detail-close ← Back
+            button(type="button", onclick="detailClose()").detail-close × Close
+            button(type="button", onclick="detailNext()").detail-close Next →
           h3#detail-chapter
           .detail-block#link-block
             p.detail-property Author :
             .detail-link#detail-link
-              a#author-link-txt: p#detail-author.detail-value null
               a#author-link-img
                 img(src="", alt="icon")#author-icon.author-icon
+              a#author-link-txt: p#detail-author.detail-value null
           .detail-block
             p.detail-property Category :
             p#detail-category.detail-value null
@@ -110,10 +116,10 @@ html(lang="ja")
           .values
             .value
               .product TOGETHER❶ デザインとプログラミングの鍋
-              .price x,xxx円
+              .price 値段検討中
             .value
               .product TOGETHER❷ 数学と電気の鍋
-              .price x,xxx円
+              .price 値段検討中
             a(href="http://yamasy.info/programming-karuta/").value
               .product プログラミング言語かるた 🔗
               .price 3,000円
@@ -125,10 +131,10 @@ html(lang="ja")
               .price 2,500円
             a(href="https://whiims.booth.pm/items/895006").value 
               .product オリジナル"Hello world"Tシャツ 🔗
-              .price x,xxx円
+              .price 値段検討中
             a(href="https://whiims.booth.pm/items/813108").value
               .product プログラマのためのマスキングテープ 🔗
-              .price x,xxx円
+              .price 値段検討中
         .info-wrapper
           .property サークル名
           .values
@@ -143,9 +149,9 @@ html(lang="ja")
 
       footer.container
         .share-sns
-          a(href="http://")
+          a(href="http://twitter.com/share?url=http://kosen14s.github.io/together.html&text=現役高専生の闇鍋同人本「TOGETHER」技術書展5&hashtags=kosen14s", target="_blank")
             img(src="./images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
-          a(href="http://")
+          a(href="http://www.facebook.com/share.php?u=http://kosen14s.github.io/together.html", onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;")
             img(src="./images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
         .logo14s
           a(href="./")

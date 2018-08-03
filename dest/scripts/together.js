@@ -81,13 +81,24 @@ function detailOpen(content_num) {
 
   link_block.innerHTML = '';
 
+  const propertyDOM = document.createElement('p');
+  propertyDOM.classList.add('detail-property');
+  propertyDOM.classList.add('detail-property-author');
+  propertyDOM.innerHTML = 'Author :'
+  link_block.appendChild(propertyDOM);
+
   contents[content_num-1].author.forEach(author => {
     const authorDOM = document.createElement('div');
     authorDOM.classList.add('detail-link');
-    authorDOM.innerHTML = `<a href=""><p class="detail-value">${author}</p></a><a href=""><img class="author-icon" src="../images/icon/${author}" alt="icon"></a>`
+    authorDOM.innerHTML = `<a href="${author.link}"><img class="author-icon" src="../images/icon/${author.icon}" alt="icon"></a><a href="${author.link}"><p class="detail-value">${author.name}</p></a>`
     link_block.appendChild(authorDOM);
   })
 
   detail_category.textContent = contents[content_num-1].category
+  if (content_num < 10) {
+    detail_category.style.color = '#ff619b';
+  }else {
+    detail_category.style.color = '#7cb639';
+  }
   detail_text.textContent = contents[content_num-1].detail
 }
