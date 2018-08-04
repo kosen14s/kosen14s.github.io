@@ -81,6 +81,9 @@ h2 {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  a {
+    cursor: pointer;
+  }
   .link-box-tw {
     width: 240px;
     transition: .3s $bezier-fast-ease-out;
@@ -105,7 +108,7 @@ h2 {
 @import 'footer';
 
 
-@media(max-width: 1000px) {
+@media(max-width: 1080px) {
   :root {
     --section: 90%;
   }

@@ -1,5 +1,21 @@
 'use strict';
 
+// contentsを取得・表示
+const contents = fetchJSON('./scripts/together-contents.json');
+addContents(contents);
+
+let detail_open = false;
+let nowContentsNum = 0;
+
+const contents_detail = document.getElementById("contents-detail");
+const link_block = document.getElementById("link-block");
+const detail_chapter = document.getElementById("detail-chapter");
+const detail_category = document.getElementById("detail-category");
+const detail_text = document.getElementById("detail-text");
+
+//
+// JSONファイルからデータをfetchする
+//
 function fetchJSON(file) {
   const request = new XMLHttpRequest();
   request.open('GET', file, false);
@@ -8,111 +24,81 @@ function fetchJSON(file) {
     return JSON.parse(request.responseText);
 }
 
-const o = fetchJSON('./scripts/together-contents.json');
-
-console.log(o);
-
-var detail_open = false;
-var contents_title = [];
-var nowContentsNum = 0;
-var contents_detail = document.getElementById("contents-detail");
-var nowAuthorNum = 1;
-var box;
-var link_block = document.getElementById("link-block");
-
-var detail_chapter = document.getElementById("detail-chapter");
-var detail_icon = document.getElementById("author-icon");
-var detail_link =  document.getElementById("detail-link");
-var detail_link_img = document.getElementById("author-link-img");
-var detail_link_txt = document.getElementById("author-link-txt");
-var detail_author = document.getElementById("detail-author");
-var detail_category = document.getElementById("detail-category");
-var detail_text = document.getElementById("detail-text");
-
-if(o){
-  //配列からコンテンツ内容取ってきて、buttonのDOM更新
-  for (let i = 0; i < o.length; i++) {
-    contents_title[i] = document.getElementById("content-"+(i+1));
-    console.log(i);
-    contents_title[i].textContent = o[i].title + " ⓘ";
+//
+// contentsを追加する
+//
+function addContents(contents) {
+  for(let i=0; i<contents.length; i++) {
+    const targetDOM = document.getElementById(`content-${i+1}`);
+    targetDOM.textContent = `${contents[i].title} ⓘ`;
   }
 }
 
-
-function detailOpen(content_num) {
-  if(o){
-    if(detail_open == false){
-      contents_detail.classList.add("detail-open");
-      detail_open = true;
-    }
-    nowContentsNum = content_num;
-    detail_chapter.textContent = content_num + ". " + o[content_num-1].title
-    //削除
-    if(nowAuthorNum > 1){
-      //追加した要素を削除させたい
-      for (let i = 0; i < nowAuthorNum; i++) {
-        box.removeChild(box.lastChild);
-      }
-    }
-
-    if(o[content_num-1].author instanceof Array){
-      //[0]のところ変更
-      detail_icon.src = "../images/icon/" + o[content_num-1].author_icon[0]
-      detail_link_img.href = o[content_num-1].author_link[0]
-      detail_link_txt.href = o[content_num-1].author_link[0]
-      detail_author.textContent = o[content_num-1].author[0]
-      nowAuthorNum = o[content_num-1].author.length;
-      //[1]以上はDOM作る
-      for (let i = 1; i < o[content_num-1].author.length; i++) {
-        box = document.createElement("div");
-        box.classList.add('detail-link');
-        box.classList.add('temporary');
-          var aTxt = document.createElement('a');
-          var aTxt_author = document.createElement('p');
-          var aPng = document.createElement('a');
-          var aPng_icon = document.createElement('img');
-          aTxt_author.classList.add('detail-value');
-          aTxt_author.textContent = o[content_num-1].author[i];
-          aTxt.appendChild(aTxt_author);
-          aPng_icon.classList.add('author-icon');
-          aPng_icon.setAttribute('src', o[content_num-1].author_link[i]);
-          aPng.appendChild(aPng_icon);
-          box.appendChild(aTxt);
-          box.appendChild(aPng);
-        link_block.appendChild(box);
-        detail_link.parentNode.insertBefore(box, detail_link.nextSibling); 
-      }
-    }else{
-      nowAuthorNum = 1;
-      detail_icon.src = "../images/icon/" + o[content_num-1].author_icon
-      detail_link_img.href = o[content_num-1].author_link
-      detail_link_txt.href = o[content_num-1].author_link
-      detail_author.textContent = o[content_num-1].author
-    }
-    detail_category.textContent = o[content_num-1].category
-    detail_text.textContent = o[content_num-1].detail
-  }
-};
-
-function detailClose() {
-  if(detail_open == true){
-    contents_detail.classList.remove("detail-open");
-    detail_open = false;
-  }
-}
-
+//
+// 前のモーダルに戻る
+//
 function detailBack() {
   if(nowContentsNum <= 1){
-    detailOpen(o.length);
-  }else{
+    detailOpen(contents.length);
+  } else {
     detailOpen(nowContentsNum-1);
   }
 }
 
+
+//
+// 次のモーダルに進む
+//
 function detailNext() {
-  if(nowContentsNum >= o.length) {
+  if(nowContentsNum >= contents.length) {
     detailOpen(1);
-  }else{
+  } else {
     detailOpen(nowContentsNum+1);
   }
+}
+
+//
+// モーダルを閉じる
+//
+function detailClose() {
+  if(detail_open) {
+    contents_detail.classList.remove('detail-open');
+    detail_open = false;
+  }
+}
+
+//
+// モーダルを開く
+//
+function detailOpen(content_num) {
+  if(detail_open == false) {
+    contents_detail.classList.add('detail-open');
+    detail_open = true;
+  }
+
+  nowContentsNum = content_num;
+  detail_chapter.textContent = `${content_num}. ${contents[content_num-1].title}`;
+
+  link_block.innerHTML = '';
+
+  const propertyDOM = document.createElement('p');
+  propertyDOM.classList.add('detail-property');
+  propertyDOM.classList.add('detail-property-author');
+  propertyDOM.innerHTML = 'Author :'
+  link_block.appendChild(propertyDOM);
+
+  contents[content_num-1].author.forEach(author => {
+    const authorDOM = document.createElement('div');
+    authorDOM.classList.add('detail-link');
+    authorDOM.innerHTML = `<a href="${author.link}"><img class="author-icon" src="../images/icon/${author.icon}" alt="icon"></a><a href="${author.link}"><p class="detail-value">${author.name}</p></a>`
+    link_block.appendChild(authorDOM);
+  })
+
+  detail_category.textContent = contents[content_num-1].category
+  if (content_num < 10) {
+    detail_category.style.color = '#ff619b';
+  }else {
+    detail_category.style.color = '#7cb639';
+  }
+  detail_text.textContent = contents[content_num-1].detail
 }
