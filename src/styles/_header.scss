@@ -52,11 +52,18 @@ header {
   width: 50vw;
 }
 
-@media(max-width: 920px) {
+@media(max-width: 1000px) {
+  .header-under {
+    transition: 1s .2s $bezier-fast-ease-out;
+  }
   header {
-    img {
-      width: 250px;
-      margin: 30px;
-    }
+    transition: 1s $bezier-fast-ease-out;
+    z-index: 2;
+  }
+  .header_open {
+    transform: translateX(-100vw);
+  }
+  .header-under_open {
+    transform: translateX(-100vw);
   }
 }

@@ -11,31 +11,42 @@ main {
   overflow-y: auto;
 
   .contents {
-    margin: 0;
-    padding: 80px;
-    padding-top: 120px;
-    padding-left: 120px;
+    margin: 10%;
+    margin-top: 200px;
+    padding: 0;
     max-width: 100%;
     font-size: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     li {
       display: inline-block;
-      width: 40%;
+      min-width: 200px;
+      width: 35%;
       min-height: 200px;
       margin: 10px;
-      padding: 5px;
+      padding: 0;
       padding-left: 20px;
 
       p {
         margin: 0;
+        &:last-child {
+          margin-bottom: 30px;
+        }
+      }
+      .nolink {
+        &:hover {
+          text-decoration: line-through;
+        }
       }
       .item {
         display: block;
-        padding: 1.5rem 0;
-        padding-left: 2rem;
+        padding: 1.5rem 3rem;
         z-index: 0;
       }
       .item-link {
+        padding: 1.5rem 3rem;
         text-decoration-line: none;
         position: relative;
         transition: .2s ease-in-out;
@@ -81,17 +92,17 @@ main {
     display: block;
     position: fixed;
     height: 50px;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 40px;
 
     .twitter-tag-link {
       display: block;
       position: fixed;
-      right: 65px;
-      bottom: 20px;
+      right: 85px;
+      bottom: 40px;
       width: auto;
       height: 50px;
-      padding: 0 20px;
+      padding: 0 40px;
       text-align: center;
       line-height: 51px;
       font-size: 2.3rem;
@@ -115,10 +126,10 @@ main {
       &::after {
         content: "";
         position: fixed;
-        bottom: 20px;
+        bottom: 40px;
         right: 0px;
         height: 50px;
-        width: 45px;
+        width: 65px;
         background: white;
         z-index: -1;
       }
@@ -126,8 +137,8 @@ main {
       &::before {
         content: "ハッシュタグでツイート";
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 40px;
+        right: 40px;
         height: 50px;
         transition: .3s $bezier-fast-ease-out;
         background: $official-twitter;
@@ -150,3 +161,81 @@ main {
   }
 }
 
+@media(max-width: 1000px) {
+  main {
+    margin: 0;
+    width: 100%;
+    .contents{
+      li {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media(max-width: 920px) {
+  main{
+    .contents {
+      li {
+        .item {
+          text-align: center;
+          margin: 4px 0; 
+        }
+        .item-link {
+          text-align: center;
+          margin: 4px 0;
+          &::before {
+            width: 100%;
+            height: 1rem;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .twitter {
+      position: initial;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+
+      .twitter-tag-link {
+        position: initial;
+      }
+      .tweet-button {
+        margin: 5px auto;
+        margin-bottom: 100px;
+        display: block;
+        position: relative;
+        padding-left: calc(16rem + 50px);
+
+        img {
+          position: relative;
+          z-index: 1;
+        }
+        &::after {
+          position: absolute;
+          bottom: 0;
+        }
+        &::before {
+          position: absolute;
+          bottom: 0;
+          right: -1.8rem;
+          width: calc(16rem + 50px);
+          z-index: 0;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 620px) {
+  main {
+    .contents{
+      li {
+        width: 50%;
+        padding: 0;
+      }
+    }
+  }
+}

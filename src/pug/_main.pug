@@ -1,21 +1,21 @@
 mixin item-link(name,url)
-  p: a(href=url).item.item-link= name
+  a(href=url).item.item-link= name
 
 ul.contents
   li
     h2 #muscle
-    p.item ベンチプレス
-    p.item デッドリフト
+    p.item.nolink ベンチプレス
+    p.item.nolink デッドリフト
   li
     h2 #book
-    +item-link("読書会","#")
-    +item-link("読書会2nd","#") 
+    p: +item-link("読書会","#")
+    p: +item-link("読書会2nd","#")
   li
     h2 #dojin
-    +item-link("闇鍋本","./together.html")
+    p: +item-link("闇鍋本","./together.html")
   li
     h2 #profile
-    +item-link("メンバーの一覧","#")
+    p: +item-link("メンバーの一覧","#")
 
 .twitter
   a(href="https://twitter.com/search?vertical=default&q=%23kosen14s&src=typd").twitter-tag-link #kosen14s
