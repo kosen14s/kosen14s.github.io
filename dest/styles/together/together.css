@@ -399,7 +399,7 @@ a {
     color: white; }
 
 ::selection {
-  background: transparent; }
+  background: #6ab1ad; }
 
 .backgraund-1 {
   position: fixed;
@@ -538,6 +538,8 @@ h2 {
 
 .about {
   margin-top: 120px; }
+  .about p {
+    line-height: 2.8rem; }
   .about .site-link-14s {
     display: block;
     font-size: 2.3rem;
