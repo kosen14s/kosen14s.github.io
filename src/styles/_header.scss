@@ -30,7 +30,6 @@ header {
 
     img {
       width: 18rem;
-      padding-right: .5rem;
     }
     h1 {
       margin: 0;
@@ -65,5 +64,25 @@ header {
   }
   .header-under_open {
     transform: translateX(-100vw);
+  }
+}
+@media(max-width: 620px){
+  header {
+    .logo {  
+      img {
+        width: 13rem;
+      }
+      h1 {
+        margin: 0;
+        font-size: 5rem;
+        font-kerning: normal;
+        height: 6rem;
+      }
+      p {
+        margin: 0;
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+      }
+    }
   }
 }
