@@ -57,7 +57,7 @@ main {
           bottom: 0;
           left: 0;
           width: 0;
-          height: 5rem;
+          height: 100%;
           z-index: -2;
           transition: .5s $bezier-fast-ease-out;
         }
@@ -67,7 +67,7 @@ main {
           bottom: 0;
           left: 0;
           width: 0;
-          height: 5rem;
+          height: 100%;
           z-index: -1;
           opacity: 0;
           transition: .5s .1s $bezier-fast-ease-out;
@@ -176,6 +176,7 @@ main {
 @media(max-width: 920px) {
   main{
     .contents {
+      margin-top: 100px;
       li {
         .item {
           text-align: center;
