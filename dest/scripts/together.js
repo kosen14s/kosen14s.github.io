@@ -90,7 +90,7 @@ function detailOpen(content_num) {
   contents[content_num-1].author.forEach(author => {
     const authorDOM = document.createElement('div');
     authorDOM.classList.add('detail-link');
-    authorDOM.innerHTML = `<a href="${author.link}"><img class="author-icon" src="./../images/icon/${author.icon}" alt="icon"></a><a href="${author.link}"><p class="detail-value">${author.name}</p></a>`
+    authorDOM.innerHTML = `<a href="${author.link}"><img class="author-icon" src="./images/icon/${author.icon}" alt="icon"></a><a href="${author.link}"><p class="detail-value">${author.name}</p></a>`
     link_block.appendChild(authorDOM);
   })
 
