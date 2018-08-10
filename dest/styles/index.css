@@ -304,6 +304,10 @@ a:link {
 a:visited {
   color: black; }
 
+@font-face {
+  font-family: 'GN-きんいろサンセリフ';
+  src: url(./../../fonts/GN-Kin-iro_SansSerif_1.ttf); }
+
 .spr {
   background-color: #F4A7B9 !important; }
   .spr::before {
@@ -392,27 +396,34 @@ main {
   position: relative;
   overflow-y: auto; }
   main .contents {
-    margin: 0;
-    padding: 80px;
-    padding-top: 120px;
-    padding-left: 120px;
+    margin: 10%;
+    margin-top: 200px;
+    padding: 0;
     max-width: 100%;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
     main .contents li {
       display: inline-block;
-      width: 40%;
+      min-width: 200px;
+      width: 35%;
       min-height: 200px;
       margin: 10px;
-      padding: 5px;
+      padding: 0;
       padding-left: 20px; }
       main .contents li p {
         margin: 0; }
+        main .contents li p:last-child {
+          margin-bottom: 30px; }
+      main .contents li .nolink:hover {
+        text-decoration: line-through; }
       main .contents li .item {
         display: block;
-        padding: 1.5rem 0;
-        padding-left: 2rem;
+        padding: 1.5rem 3rem;
         z-index: 0; }
       main .contents li .item-link {
+        padding: 1.5rem 3rem;
         text-decoration-line: none;
         position: relative;
         transition: .2s ease-in-out; }
@@ -447,16 +458,16 @@ main {
     display: block;
     position: fixed;
     height: 50px;
-    bottom: 20px;
-    right: 20px; }
+    bottom: 40px;
+    right: 40px; }
     main .twitter .twitter-tag-link {
       display: block;
       position: fixed;
-      right: 65px;
-      bottom: 20px;
+      right: 85px;
+      bottom: 40px;
       width: auto;
       height: 50px;
-      padding: 0 20px;
+      padding: 0 40px;
       text-align: center;
       line-height: 51px;
       font-size: 2.3rem;
@@ -477,17 +488,17 @@ main {
       main .twitter .tweet-button::after {
         content: "";
         position: fixed;
-        bottom: 20px;
+        bottom: 40px;
         right: 0px;
         height: 50px;
-        width: 45px;
+        width: 65px;
         background: white;
         z-index: -1; }
       main .twitter .tweet-button::before {
         content: "ハッシュタグでツイート";
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 40px;
+        right: 40px;
         height: 50px;
         transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98);
         background: #55acee;
@@ -502,6 +513,56 @@ main {
         border-radius: 25px; }
       main .twitter .tweet-button:hover::before {
         transform: translateX(0); }
+
+@media (max-width: 1000px) {
+  main {
+    margin: 0;
+    width: 100%; }
+    main .contents li {
+      width: 40%; } }
+
+@media (max-width: 920px) {
+  main .contents li .item {
+    text-align: center;
+    margin: 4px 0; }
+  main .contents li .item-link {
+    text-align: center;
+    margin: 4px 0; }
+    main .contents li .item-link::before {
+      width: 100%;
+      height: 1rem;
+      opacity: 1; }
+  main .twitter {
+    position: initial;
+    bottom: 0;
+    right: 0;
+    text-align: center; }
+    main .twitter .twitter-tag-link {
+      position: initial; }
+    main .twitter .tweet-button {
+      margin: 5px auto;
+      margin-bottom: 100px;
+      display: block;
+      position: relative;
+      padding-left: calc(16rem + 50px); }
+      main .twitter .tweet-button img {
+        position: relative;
+        z-index: 1; }
+      main .twitter .tweet-button::after {
+        position: absolute;
+        bottom: 0; }
+      main .twitter .tweet-button::before {
+        position: absolute;
+        bottom: 0;
+        right: -1.8rem;
+        width: calc(16rem + 50px);
+        z-index: 0;
+        transform: translateX(0); } }
+
+@media (max-width: 620px) {
+  main .contents li {
+    width: 50%;
+    padding: 0; } }
 
 .header-under {
   position: fixed;
@@ -548,6 +609,17 @@ header {
 .header-under_open {
   width: 50vw; }
 
+@media (max-width: 1000px) {
+  .header-under {
+    transition: 1s 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+  header {
+    transition: 1s cubic-bezier(0.17, 0.07, 0.02, 0.98);
+    z-index: 2; }
+  .header_open {
+    transform: translateX(-100vw); }
+  .header-under_open {
+    transform: translateX(-100vw); } }
+
 .menu-button {
   position: fixed;
   top: 20px;
@@ -562,7 +634,7 @@ header {
   transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98);
   z-index: 100; }
   .menu-button .menu-icon {
-    margin: 31px auto;
+    margin: 36 auto;
     width: 50px;
     height: 8px;
     background-color: white;
@@ -606,6 +678,40 @@ header {
     left: 14.84924px;
     width: 37.69848px;
     transform: rotate(90deg); }
+
+@media (max-width: 920px) {
+  .menu-button {
+    width: 100px;
+    height: 100px; }
+    .menu-button .menu-icon {
+      margin: 45px auto;
+      width: 60px;
+      height: 10px;
+      border-radius: 5px; }
+      .menu-button .menu-icon::before {
+        top: -25px;
+        width: 60px;
+        height: 10px;
+        border-radius: 5px; }
+      .menu-button .menu-icon::after {
+        bottom: -25px;
+        left: 0;
+        width: 60px;
+        height: 10px;
+        border-radius: 5px; }
+  .menu-button_open .menu-icon {
+    width: 80.71068px;
+    transform: rotate(45deg); }
+    .menu-button_open .menu-icon::before {
+      top: -17.67767px;
+      left: 17.67767px;
+      width: 45.35534px;
+      transform: rotate(90deg); }
+    .menu-button_open .menu-icon::after {
+      bottom: -17.67767px;
+      left: 17.67767px;
+      width: 45.35534px;
+      transform: rotate(90deg); } }
 
 .season {
   position: fixed;

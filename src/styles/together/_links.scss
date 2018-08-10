@@ -1,0 +1,19 @@
+.links {
+  .link-box-large {
+    display: block;
+    width: 500px;
+    margin: 20px auto;
+    transition: .3s $bezier-fast-ease-out;
+    &:hover {
+      box-shadow:0 0 60px 0 $techbookfest;
+    }
+  }
+}
+
+@media(max-width: 620px) {
+  .links {
+    .link-box-large {
+      width: 100%;
+    }
+  }
+}

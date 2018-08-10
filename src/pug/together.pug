@@ -1,22 +1,166 @@
 doctype html
 html(lang="ja")
-  head
+  head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#")
     meta(charset="utf-8")
-    link(rel="stylesheet", href="../styles/together.css")
-    title kosen14s #dojin TOGETHER
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    link(rel="stylesheet", href="./styles/together/together.css")
+    title TOGETHER | kosen14s #dojin
+    link(href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css", rel="stylesheet")
+    link(href="../fonts/GN-Kin-iro_SansSerif_1.ttf", rel="stylesheet")
+    meta(property="og:locale", content="ja_JP")
+    meta(property="fb:app_id", content="")
+    meta(name="twitter:card", content="summary_large_image")
+    meta(property="og:title", content="現役高専生の闇鍋本「TOGETHER」技術書典5に出典！")
+    meta(property="og:description", content="2014年度高専入学生のゆるふわ団体、kosen14sが闇鍋同人本「TOGETHER」を制作中。技術書典5へ出典決定！ 噂のプログラミング言語かるたやGitコマンドかるたも頒布予定です！")
+    meta(property="og:image", content="./images/techbookfest5/OGP.png")
+    meta(property="og:site_name", content="kosen14s")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="http://kosen14s.github.io/together.html")
 
   body
-    header.header
+    .backgraund-1
+    .backgraund-2
+    .backgraund-cover
 
-  main
-    .book-view
+    header.header.container
+      .sub-title kosen14s 闇鍋同人本
+      img(src="./images/techbookfest5/TOGETHER.svg", alt="タイトル：TOGETHER").title
+      .books
+        img(src="./images/techbookfest5/TOGETHER1.png", alt="TOGETHER1 表紙イメージ").book-1
+        img(src="./images/techbookfest5/TOGETHER2.png", alt="TOGETHER2 表紙イメージ").book-2
 
-    .link
+    main
+      .links.container
+        a(href="https://techbookfest.org/event/tbf05")
+          img(src="./images/techbookfest5/techbookfest5.png", alt="技術書展５のサイトへ").link-box-large
+        img(src="./images/techbookfest5/pdf-comming.png", alt="PDF版 Comming soon!").link-box-large
+        .share-sns
+          a(href="http://twitter.com/share?url=http://kosen14s.github.io/together.html&text=現役高専生の闇鍋同人本「TOGETHER」技術書典5に出典！&hashtags=kosen14s", target="_blank")
+            img(src="./images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
+          a(href="http://www.facebook.com/share.php?u=http://kosen14s.github.io/together.html", onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;")
+            img(src="./images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
 
-    .about
+      .about.container
+        h1 kosen14s とは
+        p kosen14s は、2014年度に高専という環境に若くして飛び込んだ最高のオタク達による最高の団体です。
+        | プロコニスト、ロボコニストはもちろん、デザイナーやエンジニア、絵師などの様々な活動をしている、
+        | 個性豊かなメンバーが参加しています。時々集まってはLTをしたり、読書会をしたり、開発合宿をしたり、
+        | のびのびと活動しています。
+        p 本誌ではそんな個性豊かな kosen14s メンバーの活動や趣味の一端をぎゅぎゅっと集めてみました。
+        | 各メンバーのアクの強さが隠しきれない闇鍋のような本となっております（誰得）。
+        p そんなお鍋のパンチある出汁をご賞味いただければ幸いです。
+        .site-link-14s: a(href="./") kosen14s サイトへ 🔗
 
-    
+      .separator-line.container
+
+      .contents.container
+        h1 内容
+        .contents-wrapper
 
 
+          .contents-book
+            img(src="./images/techbookfest5/design-prog.svg", alt="①デザインとプログラミングの鍋").book-title
+            
+            h2.pink Design
+            ul.content 
+              li: button(type="button", onclick="detailOpen(1)")#content-1 ロボコンで使われている安全なUI
+              li: button(type="button", onclick="detailOpen(2)")#content-2 HIの観点から理屈で分かるデザイン
+              li: button(type="button", onclick="detailOpen(3)")#content-3 デザインの二面性
+            h2.pink Programing
+            ul.content
+              li: button(type="button", onclick="detailOpen(4)")#content-4 CSSアニメーションの話
+              li: button(type="button", onclick="detailOpen(5)")#content-5 未定
+              li: button(type="button", onclick="detailOpen(6)")#content-6 未定
+              li: button(type="button", onclick="detailOpen(7)")#content-7 Rubyできかいがくしゅ～
+              li: button(type="button", onclick="detailOpen(8)")#content-8 SVG仕様書読んでみた
+              li: button(type="button", onclick="detailOpen(9)")#content-9 omronのPLC制御コンテスト技術キャンプの話
 
-    script(src="../scripts/together.js")
+          .contents-book
+            img(src="./images/techbookfest5/math-elec.svg", alt="②数学と電気の鍋").book-title
+
+            h2.green Math
+            ul.content
+              li: button(type="button", onclick="detailOpen(10)")#content-10 SATソルバについて
+              li: button(type="button", onclick="detailOpen(11)")#content-11 巨大数
+            h2.green Electric
+            ul.content
+              li: button(type="button", onclick="detailOpen(12)")#content-12 電気科オタクの見る世界
+              li: button(type="button", onclick="detailOpen(13)")#content-13 うさみみでもわかる電気工学
+              li: button(type="button", onclick="detailOpen(14)")#content-14 vvvfはエモい！
+            h2.green Others
+            ul.content
+              li: button(type="button", onclick="detailOpen(15)")#content-15 ラーメン &amp;&amp; 鉄道配線
+              li: button(type="button", onclick="detailOpen(16)")#content-16 Juliamoで乗り切ろう高専生活
+
+        #contents-detail.contents-detail
+          h1 詳細
+          .button-wrapper
+            button(type="button", onclick="detailBack()").detail-close ← Back
+            button(type="button", onclick="detailClose()").detail-close × Close
+            button(type="button", onclick="detailNext()").detail-close Next →
+          h3#detail-chapter
+          .detail-block#link-block
+            p.detail-property Author :
+            .detail-link#detail-link
+              a#author-link-img
+                img(src="", alt="icon")#author-icon.author-icon
+              a#author-link-txt: p#detail-author.detail-value null
+          .detail-block
+            p.detail-property Category :
+            p#detail-category.detail-value null
+          p#detail-text.detail-text null
+
+
+      .separator-line.container
+
+      .info.container
+        h1 頒布情報
+        p 技術書展5に出典する商品一覧です。
+        .info-wrapper
+          .property 商品名
+          .values
+            .value
+              .product TOGETHER❶ デザインとプログラミングの鍋
+              .price 値段検討中
+            .value
+              .product TOGETHER❷ 数学と電気の鍋
+              .price 値段検討中
+            a(href="http://yamasy.info/programming-karuta/").value
+              .product プログラミング言語かるた 🔗
+              .price 3,000円
+            a(href="https://whiims.booth.pm/items/799138").value
+              .product プログラミング言語かるたメイキングブック 🔗
+              .price 500円（PDF:300円）
+            a(href="https://whiims.github.io/git-karuta.html").value
+              .product Gitコマンドかるた（解説書付き）🔗
+              .price 2,500円
+            a(href="https://whiims.booth.pm/items/895006").value 
+              .product オリジナル"Hello world"Tシャツ 🔗
+              .price 値段検討中
+            a(href="https://whiims.booth.pm/items/813108").value
+              .product プログラマのためのマスキングテープ 🔗
+              .price 値段検討中
+        .info-wrapper
+          .property サークル名
+          .values
+            a(href="./").value-mono kosen14s 🔗
+        .info-wrapper
+          .property 代表
+          .values
+            a(href="https://twitter.com/tech0970").value-mono Cilvia @tech0970 🔗
+        .info-wrapper
+          .property 著者
+          .values: .value-mono 各著者名は上部「内容」の各話タイトルをクリックすると表示されます。
+
+      footer.container
+        .share-sns
+          a(href="http://twitter.com/share?url=http://kosen14s.github.io/together.html&text=現役高専生の闇鍋同人本「TOGETHER」技術書展5&hashtags=kosen14s", target="_blank")
+            img(src="./images/techbookfest5/tw-share.png", alt="つぶやく").link-box-tw
+          a(href="http://www.facebook.com/share.php?u=http://kosen14s.github.io/together.html", onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;")
+            img(src="./images/techbookfest5/fb-share.png", alt="シェア").link-box-fb
+        .logo14s
+          a(href="./")
+            img(src="./images/kosen14s-logo.svg", alt="kosen14s-logo")
+            p kosen14s
+
+    script(src="./scripts/together.js")

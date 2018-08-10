@@ -6,8 +6,10 @@ $light-gray: #ccc;
 $dark-brown: #4c3f38;
 $light-brown: #EEE5DE;
 $light-blue: #0BB3C7;
+
 $official-twitter: #55acee;
 $official-facebook: #455a9e;
+
 $spring: #F4A7B9;
 $spring-sub: #F4D0D9;
 $summer: #47b2c5;
@@ -17,10 +19,23 @@ $autumn-sub: #F9D7A0;
 $winter: #336774;
 $winter-sub: #91ABAF;
 
+$together-1: #ff619b;
+$together-2: #7cb639;
+$techbookfest: #4CAF50;
+$dark-skyblue: #000e13;
+$light-skyblue: #6ab1ad;
+$light-gray: #ddd;
+
 $primary-font: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 $rounded-font: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 $noto-font: "Noto Sans Japanese";
 $code-font: Ricty;
+
+@font-face {
+  font-family: 'GN-きんいろサンセリフ';
+  src: url(./../../fonts/GN-Kin-iro_SansSerif_1.ttf);
+}
+$kiniro-sansserif: "GN-きんいろサンセリフ";
 
 $font-color-brown: $dark-brown;
 $font-color-black: $black;
