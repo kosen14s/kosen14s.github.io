@@ -7,7 +7,7 @@
         "link":"https://twitter.com/tech0970",
         "icon":"cilvia.jpg"
       }],
-    "detail": "詳しい説明を書く。"
+    "detail": "デザインは様々なところで活躍しています。それは、ロボコンでも変わりはありません。今回はロボコンの中でも特に重要な、安全対策のためのデザイン・UIについてお話しようと思います。"
   },
   {
     "title": "HIの観点から理屈で分かるデザイン",
@@ -142,21 +142,21 @@
       },
       {
         "name":"cilvia",
-        "link":"",
-        "icon":""  
+        "link":"https://twitter.com/tech0970",
+        "icon":"cilvia.jpg"  
       }
     ],
     "detail": ""
   },
   {
-    "title": "vvvfはエモい！",
+    "title": "VVVFはエモい！",
     "category": "Electric",
     "author": [{
       "name":"cilvia",
-      "link":"",
-      "icon":""
+      "link":"https://twitter.com/tech0970",
+      "icon":"cilvia.jpg"
     }],
-    "detail": ""
+    "detail": "VVVFって知ってるかな？電車に乗っていると聞こえる、ヴィィイイン↑ヴィィイイイイイイイイン↑イイイイイイイイン↑↑↑っていうあの音を発生させている原因なんだ。なぜこんな音がするのかを考察しながら、どうやって電車が動いているかを一緒に勉強しよう！！！！"
   },
   {
     "title": "ラーメン && 鉄道配線",
