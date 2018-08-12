@@ -94,10 +94,10 @@
     "category": "Math",
     "author": [{
       "name":"shinkwhek",
-      "link":"",
-      "icon":""
+      "link":"https://twitter.com/shinkwhek",
+      "icon":"shinkwhek.png"
     }],
-    "detail": ""
+    "detail": "SATソルバについて全く知らない人が、アルゴリズムを理解できて実装もできて応用もできるようなものを目指します"
   },
   {
     "title": "巨大数",
