@@ -50,14 +50,14 @@
     "detail": ""
   },
   {
-    "title": "未定",
+    "title": "ChiselでCPUを作ってみる",
     "category": "Programing",
     "author": [{
       "name":"eliza",
-      "link":"",
-      "icon":""
+      "link":"https://twitter.com/Eliza_0x",
+      "icon":"eliza0x.jpg"
     }],
-    "detail": ""
+    "detail": "Chisel/ScalaでCPUをFPGA上に一から作っていく過程を綴った日報形式の記事です。色んな失敗や気づきを詰め込んでいるので、多分皆さんに楽しんでいただけるんじゃないかと思います。"
   },
   {
     "title": "Rubyできかいがくしゅ～",
