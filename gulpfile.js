@@ -8,7 +8,7 @@ const browserSync = require('browser-sync');
 
 const reload = browserSync.reload;
 const BROWSER_SYNC_OPTIONS = {
-    server: ['src', 'dest'],
+    server: ['src', 'docs'],
     port: 3000,
     open: false
 };
@@ -21,7 +21,7 @@ gulp.task('sass', function () {
     .pipe(sass({
       pretty: true
     }))
-    .pipe(gulp.dest('dest'));
+    .pipe(gulp.dest('docs'));
 });
 
 gulp.task('scss', ['sass'])
@@ -34,7 +34,7 @@ gulp.task('jade', () => {
   .pipe(jade({
     pretty: true
   }))
-  .pipe(gulp.dest('dest'));
+  .pipe(gulp.dest('docs'));
 });
 
 gulp.task('pug', () => {
@@ -45,7 +45,7 @@ gulp.task('pug', () => {
   .pipe(pug({
     pretty: true
   }))
-  .pipe(gulp.dest('dest'));
+  .pipe(gulp.dest('docs'));
 });
 
 gulp.task('build', ['sass', 'jade', 'pug'])
