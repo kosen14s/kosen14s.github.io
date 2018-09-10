@@ -40,16 +40,6 @@
     "detail": ""
   },
   {
-    "title": "情報系なら知っておきたい楕円曲線暗号入門",
-    "category": "Programing",
-    "author": [{
-      "name":"ptr-yudai",
-      "link":"https://twitter.com/ptrYudai",
-      "icon":"ptr-yuda.jpg"
-    }],
-    "detail": "楕円曲線上での演算から解読方法までを入門者向けに解説します。代数学の難しい部分は取り除き、高校数学で理解できる内容にしています。"
-  },
-  {
     "title": "ChiselでCPUを作ってみる",
     "category": "Programing",
     "author": [{
@@ -70,17 +60,17 @@
     "detail": ""
   },
   {
-    "title": "SVG仕様書読んでみた",
+    "title": "OMRON PLC制御技術キャンプの体験談",
     "category": "Programing",
     "author": [{
-      "name":"やましー",
-      "link":"https://twitter.com/yamasy1549",
-      "icon":"yamasy1549.png"
+      "name":"f_respectful12",
+      "link":"https://twitter.com/f_respectful12",
+      "icon":"f_respectful12.png"
     }],
     "detail": ""
   },
   {
-    "title": "OMRON PLC制御技術キャンプの体験談",
+    "title": "さぁ 深層学習を始めよう！",
     "category": "Programing",
     "author": [{
       "name":"f_respectful12",
@@ -108,6 +98,16 @@
       "icon":""
     }],
     "detail": ""
+  },
+  {
+    "title": "情報系なら知っておきたい楕円曲線暗号入門",
+    "category": "Math",
+    "author": [{
+      "name":"ptr-yudai",
+      "link":"https://twitter.com/ptrYudai",
+      "icon":"ptr-yuda.jpg"
+    }],
+    "detail": "楕円曲線上での演算から解読方法までを入門者向けに解説します。代数学の難しい部分は取り除き、高校数学で理解できる内容にしています。"
   },
   {
     "title": "電気科オタクの見る世界",

@@ -95,7 +95,7 @@ function detailOpen(content_num) {
   })
 
   detail_category.textContent = contents[content_num-1].category
-  if (content_num < 10) {
+  if (content_num < 9) {
     detail_category.style.color = '#ff619b';
   }else {
     detail_category.style.color = '#7cb639';
