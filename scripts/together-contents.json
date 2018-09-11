@@ -27,7 +27,7 @@
       "link":"https://twitter.com/chige12_",
       "icon":"Chige.png"
     }],
-    "detail": ""
+    "detail": "高専カンファレンス東京で発表した内容をより詳しく扱いたいと思います。デザインという言葉が持つ二面性に惑わされる話です。"
   },
   {
     "title": "CSSアニメーションの話",
@@ -37,7 +37,7 @@
       "link":"https://twitter.com/chige12_",
       "icon":"Chige.png"
     }],
-    "detail": ""
+    "detail": "CSSでアニメーションを行う基礎知識の解説と、実際に使用した例をいくつか紹介します。"
   },
   {
     "title": "ChiselでCPUを作ってみる",
@@ -124,7 +124,7 @@
         "icon":""  
       }
     ],
-    "detail": ""
+    "detail": "電気科の僕たちが日常生活の中で気づいた面白い（と思う）電気にまつわる概念を紹介します。「コレって要するにアレじゃん？」"
   },
   {
     "title": "うさみみでもわかる電気工学",
@@ -144,9 +144,14 @@
         "name":"cilvia",
         "link":"https://twitter.com/tech0970",
         "icon":"cilvia.jpg"  
+      },
+      {
+        "name":"kyumina",
+        "link":"",
+        "icon":""  
       }
     ],
-    "detail": ""
+    "detail": "電気工学の基礎知識をざっくり解説します。読むと分かった気になれます。電気やりたいけど躓いた方、勉強途中の方は参考になるかも？"
   },
   {
     "title": "VVVFはエモい！",
