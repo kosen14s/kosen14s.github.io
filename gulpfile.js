@@ -26,17 +26,6 @@ gulp.task('sass', function () {
 
 gulp.task('scss', ['sass'])
 
-gulp.task('jade', () => {
-  return gulp.src(['src/jade/*.jade', '!src/jade/_*.jade'])
-  .pipe(plumber({
-    errorHandler: notify.onError('<%= error.message %>')
-  }))
-  .pipe(jade({
-    pretty: true
-  }))
-  .pipe(gulp.dest('./'));
-});
-
 gulp.task('pug', () => {
   return gulp.src(['src/pug/*.pug', '!src/pug/_*.pug'])
   .pipe(plumber({
@@ -48,12 +37,11 @@ gulp.task('pug', () => {
   .pipe(gulp.dest('./'));
 });
 
-gulp.task('build', ['sass', 'jade', 'pug'])
+gulp.task('build', ['sass', 'pug'])
 
 gulp.task('watch', () => {
   browserSync(BROWSER_SYNC_OPTIONS);
 
   gulp.watch('src/styles/**/*.scss', ['sass', reload]);
-  gulp.watch('src/jade/*.jade', ['jade', reload]);
   gulp.watch('src/pug/*.pug', ['pug', reload]);
 });
