@@ -60,16 +60,6 @@
     "detail": "えｗRubyで機械学習っておまｗｗPythonでよくねｗ"
   },
   {
-    "title": "OMRON PLC制御技術キャンプの体験談",
-    "category": "Programing",
-    "author": [{
-      "name":"f_respectful12",
-      "link":"https://twitter.com/f_respectful12",
-      "icon":"f_respectful12.png"
-    }],
-    "detail": ""
-  },
-  {
     "title": "さぁ 深層学習を始めよう！",
     "category": "Programing",
     "author": [{
@@ -182,6 +172,17 @@
       "icon":"theoldmoon0602.png"
     }],
     "detail": "Ĉu vi povas paroli la lingvon \"Juliamo\"?"
+
+  },
+  {
+    "title": "高専ロボコンでチームリーダーをした記録",
+    "category": "Others",
+    "author": [{
+      "name":"f_respectful12",
+      "link":"https://twitter.com/f_respectful12",
+      "icon":"f_respectful12.png"
+    }],
+    "detail": ""
 
   }
 ]
