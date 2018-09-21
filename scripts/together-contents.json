@@ -3,7 +3,7 @@
     "title": "ロボコンで使われている安全なUI",
     "category": "Design",
     "author": [{
-        "name":"Cilvia",
+        "name":"Cilvia333",
         "link":"https://twitter.com/tech0970",
         "icon":"cilvia.jpg"
       }],
@@ -30,6 +30,16 @@
     "detail": "「センスがないと良いデザインはできないのでしょうか？　いいえ、センスがなければ理屈を極めればいいじゃない！」センスがないと嘆くあなたに読んでほしい、筆者が普段気をつけているポイントを言語化した記事です。"
   },
   {
+    "title": "J言語について",
+    "category": "Programing",
+    "author": [{
+      "name":"theoldmoon0602",
+      "link":"https://twitter.com/theoldmoon0602",
+      "icon":"theoldmoon0602.png"
+    }],
+    "detail": "CSSでアニメーションを行う基礎知識の解説と、実際に使用した例をいくつか紹介します。"
+  },
+  {
     "title": "CSSアニメーションの話",
     "category": "Programing",
     "author": [{
@@ -40,14 +50,14 @@
     "detail": "CSSでアニメーションを行う基礎知識の解説と、実際に使用した例をいくつか紹介します。"
   },
   {
-    "title": "ChiselでCPUを作ってみる",
+    "title": "ざっくり理解:ニューラルネットワーク",
     "category": "Programing",
     "author": [{
-      "name":"eliza",
-      "link":"https://twitter.com/Eliza_0x",
-      "icon":"eliza0x.jpg"
+      "name":"Shuft鯖",
+      "link":"https://twitter.com/_shuft",
+      "icon":"shuft.png"
     }],
-    "detail": "Chisel/ScalaでCPUをFPGA上に一から作っていく過程を綴った日報形式の記事です。色んな失敗や気づきを詰め込んでいるので、多分皆さんに楽しんでいただけるんじゃないかと思います。"
+    "detail": ""
   },
   {
     "title": "Rubyできかいがくしゅ～",
@@ -80,7 +90,7 @@
     "detail": "SATソルバについて全く知らない人が、アルゴリズムを理解できて実装もできて応用もできるようなものを目指します"
   },
   {
-    "title": "巨大数",
+    "title": "宇宙とか超どーでもよくなる巨大数",
     "category": "Math",
     "author": [{
       "name":"ishikazu",
@@ -90,7 +100,7 @@
     "detail": ""
   },
   {
-    "title": "情報系なら知っておきたい楕円曲線暗号入門",
+    "title": "楕円曲線暗号入門",
     "category": "Math",
     "author": [{
       "name":"ptr-yudai",
@@ -111,7 +121,7 @@
       {
         "name":"kyumina",
         "link":"",
-        "icon":""  
+        "icon":""
       }
     ],
     "detail": "電気科の僕たちが日常生活の中で気づいた面白い（と思う）電気にまつわる概念を紹介します。「コレって要するにアレじゃん？」"
@@ -121,24 +131,14 @@
     "category": "Electric",
     "author": [
       {
-        "name":"やましー",
-        "link":"https://twitter.com/yamasy1549",
-        "icon":"yamasy1549.png"
-      },
-      {
-        "name":"ちげ",
-        "link":"https://twitter.com/chige12_",
-        "icon":"Chige.png"  
-      },
-      {
-        "name":"cilvia",
-        "link":"https://twitter.com/tech0970",
-        "icon":"cilvia.jpg"  
-      },
-      {
         "name":"kyumina",
         "link":"",
-        "icon":""  
+        "icon":""
+      },
+      {
+        "name":"Cilvia333",
+        "link":"https://twitter.com/tech0970",
+        "icon":"cilvia.jpg"
       }
     ],
     "detail": "電気工学の基礎知識をざっくり解説します。読むと分かった気になれます。電気やりたいけど躓いた方、勉強途中の方は参考になるかも？"
@@ -147,17 +147,17 @@
     "title": "VVVFはエモい！",
     "category": "Electric",
     "author": [{
-      "name":"cilvia",
+      "name":"Cilvia333",
       "link":"https://twitter.com/tech0970",
       "icon":"cilvia.jpg"
     }],
     "detail": "VVVFって知ってるかな？電車に乗っていると聞こえる、ヴィィイイン↑ヴィィイイイイイイイイン↑イイイイイイイイン↑↑↑っていうあの音を発生させている原因なんだ。なぜこんな音がするのかを考察しながら、どうやって電車が動いているかを一緒に勉強しよう！！！！"
   },
   {
-    "title": "ラーメン && 鉄道配線",
+    "title": "鉄道配線略図入門",
     "category": "Others",
     "author": [{
-      "name":"zeropon",
+      "name":"zeroぽん",
       "link":"",
       "icon":""
     }],
@@ -172,7 +172,6 @@
       "icon":"theoldmoon0602.png"
     }],
     "detail": "Ĉu vi povas paroli la lingvon \"Juliamo\"?"
-
   },
   {
     "title": "高専ロボコンでチームリーダーをした記録",
@@ -183,7 +182,5 @@
       "icon":"f_respectful12.png"
     }],
     "detail": ""
-
   }
 ]
-
