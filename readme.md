@@ -1,7 +1,7 @@
-# 新サイト制作
+# 新サイト
 [kosen14s.github.io](http://kosen14s.github.io/) のリニューアル
 
-## メンバーのデータの置き方
+## TOGETHERのデータの置き方
 
 ### 1. アイコンを置く
   `images/icon` のフォルダ中に、お好きな自分のアイコン画像を置く。
