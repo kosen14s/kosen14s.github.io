@@ -60,16 +60,6 @@
     "detail": ""
   },
   {
-    "title": "Rubyできかいがくしゅ～",
-    "category": "Programming",
-    "author": [{
-      "name":"やましー",
-      "link":"https://twitter.com/yamasy1549",
-      "icon":"yamasy1549.png"
-    }],
-    "detail": "えｗRubyで機械学習っておまｗｗPythonでよくねｗ"
-  },
-  {
     "title": "さぁ 深層学習を始めよう！",
     "category": "Programming",
     "author": [{
@@ -78,6 +68,16 @@
       "icon":"f_respectful12.png"
     }],
     "detail": ""
+  },
+  {
+    "title": "Rubyできかいがくしゅ～",
+    "category": "Programming",
+    "author": [{
+      "name":"やましー",
+      "link":"https://twitter.com/yamasy1549",
+      "icon":"yamasy1549.png"
+    }],
+    "detail": "えｗRubyで機械学習っておまｗｗPythonでよくねｗ"
   },
   {
     "title": "SATソルバについて",
