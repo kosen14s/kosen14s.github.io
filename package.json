@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "build": "gulp build"
   },
   "devDependencies": {
     "browser-sync": "^2.24.5",
