@@ -646,7 +646,8 @@ h2 {
       margin-right: 1rem;
       background: #6ab1ad; }
   .contents .contents-detail .detail-text {
-    margin-left: 30px; }
+    margin-left: 30px;
+    line-height: 1.5; }
 
 .contents .detail-open {
   display: inherit; }
