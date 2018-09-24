@@ -153,6 +153,11 @@
       }
     }
     .contents-detail {
+      top: 10vh;
+      bottom: 10vh;
+      left: 10vw;
+      right: 10vw;
+      padding: 20px 40px;
       .detail-block{
         margin-left: 0;
         .detail-property-author {
@@ -183,11 +188,11 @@
     }
 
     .contents-detail {
-      top: 10vh;
-      bottom: 10vh;
-      left: 10vw;
-      right: 10vw;
-      padding: 20px 40px;
+      top: 4vw;
+      bottom: 4vw;
+      left: 4vw;
+      right: 4vw;
+      padding: 20px 20px;
       .button-wrapper {
         button {
           padding: 10px 5px;
