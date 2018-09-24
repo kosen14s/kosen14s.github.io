@@ -585,6 +585,18 @@ h2 {
           filter: drop-shadow(0 0 10px white);
           text-decoration: underline; }
 
+.contents .contents-detail-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 10;
+  display: none; }
+
 .contents .contents-detail {
   display: none;
   position: fixed;
@@ -597,7 +609,8 @@ h2 {
   bottom: 20vh;
   left: 20vw;
   right: 20vw;
-  padding: 20px 40px; }
+  padding: 20px 40px;
+  z-index: 100; }
   .contents .contents-detail h1 {
     width: 15rem;
     display: inline-block;
@@ -649,6 +662,9 @@ h2 {
     margin-left: 30px;
     line-height: 1.5; }
 
+.contents .detail-back-open {
+  display: block; }
+
 .contents .detail-open {
   display: inherit; }
 
@@ -656,26 +672,32 @@ h2 {
   .contents .contents-wrapper .contents-book {
     margin-top: 30px;
     width: 100%; }
-  .contents .contents-detail .detail-block {
-    margin-left: 0; }
-    .contents .contents-detail .detail-block .detail-property-author {
-      width: 100%; }
-    .contents .contents-detail .detail-block .detail-link {
-      margin-bottom: 8px; }
-  .contents .contents-detail h3 {
-    margin-left: 0; }
-  .contents .contents-detail .detail-text {
-    margin-left: 0; } }
-
-@media (max-width: 620px) {
-  .contents .contents-wrapper .contents-book img {
-    height: 4rem; }
   .contents .contents-detail {
     top: 10vh;
     bottom: 10vh;
     left: 10vw;
     right: 10vw;
     padding: 20px 40px; }
+    .contents .contents-detail .detail-block {
+      margin-left: 0; }
+      .contents .contents-detail .detail-block .detail-property-author {
+        width: 100%; }
+      .contents .contents-detail .detail-block .detail-link {
+        margin-bottom: 8px; }
+    .contents .contents-detail h3 {
+      margin-left: 0; }
+    .contents .contents-detail .detail-text {
+      margin-left: 0; } }
+
+@media (max-width: 620px) {
+  .contents .contents-wrapper .contents-book img {
+    height: 4rem; }
+  .contents .contents-detail {
+    top: 4vw;
+    bottom: 4vw;
+    left: 4vw;
+    right: 4vw;
+    padding: 20px 20px; }
     .contents .contents-detail .button-wrapper button {
       padding: 10px 5px; } }
 

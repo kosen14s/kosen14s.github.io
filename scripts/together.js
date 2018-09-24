@@ -8,6 +8,7 @@ let detail_open = false;
 let nowContentsNum = 0;
 
 const contents_detail = document.getElementById("contents-detail");
+const contents_detail_back = document.getElementById("contents-detail-back");
 const link_block = document.getElementById("link-block");
 const detail_chapter = document.getElementById("detail-chapter");
 const detail_category = document.getElementById("detail-category");
@@ -63,6 +64,7 @@ function detailNext() {
 function detailClose() {
   if(detail_open) {
     contents_detail.classList.remove('detail-open');
+    contents_detail_back.classList.remove('detail-back-open');
     detail_open = false;
   }
 }
@@ -73,6 +75,7 @@ function detailClose() {
 function detailOpen(content_num) {
   if(detail_open == false) {
     contents_detail.classList.add('detail-open');
+    contents_detail_back.classList.add('detail-back-open');
     detail_open = true;
   }
 
