@@ -45,6 +45,18 @@
 }
 
 .contents {
+  .contents-detail-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+  }
   .contents-detail {
     display: none;
     position: fixed;
@@ -58,6 +70,7 @@
     left: 20vw;
     right: 20vw;
     padding: 20px 40px;
+    z-index: 100;
     h1 {
       width: 15rem;
       display: inline-block;
@@ -122,6 +135,9 @@
       margin-left: 30px;
       line-height: 1.5;
     }
+  }
+  .detail-back-open {
+    display: block;
   }
   .detail-open {
     display: inherit;
