@@ -8,12 +8,42 @@
       box-shadow:0 0 60px 0 $techbookfest;
     }
   }
+  .new-a {
+    position: relative;
+    .new {
+      position: absolute;
+      display: block;
+      width:auto;
+      height:auto;
+      left: 175px;
+      top: -10px;
+    }
+  }
+  .yellow-shadow {
+    &:hover {
+      box-shadow:0 0 60px 0 #c18b44;
+    }
+  }
 }
-
+@media(max-width: 1080px) {
+  .links {
+    .new-a {
+      .new {
+        left: calc(50% - 315px);
+      }
+    }
+  }
+}
 @media(max-width: 620px) {
   .links {
     .link-box-large {
       width: 100%;
+    }
+    .new-a {
+      .new {
+        width: 19%;
+        left:0;
+      }
     }
   }
 }
