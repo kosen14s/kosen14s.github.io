@@ -32,6 +32,11 @@
     }
   }
 }
+/*container*/
+.container {
+  width: 1200px;
+  margin: auto;
+}
 
 @import 'header';
 @import 'techbook-pdf';
