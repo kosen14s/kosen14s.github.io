@@ -6,6 +6,7 @@ header {
   background-position: center 70%;
   background-repeat: no-repeat;
   background-size: 1000px;
+  position: relative;
   .home-link {
     margin-left: 20px;
     padding-top: 16px;
@@ -30,6 +31,29 @@ header {
     .scroll-img {
       width: 58px;
       animation: 4s scroll_down 0s infinite ease-in-out;
+    }
+  }
+  .detail {
+    position: absolute;
+    bottom: 120px;
+    right: calc(20% - 80px);
+    color:#fff;
+    font-size: 2.6rem;
+    .pages {
+      margin: 20px 0;
+    }
+    .variation {
+      margin: 6px 0;
+      display: flex;
+      flex-wrap: nowrap;
+      line-height: 5rem;
+      .name {
+        padding-top: .9rem;
+        width: 10rem;
+      }
+      .value {
+        font-size: 5rem;
+      }
     }
   }
 }

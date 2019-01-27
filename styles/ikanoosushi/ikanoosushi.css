@@ -385,7 +385,7 @@ html {
   font-size: 62.5%;
   height: 100%;
   font-family: "Noto Serif JP", serif;
-  font-weight: 700; }
+  font-weight: 600; }
 
 body {
   width: 100%;
@@ -412,7 +412,8 @@ header {
   background-image: url("./../../images/techbookfest6/top_image.png");
   background-position: center 70%;
   background-repeat: no-repeat;
-  background-size: 1000px; }
+  background-size: 1000px;
+  position: relative; }
   header .home-link {
     margin-left: 20px;
     padding-top: 16px; }
@@ -432,6 +433,24 @@ header {
     header .scroll .scroll-img {
       width: 58px;
       animation: 4s scroll_down 0s infinite ease-in-out; }
+  header .detail {
+    position: absolute;
+    bottom: 120px;
+    right: calc(20% - 80px);
+    color: #fff;
+    font-size: 2.6rem; }
+    header .detail .pages {
+      margin: 20px 0; }
+    header .detail .variation {
+      margin: 6px 0;
+      display: flex;
+      flex-wrap: nowrap;
+      line-height: 5rem; }
+      header .detail .variation .name {
+        padding-top: .9rem;
+        width: 10rem; }
+      header .detail .variation .value {
+        font-size: 5rem; }
 
 @keyframes scroll_down {
   0% {
