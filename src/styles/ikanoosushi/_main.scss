@@ -5,11 +5,21 @@
   position: relative;
   margin-bottom: 30px;
   .section-BG {
+    position: relative;
     width: 100%;
     height: 120px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    .BG-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $ika-dark-gray;
+      opacity: .3;
+    }
   }
   .BG1 {background-image: url("./../../images/techbookfest6/section_BG1.png");}
   .BG2 {background-image: url("./../../images/techbookfest6/section_BG2.png");}

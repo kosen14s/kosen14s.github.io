@@ -411,11 +411,20 @@ a {
   position: relative;
   margin-bottom: 30px; }
   .section-top .section-BG {
+    position: relative;
     width: 100%;
     height: 120px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+    .section-top .section-BG .BG-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #3c3c3c;
+      opacity: .3; }
   .section-top .BG1 {
     background-image: url("./../../images/techbookfest6/section_BG1.png"); }
   .section-top .BG2 {
@@ -513,7 +522,7 @@ section.techbook-pdf {
     width: 40%;
     font-weight: 700; }
     section.techbook-pdf .techbook .techbook-wrapper {
-      padding-top: 100px;
+      padding-top: 110px;
       margin-left: 145px; }
       section.techbook-pdf .techbook .techbook-wrapper .date {
         font-size: 3rem; }
