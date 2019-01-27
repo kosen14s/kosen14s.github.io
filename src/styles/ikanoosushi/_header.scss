@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  height: 960px;
+  height: 950px;
   background-color: $ika-gray;
   background-image: url("./../../images/techbookfest6/top_image.png");
   background-position: center 70%;
@@ -20,7 +20,7 @@ header {
     }
   }
   .title {
-    padding-top: 20px;
+    padding-top: 50px;
     margin-left: calc(20% - 160px);
     .title-img {
       width: 240px;
@@ -35,7 +35,7 @@ header {
   }
   .detail {
     position: absolute;
-    bottom: 120px;
+    bottom: 100px;
     right: calc(20% - 80px);
     color:#fff;
     font-size: 2.6rem;

@@ -1,0 +1,89 @@
+section.techbook-pdf {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  flex-wrap: nowrap;
+  .techbook {
+    width: 40%;
+    font-weight: 700;
+    .techbook-wrapper {
+      padding-top: 100px;
+      margin-left: 145px;
+      .date {
+        font-size: 3rem;
+      }
+      .techbook-link {
+        font-size: 4.8rem;
+        line-height: 1.6;
+        transform: translateY(-8px);
+        br {display: none;}
+        a {
+          position: relative;
+          padding-right: 2px;
+          z-index: 0;
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -2px;
+            width: calc(100% + 2px);
+            height: 40%;
+            background: $ika-green;
+            z-index: -1;
+            transition: .2s ease-out;
+          }
+          &:hover::before{
+            background: $ika-blue;
+          }
+        }
+      }
+    }
+  }
+  .pdf {
+    background-image: url("./../../images/techbookfest6/pdf_BG.png");
+    background-size: 100%;
+    width: 60%;
+    height: 100%;
+    padding-left: 40px;
+    .pdf-link {
+      position: relative;
+      margin: auto;
+      margin-top: 110px;
+      width: 400px;
+      cursor: pointer;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        transition: .2s ease-out;
+      }
+      .pdf-btn-hover {
+        transition: .2s ease-out;
+        opacity: 0;
+      }
+      .pdf-btn-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        padding-top: 36px;
+        color: #fff;
+        text-align: center;
+        font-size: 2.4rem;
+        transition: .2s ease-out;
+      }
+      &:hover {
+        img {
+          transform: translateY(-2px);
+        }
+        .pdf-btn-hover {
+          opacity: .8;
+        }
+        .pdf-btn-text {
+          transform: translateY(-4px);
+        }
+      }
+    }
+  }
+}

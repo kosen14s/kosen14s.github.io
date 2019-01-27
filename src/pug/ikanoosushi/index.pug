@@ -3,7 +3,7 @@ html(lang="ja")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,600&amp;subset=japanese",rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:600,700&amp;subset=japanese",rel="stylesheet")
     link(rel="stylesheet", href="./../styles/ikanoosushi/ikanoosushi.css")
     link(rel="icon" type="image/x-icon" href="./../images/favicon.ico")
     title いかのおすし | kosen14s #dojin
@@ -27,7 +27,20 @@ html(lang="ja")
           .name PDF版
           .value ¥600
     main
-      section#techbook
+      section.techbook-pdf
+        .techbook#techbook
+          .techbook-wrapper
+            .date 2019/04/14
+            .techbook-link 
+              a(href="http://") 技術書典6<br>
+              | にて販売
+        .pdf#pdf
+          .pdf-link
+              img.pdf-btn(src="./../images/techbookfest6/pdf_link.png", alt="pdf_link")
+              img.pdf-btn-hover(src="./../images/techbookfest6/pdf_link_hover.png", alt="pdf_link")
+              .pdf-btn-text PDF Comming Soon!
+              
+
       section#about
       section#contents
       section#products

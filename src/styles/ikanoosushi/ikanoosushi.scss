@@ -3,8 +3,8 @@
 @import '../variables';
 @import '../mixins';
 
-a:link { color: $light-gray; }
-a:visited { color: $light-gray; }
+a:link { color: $ika-dark-gray; }
+a:visited { color: $ika-dark-gray; }
 
 html {
   font-size: 62.5%;
@@ -25,9 +25,6 @@ body {
 a{
   text-decoration: none;
   position: relative;
-  &:hover {
-    color: white;
-  }
 }
 
 ::selection {
