@@ -22,6 +22,8 @@ section#products {
         img {
           position: absolute;
           width: 100%;
+          transition: .2s ease-out;
+          transform: scaleX(1)skewX(0deg);
         }
         .share-text {
           position: absolute;
@@ -30,6 +32,15 @@ section#products {
           text-align: center;
           color: #fff;
           padding-top: 12px;
+          transition: .2s ease-out;
+        }
+        &:hover {
+          img {
+            transform: scaleX(1.1)skewX(8deg);
+          }
+          .share-text {
+            transform: scaleX(1.1)skewX(-2deg);
+          }
         }
       }
     }

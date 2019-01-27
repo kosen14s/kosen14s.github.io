@@ -19,7 +19,7 @@ const detail_text = document.getElementById("detail-text");
 //
 function fetchJSON(file) {
   const request = new XMLHttpRequest();
-  request.open('GET', file, false);
+  request.open('GET', file);
   request.send(null);
   if (request.status == 200)
     return JSON.parse(request.responseText);

@@ -589,7 +589,7 @@ section.techbook-pdf {
 
 .about {
   width: 980px;
-  padding: 50px;
+  padding: 70px 50px;
   display: flex;
   flex-wrap: nowrap; }
   .about .kosen14s-nannka {
@@ -628,11 +628,18 @@ section#products {
       width: 260px; }
       section#products .section-top .sns .share img {
         position: absolute;
-        width: 100%; }
+        width: 100%;
+        transition: .2s ease-out;
+        transform: scaleX(1) skewX(0deg); }
       section#products .section-top .sns .share .share-text {
         position: absolute;
         width: 100%;
         font-size: 1.8rem;
         text-align: center;
         color: #fff;
-        padding-top: 12px; }
+        padding-top: 12px;
+        transition: .2s ease-out; }
+      section#products .section-top .sns .share:hover img {
+        transform: scaleX(1.1) skewX(8deg); }
+      section#products .section-top .sns .share:hover .share-text {
+        transform: scaleX(1.1) skewX(-2deg); }
