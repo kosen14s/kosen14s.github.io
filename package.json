@@ -16,5 +16,9 @@
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.1",
     "mathsass": "^0.10.1"
+  },
+  "dependencies": {
+    "natives": "^1.1.6",
+    "yarn": "^1.13.0"
   }
 }

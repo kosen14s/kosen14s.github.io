@@ -27,7 +27,7 @@ gulp.task('sass', function () {
 gulp.task('scss', ['sass'])
 
 gulp.task('pug', () => {
-  return gulp.src(['src/pug/*.pug', '!src/pug/_*.pug'])
+  return gulp.src(['src/pug/**/*.pug', '!src/pug/**/_*.pug'])
   .pipe(plumber({
     errorHandler: notify.onError('<%= error.message %>')
   }))
@@ -43,5 +43,5 @@ gulp.task('watch', () => {
   browserSync(BROWSER_SYNC_OPTIONS);
 
   gulp.watch('src/styles/**/*.scss', ['sass', reload]);
-  gulp.watch('src/pug/*.pug', ['pug', reload]);
+  gulp.watch('src/pug/**/*.pug', ['pug', reload]);
 });
