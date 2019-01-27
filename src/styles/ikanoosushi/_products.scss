@@ -1,0 +1,38 @@
+section#products {
+  margin-top: 60px;
+  .section-top {
+    .BG3 {
+      background-color: $ika-gray;
+      height: 160px;
+    }
+    .sns {
+      position: absolute;
+      width: 100%;
+      top: -20px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      .share {
+        position: relative;
+        margin: 0 20px;
+        width: 260px;
+        img {
+          position: absolute;
+          width: 100%;
+        }
+        .share-text {
+          position: absolute;
+          width: 100%;
+          font-size: 1.8rem;
+          text-align: center;
+          color: #fff;
+          padding-top: 12px;
+        }
+      }
+    }
+  }
+  
+}

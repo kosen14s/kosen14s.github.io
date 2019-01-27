@@ -401,7 +401,42 @@ a {
   position: relative; }
 
 ::selection {
-  background: #515150; }
+  background: #515150;
+  color: #fff; }
+
+/*section共通*/
+.section-top {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 30px; }
+  .section-top .section-BG {
+    width: 100%;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .section-top .BG1 {
+    background-image: url("./../../images/techbookfest6/section_BG1.png"); }
+  .section-top .BG2 {
+    background-image: url("./../../images/techbookfest6/section_BG2.png"); }
+  .section-top .BG3 {
+    background-image: url("./../../images/techbookfest6/section_BG3.png"); }
+  .section-top .section-title {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 520px;
+    height: 60px;
+    background: #fff;
+    text-align: center; }
+    .section-top .section-title .text {
+      padding-top: 8px;
+      font-weight: 700;
+      font-size: 3rem;
+      transform: scaleY(0.8); }
 
 header {
   width: 100%;
@@ -536,3 +571,33 @@ section.techbook-pdf {
         opacity: .8; }
       section.techbook-pdf .pdf .pdf-link:hover .pdf-btn-text {
         transform: translateY(-4px); }
+
+section#products {
+  margin-top: 60px; }
+  section#products .section-top .BG3 {
+    background-color: #515150;
+    height: 160px; }
+  section#products .section-top .sns {
+    position: absolute;
+    width: 100%;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; }
+    section#products .section-top .sns .share {
+      position: relative;
+      margin: 0 20px;
+      width: 260px; }
+      section#products .section-top .sns .share img {
+        position: absolute;
+        width: 100%; }
+      section#products .section-top .sns .share .share-text {
+        position: absolute;
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+        color: #fff;
+        padding-top: 12px; }

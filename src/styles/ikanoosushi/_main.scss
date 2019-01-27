@@ -1,2 +1,38 @@
+/*section共通*/
+.section-top {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 30px;
+  .section-BG {
+    width: 100%;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .BG1 {background-image: url("./../../images/techbookfest6/section_BG1.png");}
+  .BG2 {background-image: url("./../../images/techbookfest6/section_BG2.png");}
+  .BG3 {background-image: url("./../../images/techbookfest6/section_BG3.png");}
+  .section-title {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 520px;
+    height: 60px;
+    background: #fff;
+    text-align: center;
+    .text {
+      padding-top: 8px;
+      font-weight: 700;
+      font-size: 3rem;
+      transform: scaleY(.8);
+    }
+  }
+}
+
 @import 'header';
 @import 'techbook-pdf';
+@import 'products';
