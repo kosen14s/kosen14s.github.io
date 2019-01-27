@@ -1,0 +1,24 @@
+.about {
+  width: 980px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  .kosen14s-nannka {
+    width: 20%;
+    height: 100%;
+    padding: 40px;
+    .about-logo {
+      filter: drop-shadow(0 0 10px rgba(#111,.3));
+    }
+  }
+  .about-text {
+    padding: 0 40px;
+    width: 80%;
+    font-size: 1.9rem;
+    line-height: 1.6;
+    .about-title {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+}

@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   .section-BG {
     position: relative;
     width: 100%;
@@ -26,12 +26,12 @@
   .BG3 {background-image: url("./../../images/techbookfest6/section_BG3.png");}
   .section-title {
     position: absolute;
-    bottom: -24px;
+    bottom: -18px;
     left: 0;
     right: 0;
     margin: auto;
     width: 520px;
-    height: 60px;
+    height: 50px;
     background: #fff;
     text-align: center;
     .text {
@@ -50,4 +50,5 @@
 
 @import 'header';
 @import 'techbook-pdf';
+@import 'about';
 @import 'products';
