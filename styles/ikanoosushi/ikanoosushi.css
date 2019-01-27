@@ -413,7 +413,8 @@ a {
   .section-top .section-BG {
     position: relative;
     width: 100%;
-    height: 120px;
+    height: 170px;
+    background-color: #515150;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
@@ -428,12 +429,12 @@ a {
   .section-top .BG1 {
     background-image: url("./../../images/techbookfest6/section_BG1.png"); }
   .section-top .BG2 {
-    background-image: url("./../../images/techbookfest6/section_BG2.png"); }
-  .section-top .BG3 {
     background-image: url("./../../images/techbookfest6/section_BG3.png"); }
+  .section-top .BG3 {
+    background-image: url("./../../images/techbookfest6/section_BG2.png"); }
   .section-top .section-title {
     position: absolute;
-    bottom: -18px;
+    bottom: -12px;
     left: 0;
     right: 0;
     margin: auto;
@@ -589,7 +590,7 @@ section.techbook-pdf {
 
 .about {
   width: 980px;
-  padding: 70px 50px;
+  padding: 80px 50px;
   display: flex;
   flex-wrap: nowrap; }
   .about .kosen14s-nannka {
@@ -604,7 +605,7 @@ section.techbook-pdf {
     font-size: 1.9rem;
     line-height: 1.6; }
     .about .about-text .about-title {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 700; }
 
 .contents {
@@ -654,10 +655,10 @@ section.techbook-pdf {
 
 section#products {
   margin-top: 60px; }
-  section#products .section-top .BG3 {
-    background-color: #515150;
-    height: 160px; }
-  section#products .section-top .sns {
+
+footer {
+  position: relative; }
+  footer .sns {
     position: absolute;
     width: 100%;
     top: -20px;
@@ -667,16 +668,16 @@ section#products {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center; }
-    section#products .section-top .sns .share {
+    footer .sns .share {
       position: relative;
       margin: 0 20px;
       width: 260px; }
-      section#products .section-top .sns .share img {
+      footer .sns .share img {
         position: absolute;
         width: 100%;
         transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98);
         transform: scaleX(1) skewX(0deg); }
-      section#products .section-top .sns .share .share-text {
+      footer .sns .share .share-text {
         position: absolute;
         width: 100%;
         font-size: 1.8rem;
@@ -684,7 +685,7 @@ section#products {
         color: #fff;
         padding-top: 12px;
         transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
-      section#products .section-top .sns .share:hover img {
+      footer .sns .share:hover img {
         transform: scaleX(1.1) skewX(8deg); }
-      section#products .section-top .sns .share:hover .share-text {
+      footer .sns .share:hover .share-text {
         transform: scaleX(1.1) skewX(-2deg); }
