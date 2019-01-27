@@ -29,6 +29,16 @@ header {
     margin-left: calc(20% - 60px);
     .scroll-img {
       width: 58px;
+      animation: 4s scroll_down 0s infinite ease-in-out;
     }
   }
+}
+
+@keyframes scroll_down {
+  0%  {transform: translateY(0)}
+  80% {transform: translateY(0)}
+  85% {transform: translateY(10px)}
+  90% {transform: translateY(0)}
+  95% {transform: translateY(10px)}
+  100% {transform: translateY(0)}
 }
