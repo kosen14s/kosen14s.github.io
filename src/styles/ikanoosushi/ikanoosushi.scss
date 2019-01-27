@@ -9,7 +9,8 @@ a:visited { color: $light-gray; }
 html {
   font-size: 62.5%;
   height: 100%;
-  font-family: $noto-font;
+  font-family: $noto-serif-font;
+  font-weight: 700;
 }
 body {
   width: 100%;
@@ -17,7 +18,7 @@ body {
   margin: 0;
   position: relative;
   background-color: white;
-  color: $light-gray;
+  color: $ika-dark-gray;
   font-size: 1.9rem;
 }
 

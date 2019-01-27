@@ -384,7 +384,8 @@ a:visited {
 html {
   font-size: 62.5%;
   height: 100%;
-  font-family: "Noto Sans Japanese"; }
+  font-family: "Noto Serif JP", serif;
+  font-weight: 700; }
 
 body {
   width: 100%;
@@ -392,7 +393,7 @@ body {
   margin: 0;
   position: relative;
   background-color: white;
-  color: #ddd;
+  color: #3c3c3c;
   font-size: 1.9rem; }
 
 a {
