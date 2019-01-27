@@ -9,7 +9,14 @@ header {
   .home-link {
     margin-left: 20px;
     padding-top: 16px;
-    img.logo14s {width: 120px;}
+    img.logo14s {
+      width: 120px;
+      opacity: 1;
+      transition: .2s ease-out;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
   .title {
     padding-top: 20px;

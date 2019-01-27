@@ -416,7 +416,11 @@ header {
     margin-left: 20px;
     padding-top: 16px; }
     header .home-link img.logo14s {
-      width: 120px; }
+      width: 120px;
+      opacity: 1;
+      transition: .2s ease-out; }
+      header .home-link img.logo14s:hover {
+        opacity: 0.8; }
   header .title {
     padding-top: 20px;
     margin-left: calc(20% - 160px); }
