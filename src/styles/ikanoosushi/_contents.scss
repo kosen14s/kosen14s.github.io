@@ -1,0 +1,58 @@
+.contents{
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  ul{
+    width: 50%;
+    margin: 0;
+    padding-left: 60px;
+    list-style: none;
+    li {
+      display: flex;
+      flex-wrap: nowrap;
+      .number {
+        padding-right:10px;
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
+      .content {
+        .title {
+          font-size: 2.2rem;
+          font-weight: 700;
+        }
+        .author {
+          position: relative;
+          padding: 8px 0;
+          font-size: 1.5rem;
+          a {
+            &::after{
+              content:"";
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background: $ika-dark-gray;
+              z-index: -1;
+              transition: .2s $bezier-fast-ease-in-out;
+            }
+          }
+          a:hover {
+            &::after{
+              height: 60%;
+              width: calc(100% + 8px);
+              background: $ika-green;
+              transform: translateX(-4px);
+            }
+          }
+        }
+        .detail {
+          font-size: 1.7rem; 
+          margin-bottom: 30px;
+          p {margin: 1rem 0;}
+        }
+      }
+    }
+  }
+}

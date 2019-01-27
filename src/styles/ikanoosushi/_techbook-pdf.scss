@@ -30,7 +30,7 @@ section.techbook-pdf {
             height: 40%;
             background: $ika-green;
             z-index: -1;
-            transition: .2s ease-out;
+            transition: .3s $bezier-fast-ease-in-out;
           }
           &:hover::before{
             background: $ika-blue;
@@ -56,10 +56,10 @@ section.techbook-pdf {
         top: 0;
         left: 0;
         width: 400px;
-        transition: .2s ease-out;
+        transition: .2s $bezier-fast-ease-in-out;
       }
       .pdf-btn-hover {
-        transition: .2s ease-out;
+        transition: .2s $bezier-fast-ease-in-out;
         opacity: 0;
       }
       .pdf-btn-text {
@@ -71,7 +71,7 @@ section.techbook-pdf {
         color: #fff;
         text-align: center;
         font-size: 2.4rem;
-        transition: .2s ease-out;
+        transition: .2s $bezier-fast-ease-in-out;
       }
       &:hover {
         img {

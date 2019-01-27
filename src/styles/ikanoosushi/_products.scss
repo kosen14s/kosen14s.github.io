@@ -22,7 +22,7 @@ section#products {
         img {
           position: absolute;
           width: 100%;
-          transition: .2s ease-out;
+          transition: .2s $bezier-fast-ease-in-out;
           transform: scaleX(1)skewX(0deg);
         }
         .share-text {
@@ -32,7 +32,7 @@ section#products {
           text-align: center;
           color: #fff;
           padding-top: 12px;
-          transition: .2s ease-out;
+          transition: .2s $bezier-fast-ease-in-out;
         }
         &:hover {
           img {

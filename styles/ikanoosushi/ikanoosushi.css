@@ -546,7 +546,7 @@ section.techbook-pdf {
             height: 40%;
             background: #91C48C;
             z-index: -1;
-            transition: .2s ease-out; }
+            transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
           section.techbook-pdf .techbook .techbook-wrapper .techbook-link a:hover::before {
             background: #4E83BA; }
   section.techbook-pdf .pdf {
@@ -566,9 +566,9 @@ section.techbook-pdf {
         top: 0;
         left: 0;
         width: 400px;
-        transition: .2s ease-out; }
+        transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
       section.techbook-pdf .pdf .pdf-link .pdf-btn-hover {
-        transition: .2s ease-out;
+        transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98);
         opacity: 0; }
       section.techbook-pdf .pdf .pdf-link .pdf-btn-text {
         position: absolute;
@@ -579,7 +579,7 @@ section.techbook-pdf {
         color: #fff;
         text-align: center;
         font-size: 2.4rem;
-        transition: .2s ease-out; }
+        transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
       section.techbook-pdf .pdf .pdf-link:hover img {
         transform: translateY(-2px); }
       section.techbook-pdf .pdf .pdf-link:hover .pdf-btn-hover {
@@ -607,6 +607,51 @@ section.techbook-pdf {
       font-size: 3rem;
       font-weight: 700; }
 
+.contents {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%; }
+  .contents ul {
+    width: 50%;
+    margin: 0;
+    padding-left: 60px;
+    list-style: none; }
+    .contents ul li {
+      display: flex;
+      flex-wrap: nowrap; }
+      .contents ul li .number {
+        padding-right: 10px;
+        font-size: 2.2rem;
+        font-weight: 700; }
+      .contents ul li .content .title {
+        font-size: 2.2rem;
+        font-weight: 700; }
+      .contents ul li .content .author {
+        position: relative;
+        padding: 8px 0;
+        font-size: 1.5rem; }
+        .contents ul li .content .author a::after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: #3c3c3c;
+          z-index: -1;
+          transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+        .contents ul li .content .author a:hover::after {
+          height: 60%;
+          width: calc(100% + 8px);
+          background: #91C48C;
+          transform: translateX(-4px); }
+      .contents ul li .content .detail {
+        font-size: 1.7rem;
+        margin-bottom: 30px; }
+        .contents ul li .content .detail p {
+          margin: 1rem 0; }
+
 section#products {
   margin-top: 60px; }
   section#products .section-top .BG3 {
@@ -629,7 +674,7 @@ section#products {
       section#products .section-top .sns .share img {
         position: absolute;
         width: 100%;
-        transition: .2s ease-out;
+        transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98);
         transform: scaleX(1) skewX(0deg); }
       section#products .section-top .sns .share .share-text {
         position: absolute;
@@ -638,7 +683,7 @@ section#products {
         text-align: center;
         color: #fff;
         padding-top: 12px;
-        transition: .2s ease-out; }
+        transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
       section#products .section-top .sns .share:hover img {
         transform: scaleX(1.1) skewX(8deg); }
       section#products .section-top .sns .share:hover .share-text {
