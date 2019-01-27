@@ -304,6 +304,9 @@ a:link {
 a:visited {
   color: black; }
 
+/*TOGETHER*/
+/*いかのおすし*/
+/*font*/
 @font-face {
   font-family: 'GN-きんいろサンセリフ';
   src: url(./../../fonts/GN-Kin-iro_SansSerif_1.ttf); }

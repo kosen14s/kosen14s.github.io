@@ -1,0 +1,27 @@
+header {
+  width: 100%;
+  height: 960px;
+  background-color: $ika-gray;
+  background-image: url("./../../images/techbookfest6/top_image.png");
+  background-position: center 70%;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  .home-link {
+    margin-left: 20px;
+    padding-top: 16px;
+    img.logo14s {width: 120px;}
+  }
+  .title {
+    padding-top: 20px;
+    margin-left: calc(20% - 160px);
+    .title-img {
+      width: 240px;
+    }
+  }
+  .scroll {
+    margin-left: calc(20% - 60px);
+    .scroll-img {
+      width: 58px;
+    }
+  }
+}

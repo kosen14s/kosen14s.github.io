@@ -304,6 +304,9 @@ a:link {
 a:visited {
   color: black; }
 
+/*TOGETHER*/
+/*いかのおすし*/
+/*font*/
 @font-face {
   font-family: 'GN-きんいろサンセリフ';
   src: url(./../../fonts/GN-Kin-iro_SansSerif_1.ttf); }
@@ -388,7 +391,7 @@ body {
   height: 100%;
   margin: 0;
   position: relative;
-  background-color: black;
+  background-color: white;
   color: #ddd;
   font-size: 1.9rem; }
 
@@ -399,4 +402,27 @@ a {
     color: white; }
 
 ::selection {
-  background: #6ab1ad; }
+  background: #515150; }
+
+header {
+  width: 100%;
+  height: 960px;
+  background-color: #515150;
+  background-image: url("./../../images/techbookfest6/top_image.png");
+  background-position: center 70%;
+  background-repeat: no-repeat;
+  background-size: 1000px; }
+  header .home-link {
+    margin-left: 20px;
+    padding-top: 16px; }
+    header .home-link img.logo14s {
+      width: 120px; }
+  header .title {
+    padding-top: 20px;
+    margin-left: calc(20% - 160px); }
+    header .title .title-img {
+      width: 240px; }
+  header .scroll {
+    margin-left: calc(20% - 60px); }
+    header .scroll .scroll-img {
+      width: 58px; }

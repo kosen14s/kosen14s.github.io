@@ -3,6 +3,7 @@ html(lang="ja")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./../styles/ikanoosushi/ikanoosushi.css")
     link(rel="icon" type="image/x-icon" href="./../images/favicon.ico")
     title いかのおすし | kosen14s #dojin
     meta(property="og:locale", content="ja_JP")
@@ -12,11 +13,9 @@ html(lang="ja")
   body
     header
       .home-link
-        a(href="./")
-          img(src="./../images/techbookfest6/14s_dojin_logo.png", alt="kosen14s #dojin").14slogo
-      .title
-        img(src="./../images/techbookfest6/ikanoosushi_logo.png", alt="いかのおすし")
-      .scroll: img(src="./../images/techbookfest6/scroll_down.png", alt="scroll down!")
+        a(href="./../"): img.logo14s(src="./../images/techbookfest6/14s_dojin_logo.png", alt="kosen14s #dojin")
+      .title: img.title-img(src="./../images/techbookfest6/ikanoosushi_logo.png", alt="いかのおすし")
+      .scroll: img.scroll-img(src="./../images/techbookfest6/scroll_down.png", alt="scroll down!")
       .detail
         .pages 90ページ
         .variation

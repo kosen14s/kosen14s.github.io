@@ -16,7 +16,7 @@ body {
   height: 100%;
   margin: 0;
   position: relative;
-  background-color: black;
+  background-color: white;
   color: $light-gray;
   font-size: 1.9rem;
 }
@@ -30,7 +30,7 @@ a{
 }
 
 ::selection {
-  background: $light-skyblue;
+  background: $ika-gray;
 }
 
 @import 'main';
