@@ -1,12 +1,27 @@
 'use strict';
 
-// contentsを取得
-const contents = fetchJSON('./../scripts/ikanoosushi/ikanoosushi-contents.json');
-switchContents(contents);
-// productsを取得
-const products = fetchJSON('./../scripts/ikanoosushi/ikanoosushi-products.json');
-addProducts();
+//コンテンツ決定した？
+const decided_contents = false;
+const decided_products = false;
 
+const contents = fetchJSON('./../scripts/ikanoosushi/ikanoosushi-contents.json');
+const products = fetchJSON('./../scripts/ikanoosushi/ikanoosushi-products.json');
+
+// contentsを取得
+if(decided_contents == true){
+  switchContents(contents);
+  document.getElementById("contents").style.backgroundColor="#fff"
+}else{
+  waitPlease("contents-main");
+}
+
+// productsを取得
+if(decided_products == true){
+  addProducts();
+  document.getElementById("products").style.backgroundColor="#fff"
+}else {
+  waitPlease("products-main")
+}  
 //
 // JSONファイルからデータをfetchする
 //
@@ -104,4 +119,16 @@ function addProducts(){
         aDOM.appendChild(detailDOM);
 
   }
+}
+
+//
+// 「ちょっとまってね」
+//
+function waitPlease(id){
+  const space = document.getElementById(id);
+  space.textContent = null;
+  const waitDOM = document.createElement('div');
+  waitDOM.classList.add('please-wait');
+  waitDOM.innerHTML = " <p>ちょっと待ってね……</p>";
+  space.appendChild(waitDOM);
 }

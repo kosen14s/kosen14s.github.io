@@ -12,6 +12,8 @@ html(lang="ja")
     meta(property="og:type", content="website")
     meta(property="og:url", content="https://kosen14s.github.io/ikanoosushi")
   body
+    .BG-spiral
+      img(src="./../images/techbookfest6/BG_spiral.png")
     header
       .home-link
         a(href="./../"): img.logo14s(src="./../images/techbookfest6/14s_dojin_logo.svg", alt="kosen14s #dojin")
@@ -56,7 +58,7 @@ html(lang="ja")
           .section-BG.BG2
           .section-title: .text コンテンツ
         .container
-          .contents
+          .contents#contents-main
             ul#left-list
             ul#right-list
       section#products
@@ -64,16 +66,21 @@ html(lang="ja")
           .section-BG.BG3: .BG-cover
           .section-title: .text その他の販売物
         .container
-          .products
+          .products#products-main
             ul#product-list
               
     footer
-        .sns
-            a.share#twitter(href="http://")
-              img(src="./../images/techbookfest6/share_tw.svg")
-              .share-text Twitterでつぶやく
-            a.share#facebook(href="http://")
-              img(src="./../images/techbookfest6/share_fb.svg")
-              .share-text Facebookでシェア
+      .sns
+        a.share#twitter(href="http://")
+          img(src="./../images/techbookfest6/share_tw.svg")
+          .share-text Twitterでつぶやく
+        a.share#facebook(href="http://")
+          img(src="./../images/techbookfest6/share_fb.svg")
+          .share-text Facebookでシェア
+      .scroll-top
+        a(href="./"): img.scroll-img(src="./../images/techbookfest6/scroll_top.svg", alt="scroll top")
+      .footer-visual
+        img.footer-logo(src="./../images/techbookfest6/footer_logo.svg", alt="いかのおすし")
+      .copyright Copyright 2019 kosen14s. All Rights Reserved.
 
     script(src="./../scripts/ikanoosushi/ikanoosushi.js")
