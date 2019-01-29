@@ -1,8 +1,11 @@
 'use strict';
 
-// contentsを取得・表示
-const contents = fetchJSON('./../scripts/ikanoosushi-contents.json');
+// contentsを取得
+const contents = fetchJSON('./../scripts/ikanoosushi/ikanoosushi-contents.json');
 switchContents(contents);
+// productsを取得
+const products = fetchJSON('./../scripts/ikanoosushi/ikanoosushi-products.json');
+addProducts();
 
 //
 // JSONファイルからデータをfetchする
@@ -42,7 +45,7 @@ function addContents(list, head, tail){
 
       const numberDOM = document.createElement('div');
       numberDOM.classList.add('number');
-      numberDOM.innerHTML = ( '00' + (i+1) ).slice( -2 );;
+      numberDOM.innerHTML = ( '00' + (i+1) ).slice( -2 );
       listDOM.appendChild(numberDOM);
 
       const contentDOM = document.createElement('div');
@@ -66,3 +69,39 @@ function addContents(list, head, tail){
   }
 }
 
+//
+// productsを追加する
+//
+function addProducts(){
+  const products_list = document.getElementById("product-list");
+  for (let i=0;i<products.length; i++) {
+    // li.product
+    //   a(href="url")
+        // .pic: img(src="picture",alt="name")
+        // .product-detail
+        //   .name name
+        //   .value ¥+value
+        //   .comment
+    const listDOM = document.createElement('li');
+    listDOM.classList.add('product');
+    products_list.appendChild(listDOM);
+
+      const aDOM = document.createElement('a');
+      aDOM.href = products[i].url;
+      listDOM.appendChild(aDOM);
+    
+        const picDOM = document.createElement('div');
+        picDOM.classList.add('pic');
+        picDOM.innerHTML = `<img src="./../images/techbookfest6/products/${products[i].picture}" alt="${products[i].name}">`;
+        aDOM.appendChild(picDOM);
+
+        const detailDOM = document.createElement('div');
+        detailDOM.classList.add('product-detail');
+        detailDOM.innerHTML = 
+        `<div class="name">${products[i].name}</div>
+         <div class="value">¥${products[i].value}</div>
+         <div class="comment">${products[i].comment}</div>`
+        aDOM.appendChild(detailDOM);
+
+  }
+}
