@@ -25,7 +25,9 @@
           position: relative;
           padding: 8px 0;
           font-size: 1.5rem;
+          z-index: 4;
           a {
+            z-index: 4;
             &::after{
               content:"";
               position: absolute;

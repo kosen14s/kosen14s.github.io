@@ -412,7 +412,7 @@ section#about, section.techbook-pdf {
   width: 100%;
   height: auto;
   position: relative;
-  margin-bottom: 10px; }
+  z-index: 1; }
   .section-top .section-BG {
     position: relative;
     width: 100%;
@@ -457,22 +457,27 @@ section#about, section.techbook-pdf {
   margin: auto; }
 
 /*BG*/
-body {
+body .please-wait {
   position: relative;
-  z-index: 0; }
-  body .BG-spiral {
-    position: fixed;
+  z-index: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 80px 0 90px; }
+  body .please-wait .BG-spiral {
+    position: absolute;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -20; }
-    body .BG-spiral img {
+    width: 100%;
+    height: 100%;
+    z-index: -20;
+    overflow: hidden; }
+    body .please-wait .BG-spiral img {
       z-index: -20;
-      position: fixed;
+      position: absolute;
       margin: auto;
       top: 0;
       left: 0;
@@ -480,12 +485,6 @@ body {
       bottom: 0;
       animation: 16s rotation linear infinite;
       opacity: .6; }
-
-.please-wait {
-  width: 100%;
-  display: block;
-  text-align: center;
-  margin-bottom: 20px; }
 
 header {
   width: 100%;
@@ -518,7 +517,7 @@ header {
   header .detail {
     position: absolute;
     bottom: 100px;
-    right: calc(20% - 80px);
+    right: calc(36% - 400px);
     color: #fff;
     font-size: 2.6rem;
     font-weight: 700; }
@@ -530,10 +529,11 @@ header {
       flex-wrap: nowrap;
       line-height: 5rem; }
       header .detail .variation .name {
-        padding-top: .9rem;
-        width: 10rem; }
+        padding-top: .9rem; }
       header .detail .variation .value {
-        font-size: 5rem; }
+        width: 19rem;
+        font-size: 5rem;
+        text-align: right; }
 
 @keyframes scroll_down {
   0% {
@@ -624,7 +624,7 @@ section.techbook-pdf {
 
 .about {
   width: 980px;
-  padding: 80px 50px;
+  padding: 90px 50px 80px;
   display: flex;
   flex-wrap: nowrap; }
   .about .kosen14s-nannka {
@@ -665,17 +665,20 @@ section.techbook-pdf {
       .contents ul li .content .author {
         position: relative;
         padding: 8px 0;
-        font-size: 1.5rem; }
-        .contents ul li .content .author a::after {
-          content: "";
-          position: absolute;
-          bottom: -2px;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background: #3c3c3c;
-          z-index: -1;
-          transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+        font-size: 1.5rem;
+        z-index: 4; }
+        .contents ul li .content .author a {
+          z-index: 4; }
+          .contents ul li .content .author a::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #3c3c3c;
+            z-index: -1;
+            transition: 0.2s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
         .contents ul li .content .author a:hover::after {
           height: 60%;
           width: calc(100% + 8px);
@@ -688,7 +691,7 @@ section.techbook-pdf {
           margin: 1rem 0; }
 
 .products {
-  padding: 60px 0 100px;
+  padding: 80px 0 100px;
   width: 100%; }
   .products ul#product-list {
     list-style: none; }

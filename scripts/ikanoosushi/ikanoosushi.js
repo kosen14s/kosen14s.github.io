@@ -12,7 +12,7 @@ if(decided_contents == true){
   switchContents(contents);
   document.getElementById("contents").style.backgroundColor="#fff"
 }else{
-  waitPlease("contents-main");
+  waitPlease("contents-set");
 }
 
 // productsを取得
@@ -20,7 +20,7 @@ if(decided_products == true){
   addProducts();
   document.getElementById("products").style.backgroundColor="#fff"
 }else {
-  waitPlease("products-main")
+  waitPlease("products-set")
 }  
 //
 // JSONファイルからデータをfetchする
@@ -129,6 +129,6 @@ function waitPlease(id){
   space.textContent = null;
   const waitDOM = document.createElement('div');
   waitDOM.classList.add('please-wait');
-  waitDOM.innerHTML = " <p>ちょっと待ってね……</p>";
+  waitDOM.innerHTML = `<div class="BG-spiral"><img src="./../images/techbookfest6/BG_spiral.png"></div><p>ちょっと待ってね……</p>`;
   space.appendChild(waitDOM);
 }

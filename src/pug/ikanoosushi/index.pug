@@ -16,8 +16,6 @@ html(lang="ja")
     meta(property="og:type", content="website")
     meta(property="og:url", content="https://kosen14s.github.io/ikanoosushi")
   body
-    .BG-spiral
-      img(src="./../images/techbookfest6/BG_spiral.png")
     header
       .home-link
         a(href="./../"): img.logo14s(src="./../images/techbookfest6/14s_dojin_logo.svg", alt="kosen14s #dojin")
@@ -28,10 +26,10 @@ html(lang="ja")
         .pages 90ページ
         .variation
           .name 物理本
-          .value ¥800
+          .value ¥1,000
         .variation
           .name PDF版
-          .value ¥600
+          .value ¥800
     main
       section.techbook-pdf
         .techbook#techbook
@@ -39,7 +37,8 @@ html(lang="ja")
             .date 2019/04/14
             .techbook-link 
               a(href="http://") 技術書典6<br>
-              | にて販売<span style="font-size:2.4rem;">（予定）</span>
+              | にて販売
+              span(style="font-size:2.2rem;") （予定）
         .pdf#pdf
           .pdf-link
               img.pdf-btn(src="./../images/techbookfest6/pdf_link.png", alt="pdf_link")
@@ -61,16 +60,16 @@ html(lang="ja")
         .section-top
           .section-BG.BG2
           .section-title: .text コンテンツ
-        .container
-          .contents#contents-main
+        .container#contents-set
+          .contents
             ul#left-list
             ul#right-list
       section#products
         .section-top
           .section-BG.BG3: .BG-cover
           .section-title: .text その他の販売物
-        .container
-          .products#products-main
+        .container#products-set
+          .products
             ul#product-list
               
     footer
