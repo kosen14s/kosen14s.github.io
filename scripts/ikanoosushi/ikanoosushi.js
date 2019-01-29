@@ -99,7 +99,7 @@ function addProducts(){
         detailDOM.classList.add('product-detail');
         detailDOM.innerHTML = 
         `<div class="name">${products[i].name}</div>
-         <div class="value">¥${products[i].value}</div>
+         <div class="value">${products[i].value}</div>
          <div class="comment">${products[i].comment}</div>`
         aDOM.appendChild(detailDOM);
 

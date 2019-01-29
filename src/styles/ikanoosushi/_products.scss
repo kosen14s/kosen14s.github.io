@@ -1,5 +1,39 @@
-section#products {
-  margin-top: 60px;
-  .section-top {
+.products {
+  margin: 80px 0 60px;
+  width: 100%;
+  ul#product-list {
+    list-style: none;
+    li.product a {
+      margin: 4px;
+      padding: 12px;
+      display: flex;
+      flex-wrap: nowrap;
+      background: #fff;
+      transition: .3s $bezier-fast-ease-in-out;
+      .pic {
+        width: 300px;
+        padding-right: 12px;
+        img {
+          width: 100%;
+          background: $ika-gray;
+        }
+      }
+      .product-detail {
+        padding-left: 20px;
+        margin: 20px 0;
+        .name {
+          margin-bottom: 10px;
+          font-size: 2.4rem;
+          font-weight: 700;
+        }
+        .comment {
+          padding-top: 10px;
+          font-size: 1.8rem;
+        }
+      }
+      &:hover {
+        background: #f6f6f6;
+      }
+    }
   }
 }

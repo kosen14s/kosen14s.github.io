@@ -609,7 +609,7 @@ section.techbook-pdf {
       font-weight: 700; }
 
 .contents {
-  margin-top: 80px;
+  margin: 80px 0 60px;
   display: flex;
   flex-wrap: nowrap;
   width: 100%; }
@@ -653,8 +653,36 @@ section.techbook-pdf {
         .contents ul li .content .detail p {
           margin: 1rem 0; }
 
-section#products {
-  margin-top: 60px; }
+.products {
+  margin: 80px 0 60px;
+  width: 100%; }
+  .products ul#product-list {
+    list-style: none; }
+    .products ul#product-list li.product a {
+      margin: 4px;
+      padding: 12px;
+      display: flex;
+      flex-wrap: nowrap;
+      background: #fff;
+      transition: 0.3s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+      .products ul#product-list li.product a .pic {
+        width: 300px;
+        padding-right: 12px; }
+        .products ul#product-list li.product a .pic img {
+          width: 100%;
+          background: #515150; }
+      .products ul#product-list li.product a .product-detail {
+        padding-left: 20px;
+        margin: 20px 0; }
+        .products ul#product-list li.product a .product-detail .name {
+          margin-bottom: 10px;
+          font-size: 2.4rem;
+          font-weight: 700; }
+        .products ul#product-list li.product a .product-detail .comment {
+          padding-top: 10px;
+          font-size: 1.8rem; }
+      .products ul#product-list li.product a:hover {
+        background: #f6f6f6; }
 
 footer {
   position: relative; }
