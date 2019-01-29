@@ -504,6 +504,19 @@ header {
       transition: .2s ease-out; }
       header .home-link img.logo14s:hover {
         opacity: 0.8; }
+  header .share-btns {
+    position: absolute;
+    top: 22px;
+    right: 20px; }
+    header .share-btns a {
+      margin: 8px; }
+      header .share-btns a img.share-btn {
+        width: 42px;
+        height: 42px;
+        transform: rotateZ(0deg) scale(1);
+        transition: 1s cubic-bezier(0.17, 0.07, 0.02, 0.98); }
+      header .share-btns a:hover img.share-btn {
+        transform: rotateZ(360deg) scale(0.7); }
   header .title {
     padding-top: 50px;
     margin-left: calc(20% - 160px); }

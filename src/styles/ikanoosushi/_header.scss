@@ -19,6 +19,23 @@ header {
       }
     }
   }
+  .share-btns {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    a {
+      margin: 8px;
+      img.share-btn {
+        width: 42px;
+        height: 42px;
+        transform: rotateZ(0deg)scale(1);
+        transition: 1s $bezier-fast-ease-in-out;
+      }
+      &:hover img.share-btn {
+        transform: rotateZ(360deg)scale(.7);
+      }
+    }
+  }
   .title {
     padding-top: 50px;
     margin-left: calc(20% - 160px);
