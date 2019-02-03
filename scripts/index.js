@@ -1,3 +1,6 @@
+var hash = location.hash;
+console.log(location.hash)
+
 var header = document.getElementById("header");
 var headerUnder = document.getElementById("header-under");
 var menuButton = document.getElementById("menu-button");
@@ -29,6 +32,12 @@ window.onload = function(){
       console.log(dis);
     }
   }
+
+  //#menuのハッシュの時はメニュOpen
+  if(hash == "#menu"){
+    menuOpen();
+  }
+  
 }
 
 function DaySetting() {
@@ -196,14 +205,24 @@ function ResetSeason() {
 }
 
 //メニューボタン押したとき
-menuButton.onclick = function() {
+menuButton.onclick = function(){
   clicktime++;
-  header.classList.toggle("header_open");
-  headerUnder.classList.toggle("header-under_open");
-  menuButton.classList.toggle("menu-button_open");
   if(clicktime % 2){
-    menuIcon.classList.add(season_style);  
+    menuOpen();
   }else{
-    menuIcon.classList.remove("spr","sum","aut","win");
+    menuClose();
   }
+};
+
+function menuOpen() {
+  header.classList.add("header_open");
+  headerUnder.classList.add("header-under_open");
+  menuButton.classList.add("menu-button_open");
+  menuIcon.classList.add(season_style);  
+};
+function menuClose() {
+  header.classList.remove("header_open");
+  headerUnder.classList.remove("header-under_open");
+  menuButton.classList.remove("menu-button_open");
+  menuIcon.classList.remove("spr","sum","aut","win");
 };
