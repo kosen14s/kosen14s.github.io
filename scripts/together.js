@@ -2,6 +2,7 @@
 
 // contentsを取得・表示
 const contents = fetchJSON('./scripts/together-contents.json');
+console.log(contents)
 addContents(contents);
 
 let detail_open = false;
@@ -19,7 +20,7 @@ const detail_text = document.getElementById("detail-text");
 //
 function fetchJSON(file) {
   const request = new XMLHttpRequest();
-  request.open('GET', file);
+  request.open('GET', file, false);
   request.send(null);
   if (request.status == 200)
     return JSON.parse(request.responseText);

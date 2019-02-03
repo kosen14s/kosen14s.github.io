@@ -441,6 +441,16 @@ a {
   background-color: #000e13;
   opacity: 0.7; }
 
+.home-link {
+  margin-left: 20px;
+  padding-top: 16px; }
+  .home-link img.logo14s {
+    width: 120px;
+    opacity: 1;
+    transition: .2s ease-out; }
+    .home-link img.logo14s:hover {
+      opacity: 0.8; }
+
 @media (max-width: 1000px) {
   .backgraund-1 {
     background-size: 100%;
