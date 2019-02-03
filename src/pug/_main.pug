@@ -1,5 +1,6 @@
-mixin item-link(name,url)
+mixin item-link(name, url)
   a(href=url).item.item-link= name
+    block
 
 ul.contents
   li
@@ -14,9 +15,10 @@ ul.contents
     h2 #dojin
     p: +item-link("闇鍋本 TOGETHER","./together")
     p: +item-link("いかのおすし","./ikanoosushi")
+      img.new-tag(src="./images/new-icon.svg",art="new")
   li
     h2 #profile
-    p: +item-link("メンバーの一覧","./member")
+    p: +item-link("メンバーの一覧","./member","new")
 
 .twitter
   a(href="https://twitter.com/search?vertical=default&q=%23kosen14s&src=typd").twitter-tag-link #kosen14s
