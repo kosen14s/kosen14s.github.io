@@ -215,12 +215,14 @@ menuButton.onclick = function(){
 };
 
 function menuOpen() {
+  location.hash = "#menu";
   header.classList.add("header_open");
   headerUnder.classList.add("header-under_open");
   menuButton.classList.add("menu-button_open");
   menuIcon.classList.add(season_style);  
 };
 function menuClose() {
+  location.hash = "";
   header.classList.remove("header_open");
   headerUnder.classList.remove("header-under_open");
   menuButton.classList.remove("menu-button_open");
