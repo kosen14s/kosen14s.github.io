@@ -1,5 +1,3 @@
-var hash = location.hash;
-console.log(location.hash)
 
 var header = document.getElementById("header");
 var headerUnder = document.getElementById("header-under");
@@ -14,8 +12,6 @@ var sprBtn = document.getElementById("spring");
 var sumBtn = document.getElementById("summer");
 var autBtn = document.getElementById("autumn");
 var winBtn = document.getElementById("winter");
-
-var clicktime = 0;
 
 var metaDiscre = document.head.children;
 var metaLength = metaDiscre.length;
@@ -34,7 +30,7 @@ window.onload = function(){
   }
 
   //#menuのハッシュの時はメニュOpen
-  if(hash == "#menu"){
+  if(location.hash == "#menu"){
     menuOpen();
   }
   
@@ -120,7 +116,7 @@ sprBtn.onclick = function() {
   ChangeSpr();
   seasonList.classList.remove("season-list_open");
   menuIcon.classList.remove("spr","sum","aut","win");
-  if(clicktime % 2){
+  if(location.hash=="#menu"){
     menuIcon.classList.add(season_style);  
   }else{
     menuIcon.classList.remove("spr","sum","aut","win");
@@ -131,7 +127,7 @@ sumBtn.onclick = function() {
   ChangeSum();
   seasonList.classList.remove("season-list_open");
   menuIcon.classList.remove("spr","sum","aut","win");
-  if(clicktime % 2){
+  if(location.hash=="#menu"){
     menuIcon.classList.add(season_style);  
   }else{
     menuIcon.classList.remove("spr","sum","aut","win");
@@ -142,7 +138,7 @@ autBtn.onclick = function() {
   ChangeAut();
   seasonList.classList.remove("season-list_open");
   menuIcon.classList.remove("spr","sum","aut","win");
-  if(clicktime % 2){
+  if(location.hash=="#menu"){
     menuIcon.classList.add(season_style);  
   }else{
     menuIcon.classList.remove("spr","sum","aut","win");
@@ -153,7 +149,7 @@ winBtn.onclick = function() {
   ChangeWin();
   seasonList.classList.remove("season-list_open");
   menuIcon.classList.remove("spr","sum","aut","win");
-  if(clicktime % 2){
+  if(location.hash=="#menu"){
     menuIcon.classList.add(season_style);  
   }else{
     menuIcon.classList.remove("spr","sum","aut","win");
@@ -206,11 +202,10 @@ function ResetSeason() {
 
 //メニューボタン押したとき
 menuButton.onclick = function(){
-  clicktime++;
-  if(clicktime % 2){
-    menuOpen();
-  }else{
+  if(location.hash=="#menu"){
     menuClose();
+  }else{
+    menuOpen();
   }
 };
 
