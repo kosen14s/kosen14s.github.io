@@ -1,11 +1,11 @@
 header {
   width: 100%;
-  height: 950px;
+  height: 100vh;
   background-color: $ika-gray;
   background-image: url("./../../images/techbookfest6/top_image.png");
-  background-position: center 70%;
+  background-position: center 50%;
   background-repeat: no-repeat;
-  background-size: 1000px;
+  background-size: 105vh;
   position: relative;
   .home-link {
     margin-left: 20px;
@@ -38,22 +38,24 @@ header {
   }
   .title {
     padding-top: 50px;
-    margin-left: calc(20% - 160px);
+    margin-left: calc(50% - 60vh);
     .title-img {
-      width: 240px;
+      height: 56vh;
     }
   }
   .scroll {
-    margin-left: calc(20% - 60px);
+    margin-left: calc(50% - 53vh);
+    margin-top: 4vh;
+    width: min-content;
     .scroll-img {
-      width: 58px;
+      width: 6vh;
       animation: 4s scroll_down 0s infinite ease-in-out;
     }
   }
   .detail {
     position: absolute;
     bottom: 100px;
-    right: calc(36% - 400px);
+    right: calc(38% - 460px);
     color:#fff;
     font-size: 2.6rem;
     font-weight: 700;
@@ -76,6 +78,109 @@ header {
     }
   }
 }
+
+@media(max-width: 1400px) {
+  header {
+    background-size: calc(40vw + 50vh);
+    .title {
+      margin-left: 3%;
+      .title-img {
+        height: calc(24vw + 27vh);
+      }
+    }
+    .scroll {
+      margin-left: calc(3% + 2vh + 2vw);
+    }
+    .detail {
+      bottom: calc(100px + 4vh);
+      right: 3%;
+      font-size: 1.6vw;
+      .variation {
+        margin: .3vw 0;
+        .value {
+          width: 14vw;
+          font-size: 3.8vw;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  header {
+    height: calc(90vw + 200px);
+    background-size: 102vw;
+    background-position: center calc(50% + 10px);
+    .title {
+      display: none;
+    }
+    .scroll {
+      display: none;
+    }
+    .detail {
+      width: 100%;
+      bottom: 4vw;
+      right: 0;
+      font-size: 2rem;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content:center;
+      .pages {
+        line-height: 4rem;
+        padding-top: .9rem;
+        margin: 6px 3vw;
+      }
+      .variation {
+        margin: 6px 1.3vw;
+        display: flex;
+        flex-wrap: nowrap;
+        line-height: 4rem;
+        .name {
+          padding-top: .9rem;
+        }
+        .value {
+          width: auto;
+          padding-left: 10px;
+          font-size: 4rem;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 580px) {
+  header {
+    height: calc(90vw + 300px);
+    background-size: 140vw;
+    background-position: center 50%;
+    .detail {
+      bottom: 4vw;
+      font-size: 3.5vw;
+      .pages {
+        line-height: 7vw;
+        padding-top: 1.3vw;
+        margin: 6px 4vw;
+      }
+      .variation {
+        margin: 6px 1.3vw;
+        display: flex;
+        flex-wrap: nowrap;
+        line-height: 7vw;
+        .name {
+          padding-top: 1.3vw;
+        }
+        .value {
+          width: auto;
+          padding-left: 1.3vw;
+          font-size: 7vw;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+
 
 @keyframes scroll_down {
   0%  {transform: translateY(0)}
